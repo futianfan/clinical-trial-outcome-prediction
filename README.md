@@ -39,3 +39,6 @@
 
 ## Contact
 
+Please contact futianfan@gmail.com for help or submit an issue. 
+
+
