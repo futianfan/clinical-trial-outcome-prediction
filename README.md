@@ -24,7 +24,7 @@ git clone git@github.com:futianfan/clinical-trial-outcome-prediction.git
 
 cd clinical-trial-outcome-prediction 
 
-mkdir -p data save_model 
+mkdir -p data save_model figure
 
 ```
 
@@ -362,7 +362,11 @@ Mean and standard deviation are reported.
 
 
 
-
+### specify cpu or gpu in learn_X.py 
+```python
+device = torch.device("cuda:0")
+device = torch.device("cpu")
+```
 
  
 
