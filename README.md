@@ -2,6 +2,17 @@
 
 
 
+## 1. Conda Environment
+
+```bash
+
+conda env create -f conda.yml
+
+
+conda activate predict_drug_clinical_trial
+```
+
+The user can use conda.yml as reference to setup conda environment. 
 
 
 
@@ -9,7 +20,39 @@
 
 
 
-## Raw Data 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 2. Raw Data 
 
 ```bash
 
@@ -19,7 +62,7 @@ ls ./ClinicalTrialGov
 
 It is downloaded from [ClinicalTrial.gov](https://clinicaltrials.gov/). 
 It is 8.6+G, containing 348,891+ clinical trial records. 
-The data size grows with time.  
+The data size grows with time because more clinical trial records are added.  
 
 
 
@@ -54,17 +97,6 @@ The data size grows with time.
 
 
 
-## Conda Environment
-
-```bash
-
-cd /project/molecular_data/graphnn/ctgov
-
-conda activate predict_drug_clinical_trial
-source activate predict_drug_clinical_trial 
-```
-
-Use ctgov.yml to setup conda environment. 
 
 
 
@@ -73,29 +105,52 @@ Use ctgov.yml to setup conda environment.
 
 
 
-## Data Preprocess 
 
 
 
 
-### (1) Collect all the NCTIDs. 348,891 IDs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 3. Data Preprocess 
+
+
+### 3.1 Collect all the 348,891 NCTIDs.
 input: ClinicalTrialGov/   
-output: all_xml
+output: data/all_xml 
 ```bash
-find ClinicalTrialGov/ -name NCT*.xml | sort > all_xml
+find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
 ```
 
 
-
-### (2) diseaes -> icd10
-input: ClinicalTrialGov/* & all_xml   
+### 3.2 diseaes -> icd10
+input: ClinicalTrialGov/* & data/all_xml   
 output:	ctgov_data/diseases.csv  
 ```bash 
 python src/collect_disease_from_raw.py
 ```
 
 
-### (3) drug -> SMILES 
+### 3.3 drug -> SMILES 
 input:iqvia_data/drugbank_drugs_info.csv   
 output:iqvia_data/drug2smiles.pkl   
 ```bash
@@ -106,12 +161,13 @@ python src/drug2smiles.py
 
 
 
-### (4) Aggregation
+### 3.4 Aggregation
 
 input:     
-	1. ctgov_data/diseases.csv  
-	2. iqvia_data/drug2smiles.pkl  
-	3. all_xml        
+* ctgov_data/diseases.csv  
+* iqvia_data/drug2smiles.pkl  
+* all_xml        
+
 output: ctgov_data/raw_data.csv
 ```bash
 python src/collect_raw_data.py | tee process.log 
