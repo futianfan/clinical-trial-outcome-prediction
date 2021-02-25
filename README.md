@@ -187,11 +187,11 @@ It takes around 30 minutes.
 ### 4.2 Data Statistics 
 
 | Dataset  | Training | Test |
-|-----------------|-------------|
-| Phase I |  |  | 
-| Phase II |  |  | 
-| Phase III |  |  |
-| Indication   |        |     |   
+|-----------------|-------------|-------------|
+| Phase I |  |  |   |
+| Phase II |  |  |   |
+| Phase III |  |  |  |
+| Indication   |    |   |     |   
 
 
 ## 5. Learn and Inference 
