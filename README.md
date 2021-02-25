@@ -1,4 +1,4 @@
-# clinical-trial-outcome-prediction
+# Clinical Trial Outcome Prediction
 
 
 
@@ -24,7 +24,7 @@ git clone git@github.com:futianfan/clinical-trial-outcome-prediction.git
 
 cd clinical-trial-outcome-prediction 
 
-mkdir save_model 
+mkdir -p data save_model 
 
 ```
 
@@ -195,7 +195,7 @@ input:
 * ClinicalTrialGov/  
 * data/all_xml   
 
-output:	ctgov_data/diseases.csv  
+output:	data/diseases.csv  
 ```bash 
 python src/collect_disease_from_raw.py
 ```
@@ -204,9 +204,9 @@ python src/collect_disease_from_raw.py
 ### 3.3 drug -> SMILES using [DrugBank](https://go.drugbank.com/)
 
 
-input: iqvia_data/drugbank_drugs_info.csv   
+input: data/drugbank_drugs_info.csv   
 
-output: iqvia_data/drug2smiles.pkl   
+output: data/drug2smiles.pkl   
 ```bash
 python src/drug2smiles.py 
 ```
@@ -216,15 +216,14 @@ python src/drug2smiles.py
 ### 3.4 Aggregation
 
 input:     
-* ctgov_data/diseases.csv  
-* iqvia_data/drug2smiles.pkl  
+* data/diseases.csv  
+* data/drug2smiles.pkl  
 * data/all_xml         
 
-output: ctgov_data/raw_data.csv
+output: data/raw_data.csv
 ```bash
 python src/collect_raw_data.py | tee process.log 
 ```
-It takes around 30 minutes.   
 
 
 
@@ -256,15 +255,15 @@ It takes around 30 minutes.
 
 ### 4.1 Data Split 
 
-input: 
+input: data/raw_data.csv 
 
 
 
-output:
-* ctgov_data/phase_I_{train/valid/test}.csv 
-* ctgov_data/phase_II_{train/valid/test}.csv 
-* ctgov_data/phase_III_{train/valid/test}.csv 
-* ctgov_data/indication_{train/valid/test}.csv 
+output: 
+* data/phase_I_{train/valid/test}.csv 
+* data/phase_II_{train/valid/test}.csv 
+* data/phase_III_{train/valid/test}.csv 
+* data/indication_{train/valid/test}.csv 
 
 
 ```bash
@@ -276,10 +275,10 @@ python src/data_split.py
 
 | Dataset  | \# Train | \# Valid | \# Test | \# Total | Split Date |
 |-----------------|-------------|-------------|------------|-------------|------------|
-| Phase I |    |    |    |     |    | 
-| Phase II |    |   |    |     |    | 
-| Phase III |    |  |  |     |    | 
-| Indication |    |   |     |    |    | 
+| Phase I |  1028  |  146  |  295  |   1469  |  08/13/2014  | 
+| Phase II | 2667 |  381 | 762  |   3810  |  03/20/2014  | 
+| Phase III |  4286  |  612  |  1225 |  6123  |  04/07/2014  | 
+| Indication |  3767  |  538  |  1077   |  5382  |  05/21/2014  | 
 
 
 
@@ -385,8 +384,9 @@ python src/learn_indication.py
 
 ## Quick Start 
 
-* Setup Conda environment (1. Installation via Conda)
-* Learning and Inference (5. Learn and Inference)
+* 1. Installation via Conda
+* 4. TOP: Trial Outcome Prediction benchmark Dataset 
+* 5. Learn and Inference
 
 
 
