@@ -3,6 +3,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 0. Download code repo
+
+```bash 
+
+git clone git@github.com:futianfan/clinical-trial-outcome-prediction.git
+
+cd clinical-trial-outcome-prediction 
+
+mkdir save_model 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 1. Installation via Conda 
 
 ```bash
@@ -143,19 +190,24 @@ find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
 ```
 
 
-### 3.2 diseaes -> icd10
-input: ClinicalTrialGov/* & data/all_xml   
+### 3.2 diseaes -> icd10 using [ClinicalTable](https://clinicaltables.nlm.nih.gov/)
+input: 
+* ClinicalTrialGov/  
+* data/all_xml   
+
 output:	ctgov_data/diseases.csv  
 ```bash 
 python src/collect_disease_from_raw.py
 ```
 
 
-### 3.3 drug -> SMILES 
-input:iqvia_data/drugbank_drugs_info.csv   
-output:iqvia_data/drug2smiles.pkl   
+### 3.3 drug -> SMILES using [DrugBank](https://go.drugbank.com/)
+
+
+input: iqvia_data/drugbank_drugs_info.csv   
+
+output: iqvia_data/drug2smiles.pkl   
 ```bash
-### need optimize 
 python src/drug2smiles.py 
 ```
 
@@ -177,7 +229,7 @@ It takes around 30 minutes.
 
 
 
-## 4. Dataset of clinical trial outcome prediction 
+## 4. TOP: Trial Outcome Prediction benchmark Dataset 
 
 
 
@@ -189,9 +241,9 @@ input:
 
 output:
 * ctgov_data/phase_I_{train/valid/test}.csv 
-* ctgov_data/phase_II.csv 
-* ctgov_data/phase_III.csv 
-* ctgov_data/trial.csv 
+* ctgov_data/phase_II_{train/valid/test}.csv 
+* ctgov_data/phase_III_{train/valid/test}.csv 
+* ctgov_data/indication_{train/valid/test}.csv 
 
 
 ```bash
@@ -201,7 +253,7 @@ python src/data_split.py
 
 ### 4.2 Data Statistics 
 
-| Dataset  | Training | Test | Split Date |
+| Dataset  | \# Train | \# Test | Split Date |
 |-----------------|-------------|-------------|------------|
 | Phase I |    |    |    |    
 | Phase II |    |   |    |    
@@ -212,12 +264,14 @@ python src/data_split.py
 ## 5. Learn and Inference 
 
 
+
+
+
 ### 5.1 Phase I Prediction
 
 ```bash
 
-python src/learn_hint_phaseI.py
-
+python src/learn_phaseI.py
 
 ```
 
@@ -226,7 +280,7 @@ python src/learn_hint_phaseI.py
 
 ```bash
 
-python src/learn_hint_phaseII.py
+python src/learn_phaseII.py
 
 
 ```
@@ -234,19 +288,24 @@ python src/learn_hint_phaseII.py
 ### 5.3 Phase III Prediction
 
 ```bash
-
-python src/learn_hint_phaseIII.py
-
-
+python src/learn_phaseIII.py
 ```
 
 ### 5.4 Indication Prediction
 
 ```bash
-
-python src/learn_hint_trial.py
-
+python src/learn_indication.py 
 ```
+
+### Result Table 
+
+| Dataset  | PR-AUC | F1 | ROC-AUC |
+|-----------------|-------------|-------------|------------|
+| Phase I |    |    |    |    
+| Phase II |    |   |    |    
+| Phase III |    |  |  |    
+| Indication |    |   |     |   
+
 
 
 ## Quick Start 
