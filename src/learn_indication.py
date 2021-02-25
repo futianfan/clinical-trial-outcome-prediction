@@ -22,11 +22,11 @@ base_name = 'trial'
 # base_name = 'phase_I'
 assert base_name in base_name_lst 
 
-train_file = 'ctgov_data/' + base_name + '_train.csv'
-valid_file = 'ctgov_data/' + base_name + '_valid.csv'
-test_file = 'ctgov_data/' + base_name + '_test.csv'
+train_file = 'data/' + base_name + '_train.csv'
+valid_file = 'data/' + base_name + '_valid.csv'
+test_file = 'data/' + base_name + '_test.csv'
 subgroup_lst = ['digest', 'nervous', 'infection', 'respiratory']
-subgroup_file_lst = ['ctgov_data/' + base_name +'_' + subgroup + '_test.csv' for subgroup in subgroup_lst]
+subgroup_file_lst = ['data/' + base_name +'_' + subgroup + '_test.csv' for subgroup in subgroup_lst]
 
 
 mpnn_model = MPNN(mpnn_hidden_size = 50, mpnn_depth=3, device = device)

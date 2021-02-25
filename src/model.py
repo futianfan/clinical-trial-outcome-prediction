@@ -470,6 +470,8 @@ nn.ModuleList([ nn.ModuleList([nn.Linear(3,2) for j in range(5)] + [None]) for i
 				print(name)
 				data2graph(attention_matrix = attention_mat_lst[i], adj = self.adj, save_name = name)
 
+	def init_pretrain(self, admet_model):
+		self.molecule_encoder = admet_model.molecule_encoder
 
 	### generate attention matrix 
 

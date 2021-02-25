@@ -4,9 +4,9 @@
 
 input: 	348k data  
 	1. ClinicalTrialGov/NCTxxxx/xxxxxx.xml & all_xml    
-	1. ctgov_data/diseases.csv  
-	2. iqvia_data/drug2smiles.pkl          
-output: ctgov_data/raw_data.csv
+	1. data/diseases.csv  
+	2. data/drug2smiles.pkl          
+output: data/raw_data.csv
 
 processing:  
 	0.1 Interventional: 273k data (348k total, e.g., observatorial, surgery, )
@@ -59,7 +59,7 @@ drop_set = ['Active, not recruiting', 'Enrolling by invitation', 'No longer avai
 
 def load_disease2icd():
 	disease2icd = dict()
-	with open('ctgov_data/diseases.csv', 'r') as csvfile:
+	with open('data/diseases.csv', 'r') as csvfile:
 		rows = list(csv.reader(csvfile, delimiter = ','))[1:]
 	for row in rows:
 		disease = row[0]
@@ -155,7 +155,7 @@ def process_all():
 	disease2icd = load_disease2icd() 
 	input_file_lst = get_path_of_all_xml_file()
 	### output 
-	output_file = 'ctgov_data/raw_data.csv'
+	output_file = 'data/raw_data.csv'
 	# iqvia_disease2icd, public_disease2icd = load_disease2icd_pkl() 
 	# iqvia_disease2diseaseset = disease_dict_reorganize(iqvia_disease2icd)
 	# disease2icd = public_disease2icd 

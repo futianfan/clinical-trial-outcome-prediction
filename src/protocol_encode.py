@@ -1,6 +1,6 @@
 '''
 input:
-	ctgov_data/raw_data.csv
+	data/raw_data.csv
 
 
 '''
@@ -23,7 +23,7 @@ def clean_protocol(protocol):
 	return protocol_split 
 
 def get_all_protocols():
-	input_file = 'ctgov_data/raw_data.csv'
+	input_file = 'data/raw_data.csv'
 	with open(input_file, 'r') as csvfile:
 		rows = list(csv.reader(csvfile, delimiter = ','))[1:]
 	protocols = [row[9] for row in rows]
@@ -70,11 +70,11 @@ def save_sentence_bert_dict_pkl():
 	protocol_sentence_2_embedding = dict()
 	for sentence in tqdm(cleaned_sentence_set):
 		protocol_sentence_2_embedding[sentence] = text2vec(sentence)
-	pickle.dump(protocol_sentence_2_embedding, open('ctgov_data/sentence2embedding.pkl', 'wb'))
+	pickle.dump(protocol_sentence_2_embedding, open('data/sentence2embedding.pkl', 'wb'))
 	return 
 
 def load_sentence_2_vec():
-	sentence_2_vec = pickle.load(open('ctgov_data/sentence2embedding.pkl', 'rb'))
+	sentence_2_vec = pickle.load(open('data/sentence2embedding.pkl', 'rb'))
 	return sentence_2_vec 
 
 def protocol2feature(protocol, sentence_2_vec):

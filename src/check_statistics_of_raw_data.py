@@ -1,6 +1,6 @@
 '''
 input:  270k
-	ctgov_data/raw_data.csv
+	data/raw_data.csv
 
 process:
 	1. print statistics
@@ -16,7 +16,7 @@ import csv
 from collections import defaultdict
 text2cnt = defaultdict(int)
 
-raw_data_file = "ctgov_data/raw_data.csv" 
+raw_data_file = "data/raw_data.csv" 
 with open(raw_data_file, 'r') as csvfile:
 	reader = list(csv.reader(csvfile, delimiter = ','))[1:]
 fieldname = ['nctid', 'status', 'why_stop', 'label', 'phase', 'diseases', 'drugs', 'title', 'criteria', 'summary']

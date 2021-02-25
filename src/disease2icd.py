@@ -1,14 +1,14 @@
 '''
 input:  
 
-	"iqvia_data/drugbank_trial_conditions.csv"
+	"data/drugbank_trial_conditions.csv"
 
 process:
 	disease maps to icd? code 
 
 output: 
 
-	"iqvia_data/disease2icd.pkl" 
+	"data/disease2icd.pkl" 
 
 
 
@@ -22,7 +22,7 @@ output:
 import csv, pickle 
 from collections import defaultdict 
 def disease2icd_func():
-	file = "iqvia_data/drugbank_trial_conditions.csv"
+	file = "data/drugbank_trial_conditions.csv"
 	with open(file, 'r') as csvfile:
 		reader = list(csv.reader(csvfile, delimiter = ','))[1:]
 	disease2icdcode = defaultdict(set)
@@ -44,7 +44,7 @@ def disease2icd_func():
 ### disease -> icd code
 if __name__ == "__main__":
 	disease2icdcode = disease2icd_func()
-	pickle.dump(disease2icdcode, open("iqvia_data/disease2icd.pkl", 'wb')) 
+	pickle.dump(disease2icdcode, open("data/disease2icd.pkl", 'wb')) 
 	for disease, icd in disease2icdcode.items():
 		if len(disease.split())==1:
 			print(disease, icd)

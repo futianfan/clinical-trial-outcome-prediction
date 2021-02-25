@@ -1,6 +1,6 @@
 '''
 input:
-	ctgov_data/raw_data.csv
+	data/raw_data.csv
 
 
 '''
@@ -33,7 +33,7 @@ def text_2_lst_of_lst(text):
 	return code_sublst 
 
 def get_icdcode_lst():
-	input_file = 'ctgov_data/raw_data.csv'
+	input_file = 'data/raw_data.csv'
 	with open(input_file, 'r') as csvfile:
 		rows = list(csv.reader(csvfile, delimiter = ','))[1:]
 	code_lst = []
@@ -70,7 +70,7 @@ def find_ancestor_for_icdcode(icdcode, icdcode2ancestor):
 
 
 def build_icdcode2ancestor_dict():
-	pkl_file = "ctgov_data/icdcode2ancestor_dict.pkl"
+	pkl_file = "data/icdcode2ancestor_dict.pkl"
 	if os.path.exists(pkl_file):
 		icdcode2ancestor = pickle.load(open(pkl_file, 'rb'))
 		return icdcode2ancestor 

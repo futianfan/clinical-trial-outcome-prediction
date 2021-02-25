@@ -3,7 +3,7 @@
 '''
 
 input: 	9k data ?  
-	1. ctgov_data/raw_data.csv 
+	1. data/raw_data.csv 
 
 nctid,status,why_stop,label,phase,diseases,icdcodes,drugs,smiless,criteria
 
@@ -16,10 +16,10 @@ processing:
 
 
 output:
-	1. ctgov_data/phase_I.csv 
-	2. ctgov_data/phase_II.csv 
-	3. ctgov_data/phase_III.csv 
-	4. ctgov_data/trial.csv 
+	1. data/phase_I.csv 
+	2. data/phase_II.csv 
+	3. data/phase_III.csv 
+	4. data/trial.csv 
 
 requires ~10 minutes. 
 
@@ -388,19 +388,19 @@ def clean_data(input_file, clean_file):
 
 
 if __name__ == "__main__":
-	input_file = 'ctgov_data/raw_data.csv'
-	clean_file = "ctgov_data/clean_data.csv"
+	input_file = 'data/raw_data.csv'
+	clean_file = "data/clean_data.csv"
 
 	clean_data(input_file, clean_file)
 
 	print("\tphase I")
-	select_and_split_data(clean_file, filter_phase_I, 'ctgov_data/phase_I.csv')
+	select_and_split_data(clean_file, filter_phase_I, 'data/phase_I.csv')
 	print("\tphase II")
-	select_and_split_data(clean_file, filter_phase_II, 'ctgov_data/phase_II.csv')
+	select_and_split_data(clean_file, filter_phase_II, 'data/phase_II.csv')
 	print("\tphase III")
-	select_and_split_data(clean_file, filter_phase_III, 'ctgov_data/phase_III.csv')
+	select_and_split_data(clean_file, filter_phase_III, 'data/phase_III.csv')
 	print("\tindication")
-	select_and_split_data(clean_file, filter_trial, 'ctgov_data/trial.csv')
+	select_and_split_data(clean_file, filter_trial, 'data/trial.csv')
 
 
 
@@ -414,13 +414,13 @@ if __name__ == "__main__":
 
 
 	# print("\tphase I")
-	# select_and_split_data(input_file, filter_phase_I, 'ctgov_data/phase_I.csv')
+	# select_and_split_data(input_file, filter_phase_I, 'data/phase_I.csv')
 	# print("\tphase II")
-	# select_and_split_data(input_file, filter_phase_II, 'ctgov_data/phase_II.csv')
+	# select_and_split_data(input_file, filter_phase_II, 'data/phase_II.csv')
 	# print("\tphase III")
-	# select_and_split_data(input_file, filter_phase_III, 'ctgov_data/phase_III.csv')
+	# select_and_split_data(input_file, filter_phase_III, 'data/phase_III.csv')
 	# print("\tindication")
-	# select_and_split_data(input_file, filter_trial, 'ctgov_data/trial.csv')
+	# select_and_split_data(input_file, filter_trial, 'data/trial.csv')
 
 
 

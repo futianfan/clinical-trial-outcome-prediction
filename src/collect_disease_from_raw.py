@@ -19,7 +19,7 @@ processing:
 	1. disease -> icd
 
 output:
-	1. 	output_file = 'ctgov_data/diseases.csv' 
+	1. 	output_file = 'data/diseases.csv' 
 
 requires ~10 minutes. 
 
@@ -227,7 +227,7 @@ def xml_file_2_tuple(xml_file):
 
 
 def process_all():
-	output_file = 'ctgov_data/diseases.csv'
+	output_file = 'data/diseases.csv'
 	t1 = time()
 	disease_hit, disease_all = 0,0 ### disease hit icd && drug hit smiles
 	input_file_lst = get_path_of_all_xml_file()

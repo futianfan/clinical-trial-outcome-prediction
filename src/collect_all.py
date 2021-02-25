@@ -119,8 +119,8 @@ def getXmlData(file_name):
 
 
 def Get_Iqvia_data():
-	nct2outcome_file = "iqvia_data/trial_outcomes_v1.csv"
-	outcome2label_file = "iqvia_data/outcome2label.txt"
+	nct2outcome_file = "data/trial_outcomes_v1.csv"
+	outcome2label_file = "data/outcome2label.txt"
 	outcome2label = dict()
 	nct2label = dict() 
 	with open(outcome2label_file, 'r') as fin:
@@ -147,12 +147,12 @@ def Get_Iqvia_data():
 	return nct2label 
 
 def load_drug2smiles_pkl():
-	pkl_file = "iqvia_data/drug2smiles.pkl"
+	pkl_file = "data/drug2smiles.pkl"
 	drug2smiles = pickle.load(open(pkl_file, 'rb'))
 	return drug2smiles 
 
 def load_disease2icd_pkl():
-	iqvia_pkl_file = "iqvia_data/disease2icd.pkl"
+	iqvia_pkl_file = "data/disease2icd.pkl"
 	public_pkl_file = "icdcode/description2icd.pkl"
 	iqvia_disease2icd = pickle.load(open(iqvia_pkl_file, 'rb'))
 	public_disease2icd = pickle.load(open(public_pkl_file, 'rb'))
@@ -226,7 +226,7 @@ def disease_dict_reorganize(disease2icd):
 
 
 def write_csv_file():
-	cook_csv_file = 'ctgov_data/cooked_trial.csv'
+	cook_csv_file = 'data/cooked_trial.csv'
 	drug2smiles = load_drug2smiles_pkl()
 	iqvia_disease2icd, public_disease2icd  = load_disease2icd_pkl() 
 	iqvia_disease2diseaseset = disease_dict_reorganize(iqvia_disease2icd)
@@ -297,7 +297,7 @@ if __name__ == "__main__":
 
 # #### check csvfile
 # if __name__ == "__main__":
-# 	cook_csv_file = 'ctgov_data/cooked_trial.csv'
+# 	cook_csv_file = 'data/cooked_trial.csv'
 # 	positive_sample_cnt, negative_sample_cnt = 0, 0
 # 	wrong_nct_list = []
 # 	correct_cnt, total_cnt = 0, 0 

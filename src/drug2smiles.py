@@ -1,7 +1,7 @@
 '''
 ## drug maps to smiles
-## input:  "iqvia_data/drugbank_drugs_info.csv"
-## output:  "iqvia_data/drug2smiles.pkl"
+## input:  "data/drugbank_drugs_info.csv"
+## output:  "data/drug2smiles.pkl"
 
 '''
 
@@ -10,7 +10,7 @@
 import csv, pickle 
 from collections import defaultdict 
 def drug2smiles_func():
-	file = "iqvia_data/drugbank_drugs_info.csv"
+	file = "data/drugbank_drugs_info.csv"
 	with open(file, 'r') as csvfile:
 		reader = list(csv.reader(csvfile, delimiter = ','))[1:]
 	drug2smiles = defaultdict(set)
@@ -37,7 +37,7 @@ def drug2smiles_func():
 ### disease -> icd code
 if __name__ == "__main__":
 	drug2smiles = drug2smiles_func()
-	drug2smiles_file = "iqvia_data/drug2smiles.pkl"
+	drug2smiles_file = "data/drug2smiles.pkl"
 	pickle.dump(drug2smiles, open(drug2smiles_file, 'wb'))
 
 

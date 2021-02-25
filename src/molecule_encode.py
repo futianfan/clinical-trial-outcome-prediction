@@ -48,7 +48,7 @@ from torch.utils import data  #### data.Dataset
 from module import Highway 
 
 def get_drugbank_smiles_lst():
-	drugfile = 'iqvia_data/drugbank_drugs_info.csv'
+	drugfile = 'data/drugbank_drugs_info.csv'
 	with open(drugfile, 'r') as csvfile:
 		rows = list(csv.reader(csvfile, delimiter = ','))[1:]
 	return [row[27] for row in rows]
@@ -62,7 +62,7 @@ def txt_to_lst(text):
 	return lst 
 
 def get_cooked_data_smiles_lst():
-	cooked_file = 'ctgov_data/raw_data.csv'
+	cooked_file = 'data/raw_data.csv'
 	with open(cooked_file, 'r') as csvfile:
 		rows = list(csv.reader(csvfile, delimiter = ','))[1:]
 	smiles_lst = [row[8] for row in rows]
@@ -336,8 +336,8 @@ class ADMET(nn.Sequential):
 		self.molecule_encoder = molecule_encoder 
 		self.embedding_size = self.molecule_encoder.embedding_size
 		self.highway_num = highway_num 
-		self.highway_nn_lst = [Highway(size = self.embedding_size, num_layers = self.highway_num) for i in range(5)]
-		self.fc_output_lst = [nn.Linear(self.embedding_size, 1) for i in range(5)]
+		self.highway_nn_lst = nn.ModuleList([Highway(size = self.embedding_size, num_layers = self.highway_num) for i in range(5)])
+		self.fc_output_lst = nn.ModuleList([nn.Linear(self.embedding_size, 1) for i in range(5)])
 		self.f = F.relu 
 		self.loss = nn.BCEWithLogitsLoss()
 
@@ -357,7 +357,7 @@ class ADMET(nn.Sequential):
 	def forward_smiles_lst_pred(self, smiles_lst, idx):
 		embeded = self.forward_smiles_lst_embedding(smiles_lst, idx)
 		fc_output = self.forward_embedding_to_pred(embeded, idx)
-		return fc_output  #### 32, 1 
+		return fc_output   
 
 	def test(self, dataloader_lst, return_loss = True):
 		loss_lst = []
@@ -376,7 +376,7 @@ class ADMET(nn.Sequential):
 		valid_loss = self.test(valid_loader_lst, return_loss=True)
 		valid_loss_record = [valid_loss]
 		best_valid_loss = valid_loss
-		for ep in range(self.epoch):
+		for ep in tqdm(range(self.epoch)):
 			data_iterator_lst = [iter(train_loader_lst[idx]) for idx in range(5)]
 			try: 
 				while True:
@@ -387,8 +387,6 @@ class ADMET(nn.Sequential):
 						opt.zero_grad() 
 						loss.backward()
 						opt.step()	
-						train_loss_record.append(loss.item())
-						print("loss is", loss.item())
 			except:
 				pass 
 			valid_loss = self.test(valid_loader_lst, return_loss = True)
@@ -398,21 +396,8 @@ class ADMET(nn.Sequential):
 				best_valid_loss = valid_loss 
 				best_model = deepcopy(self)
 
-		self.plot_learning_curve(train_loss_record, valid_loss_record)
 		self = deepcopy(best_model)
-		# auc_score, f1score, prauc_score, precision, recall, accuracy, predict_1_ratio, label_1_ratio = self.test(test_loader_lst, return_loss = False, validloader = valid_loader)
-		# print("ROC AUC: " + str(auc_score)[:4] + "\nF1: " + str(f1score)[:4] + "\nPR-AUC: " + str(prauc_score)[:4]\
-		# 	 + "\nPrecision: " + str(precision)[:4] + "\nrecall: "+str(recall)[:4] + "\naccuracy: "+str(recall)[:4]\
-		# 	 + "\npredict 1 ratio: " + str(predict_1_ratio)[:4] + "\nlabel 1 ratio: " + str(label_1_ratio)[:4])
 
-
-	def plot_learning_curve(self, train_loss_record, valid_loss_record):
-		plt.plot(train_loss_record)
-		plt.savefig("./figure/" + self.save_name + '_train_loss.jpg')
-		plt.clf() 
-		plt.plot(valid_loss_record)
-		plt.savefig("./figure/" + self.save_name + '_valid_loss.jpg')
-		plt.clf() 
 
 
 
