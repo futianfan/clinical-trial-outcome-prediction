@@ -2,6 +2,7 @@
 
 
 
+
 ## 1. Installation via Conda 
 
 ```bash
@@ -182,64 +183,82 @@ It takes around 30 minutes.
 
 ### 4.1 Data Split 
 
+input: 
+
+
+
+output:
+* ctgov_data/phase_I_{train/valid/test}.csv 
+* ctgov_data/phase_II.csv 
+* ctgov_data/phase_III.csv 
+* ctgov_data/trial.csv 
+
+
+```bash
+python src/data_split.py 
+```
 
 
 ### 4.2 Data Statistics 
 
-| Dataset  | Training | Test |
+| Dataset  | Training | Test | Split Date |
 |-----------------|-------------|-------------|
-| Phase I |  |  |   |
-| Phase II |  |  |   |
-| Phase III |  |  |  |
-| Indication   |    |   |     |   
+| Phase I |    |    |    |    |
+| Phase II |    |   |    |    |
+| Phase III |    |  |  |    |
+| Indication |    |   |   |   |   
 
 
 ## 5. Learn and Inference 
 
 
-### 5.1 Phase I
+### 5.1 Phase I Prediction
 
 ```bash
 
-python src/
+python src/learn_hint_phaseI.py
 
 
 ```
 
 
-### 5.2 Phase II
+### 5.2 Phase II Prediction
 
 ```bash
 
-python src/
+python src/learn_hint_phaseII.py
 
 
 ```
 
-### 5.3 Phase III 
+### 5.3 Phase III Prediction
 
 ```bash
 
-python src/
+python src/learn_hint_phaseIII.py
 
 
 ```
 
-### 5.4 Indication 
+### 5.4 Indication Prediction
 
 ```bash
 
-python src/
-
+python src/learn_hint_trial.py
 
 ```
 
+
+## Quick Start 
+
+* Setup Conda environment (1. Installation via Conda)
+* Learning and Inference (5. Learn and Inference)
 
 
 
 ## Contact
 
-Please contact futianfan@gmail.com for help or submit an issue. 
+Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
 
 
 
