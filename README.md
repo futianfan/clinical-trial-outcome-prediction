@@ -2,7 +2,7 @@
 
 
 
-## 1. Conda Environment
+## 1. Installation via Conda 
 
 ```bash
 
@@ -160,38 +160,108 @@ python src/drug2smiles.py
 
 
 
-
 ### 3.4 Aggregation
 
 input:     
 * ctgov_data/diseases.csv  
 * iqvia_data/drug2smiles.pkl  
-* all_xml        
+* data/all_xml         
 
 output: ctgov_data/raw_data.csv
 ```bash
 python src/collect_raw_data.py | tee process.log 
 ```
-It takes around 20 minutes.   
+It takes around 30 minutes.   
 
 
 
 
-## Dataset of clinical trial outcome prediction 
+## 4. Dataset of clinical trial outcome prediction 
 
 
 
-## Model 
+### 4.1 Data Split 
+
+
+
+### 4.2 Data Statistics 
+
+| Dataset  | Training | Test |
+|-----------------|-------------|
+| Phase I |  |  | 
+| Phase II |  |  | 
+| Phase III |  |  |
+| Indication   |        |     |   
+
+
+## 5. Learn and Inference 
+
+
+### 5.1 Phase I
 
 ```bash
 
+python src/
 
 
 ```
 
 
+### 5.2 Phase II
+
+```bash
+
+python src/
+
+
+```
+
+### 5.3 Phase III 
+
+```bash
+
+python src/
+
+
+```
+
+### 5.4 Indication 
+
+```bash
+
+python src/
+
+
+```
+
+
+
+
 ## Contact
 
 Please contact futianfan@gmail.com for help or submit an issue. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
