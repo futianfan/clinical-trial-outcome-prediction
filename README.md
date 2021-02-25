@@ -182,12 +182,13 @@ The data size grows with time because more clinical trial records are added.
 ## 3. Data Preprocess 
 
 
-### 3.1 Collect all the 348,891 NCTIDs.
+### 3.1 Collect all the NCTIDs.
 input: ClinicalTrialGov/   
 output: data/all_xml 
 ```bash
 find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
 ```
+The current version has 348,891 trial IDs. 
 
 
 ### 3.2 diseaes -> icd10 using [ClinicalTable](https://clinicaltables.nlm.nih.gov/)
@@ -256,7 +257,6 @@ python src/collect_raw_data.py | tee process.log
 ### 4.1 Data Split 
 
 input: data/raw_data.csv 
-
 
 
 output: 
