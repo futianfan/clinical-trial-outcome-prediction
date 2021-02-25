@@ -229,6 +229,27 @@ It takes around 30 minutes.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 4. TOP: Trial Outcome Prediction benchmark Dataset 
 
 
@@ -253,12 +274,44 @@ python src/data_split.py
 
 ### 4.2 Data Statistics 
 
-| Dataset  | \# Train | \# Test | Split Date |
-|-----------------|-------------|-------------|------------|
-| Phase I |    |    |    |    
-| Phase II |    |   |    |    
-| Phase III |    |  |  |    
-| Indication |    |   |     |   
+| Dataset  | \# Train | \# Valid | \# Test | \# Total | Split Date |
+|-----------------|-------------|-------------|------------|-------------|------------|
+| Phase I |    |    |    |     |    | 
+| Phase II |    |   |    |     |    | 
+| Phase III |    |  |  |     |    | 
+| Indication |    |   |     |    |    | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 5. Learn and Inference 
@@ -301,10 +354,32 @@ python src/learn_indication.py
 
 | Dataset  | PR-AUC | F1 | ROC-AUC |
 |-----------------|-------------|-------------|------------|
-| Phase I |    |    |    |    
-| Phase II |    |   |    |    
-| Phase III |    |  |  |    
-| Indication |    |   |     |   
+| Phase I | 0.7495 (0.0277) | 0.8448 (0.0175) | 0.8146 (0.0233)   |    
+| Phase II | 0.5585 (0.0253) | 0.5984 (0.0300) | 0.7619 (0.0214)  |    
+| Phase III | 0.6199 (0.0165) | 0.6613 (0.0185) | 0.7171 (0.0134) |    
+| Indication | 0.7037 (0.0136) | 0.7608 (0.0118) | 0.7849 (0.0114)  |   
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
