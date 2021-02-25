@@ -351,6 +351,8 @@ python src/learn_indication.py
 
 ### Result Table 
 
+Mean and standard deviation are reported. 
+
 | Dataset  | PR-AUC | F1 | ROC-AUC |
 |-----------------|-------------|-------------|------------|
 | Phase I | 0.7495 (0.0277) | 0.8448 (0.0175) | 0.8146 (0.0233)   |    
@@ -395,7 +397,11 @@ python src/learn_indication.py
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
 
 
+## Potential Issues
 
+* Drug
+* ICD
+* 
 
 
 
