@@ -202,11 +202,11 @@ python src/data_split.py
 ### 4.2 Data Statistics 
 
 | Dataset  | Training | Test | Split Date |
-|-----------------|-------------|-------------|
-| Phase I |    |    |    |    |
-| Phase II |    |   |    |    |
-| Phase III |    |  |  |    |
-| Indication |    |   |   |   |   
+|-----------------|-------------|-------------|------------|
+| Phase I |    |    |    |    
+| Phase II |    |   |    |    
+| Phase III |    |  |  |    
+| Indication |    |   |     |   
 
 
 ## 5. Learn and Inference 
