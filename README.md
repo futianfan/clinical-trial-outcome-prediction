@@ -315,7 +315,7 @@ python src/data_split.py
 
 ## 5. Learn and Inference 
 
-
+After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The empirical results are given for reference. 
 
 
 
@@ -388,10 +388,13 @@ device = torch.device("cpu")
 
 
 
-## Quick Start 
+## Quick Reproduction
 
+We provide a guidance for quick reproduction of the main experimental results. Since the data preprocessing procedure is time- and space-consuming, we make the processed data publicly available. 
+
+* 0. Download code repo
 * 1. Installation via Conda
-* 4. TOP: Trial Outcome Prediction benchmark Dataset 
+* Download the [processed data](https://drive.google.com/drive/folders/1EJvVITNRdq4BYU6L27NF5f1moHqB8DTf?usp=sharing) from Google Drive. It requires 1.0 G. Please make sure that all the data files are in the folder "./data". 
 * 5. Learn and Inference
 
 
@@ -400,8 +403,6 @@ device = torch.device("cpu")
 
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
 
-
-## Potential Issues
 
 
 
