@@ -266,6 +266,10 @@ python src/drug2smiles.py
 
 ### 3.4 Aggregation
 
+- inclusion criteria 
+  - 
+  - 
+
 - input    
   - data/diseases.csv  
   - data/drug2smiles.pkl  
@@ -273,6 +277,8 @@ python src/drug2smiles.py
 
 - output 
   - data/raw_data.csv
+
+
 
 ```bash
 python src/collect_raw_data.py | tee data_process.log 
@@ -293,6 +299,7 @@ python src/collect_raw_data.py | tee data_process.log
 
 
 
+<p align="center"><img src="dataset.png" alt="logo" width="400px" /></p>
 
 
 
@@ -308,14 +315,18 @@ python src/collect_raw_data.py | tee data_process.log
 
 ### 4.1 Data Split 
 
-input: data/raw_data.csv 
+- Split criteria
 
 
-output: 
-* data/phase_I_{train/valid/test}.csv 
-* data/phase_II_{train/valid/test}.csv 
-* data/phase_III_{train/valid/test}.csv 
-* data/indication_{train/valid/test}.csv 
+- input
+  - data/raw_data.csv 
+
+
+- output: 
+  - data/phase_I_{train/valid/test}.csv 
+  - data/phase_II_{train/valid/test}.csv 
+  - data/phase_III_{train/valid/test}.csv 
+  - data/indication_{train/valid/test}.csv 
 
 
 ```bash
