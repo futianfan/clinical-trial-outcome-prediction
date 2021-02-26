@@ -1,34 +1,4 @@
 '''
-1. 
-	class dataset(data.Dataset):
-		def __init__(self, xxx, ):
-			self.lst = xxx 
-
-		def __len__(self):
-
-		def __getitem__(self, index):
-			return self.lst[index], xxx, xxx, xxx
-
-	xxx_dataset = dataset()
-
-2. collate_fn 
-	data_loader = data.DataLoader(xxx_dataset, batch_size = xxx, collate_fn = xxx)
-
-
-
-collate_fn:
-	batch size is 32. 
-
-	input is:
-		[ [i1], [i2], [i3], ..., [l_32] ]	 
-		i1, i2, ... i_32 is output of __getitem__  e.g., i1,i2, is tuple of length 3
-
-	output is: 
-		[ o1, o2, o3 ]    length 3. 
-
-		"for smiles_vec, disease_vec, label_lst in dataloader" 
-
-
 
 (I). Trial_Dataset for prediction
 (II). Trial_Dataset_Complete for interpretation
@@ -176,7 +146,7 @@ def smiles_txt_to_2lst(smiles_txt_file):
 	return smiles_lst, label_lst 
 
 def generate_admet_dataloader_lst(batch_size):
-	datafolder = "ADMET/cooked/"
+	datafolder = "data/ADMET/cooked/"
 	name_lst = ["absorption", 'distribution', 'metabolism', 'excretion', 'toxicity']
 	dataloader_lst = []
 	for i,name in enumerate(name_lst):

@@ -21,11 +21,8 @@ device = torch.device("cpu")
 
 
 ## 2. input & hyperparameter
-base_name_lst = ['indication', 'phase_I', 'phase_II', 'phase_III']
 
 base_name = 'phase_I' 
-assert base_name in base_name_lst 
-
 datafolder = "data"
 
 train_file = os.path.join(datafolder, base_name + '_train.csv')
