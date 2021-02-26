@@ -256,13 +256,14 @@ python src/drug2smiles.py
 
 ### 3.4 Aggregation
 
-* input:     
-** data/diseases.csv  
-** data/drug2smiles.pkl  
-** data/all_xml         
+- input:     
+  - data/diseases.csv  
+  - data/drug2smiles.pkl  
+  - data/all_xml         
 
-* output: 
-** data/raw_data.csv
+- output: 
+  - data/raw_data.csv
+
 ```bash
 python src/collect_raw_data.py | tee data_process.log 
 ```
