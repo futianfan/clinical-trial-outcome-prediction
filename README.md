@@ -111,6 +111,7 @@ ls ./ClinicalTrialGov
 It is downloaded from [ClinicalTrial.gov](https://clinicaltrials.gov/). 
 It is 8.6+G, containing 348,891+ clinical trial records. 
 The data size grows with time because more clinical trial records are added.  
+It describes many important information about clinical trials, including NCT ID (i.e.,  identifiers to each clinical study), disease names, drugs, brief title and summary, phase, criteria, and statistical analysis results.  
 
 
 
@@ -191,7 +192,15 @@ find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
 The current version has 348,891 trial IDs. 
 
 
-### 3.2 diseaes -> icd10 using [ClinicalTable](https://clinicaltables.nlm.nih.gov/)
+### 3.2 diseaes -> icd10 using 
+
+* The diseases in ClinicalTrialGov are described in natural language. 
+
+* On the other hand, [ICD-10](https://en.wikipedia.org/wiki/ICD-10) is the 10th revision of the International Statistical Classification of Diseases and Related Health Problems (ICD), a medical classification list by the World Health Organization (WHO). 
+It leverages the hierarchical information inherent to medical ontologies. 
+
+* We use [ClinicalTable](https://clinicaltables.nlm.nih.gov/), a public API to convert disease name (natural language) into ICD-10 code. 
+
 input: 
 * ClinicalTrialGov/  
 * data/all_xml   
