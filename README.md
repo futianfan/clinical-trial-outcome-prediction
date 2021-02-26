@@ -210,8 +210,12 @@ It describes many important information about clinical trials, including NCT ID 
 
 
 ### 3.1 Collect all the NCTIDs.
-input: ClinicalTrialGov/   
-output: data/all_xml 
+- input
+  - ClinicalTrialGov/  
+
+- output
+  - data/all_xml 
+
 ```bash
 find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
 ```
@@ -220,18 +224,20 @@ The current version has 348,891 trial IDs.
 
 ### 3.2 diseaes -> icd10 using 
 
-* The diseases in ClinicalTrialGov are described in natural language. 
+- description
 
-* On the other hand, [ICD-10](https://en.wikipedia.org/wiki/ICD-10) is the 10th revision of the International Statistical Classification of Diseases and Related Health Problems (ICD), a medical classification list by the World Health Organization (WHO). 
-It leverages the hierarchical information inherent to medical ontologies. 
+  - The diseases in ClinicalTrialGov are described in natural language. 
 
-* We use [ClinicalTable](https://clinicaltables.nlm.nih.gov/), a public API to convert disease name (natural language) into ICD-10 code. 
+  - On the other hand, [ICD-10](https://en.wikipedia.org/wiki/ICD-10) is the 10th revision of the International Statistical Classification of Diseases and Related Health Problems (ICD), a medical classification list by the World Health Organization (WHO). It leverages the hierarchical information inherent to medical ontologies. 
 
-input: 
-* ClinicalTrialGov/  
-* data/all_xml   
+  - We use [ClinicalTable](https://clinicaltables.nlm.nih.gov/), a public API to convert disease name (natural language) into ICD-10 code. 
 
-output:	data/diseases.csv  
+- input 
+  - ClinicalTrialGov/  
+  - data/all_xml   
+
+- output
+  -	data/diseases.csv  
 ```bash 
 python src/collect_disease_from_raw.py
 ```
@@ -239,15 +245,19 @@ python src/collect_disease_from_raw.py
 
 ### 3.3 drug -> SMILES 
 
-* The drugs in ClinicalTrialGov are described in natural language. 
+- description
+  - The drugs in ClinicalTrialGov are described in natural language. 
 
-* [DrugBank](https://go.drugbank.com/) contains rich information about drugs. 
+  - [DrugBank](https://go.drugbank.com/) contains rich information about drugs. 
 
-* We use [DrugBank](https://go.drugbank.com/) to get the molecule structures of the drug. 
+  - We use [DrugBank](https://go.drugbank.com/) to get the molecule structures of the drug. 
 
-input: data/drugbank_drugs_info.csv   
+- input
+  - data/drugbank_drugs_info.csv   
 
-output: data/drug2smiles.pkl   
+- output
+  - data/drug2smiles.pkl   
+
 ```bash
 python src/drug2smiles.py 
 ```
@@ -256,12 +266,12 @@ python src/drug2smiles.py
 
 ### 3.4 Aggregation
 
-- input:     
+- input    
   - data/diseases.csv  
   - data/drug2smiles.pkl  
   - data/all_xml         
 
-- output: 
+- output 
   - data/raw_data.csv
 
 ```bash
