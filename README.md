@@ -50,6 +50,23 @@ mkdir -p data save_model figure
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 1. Installation via Conda 
 
 ```bash
@@ -180,6 +197,15 @@ It describes many important information about clinical trials, including NCT ID 
 
 
 
+
+
+
+
+
+
+
+
+
 ## 3. Data Preprocess 
 
 
@@ -211,8 +237,13 @@ python src/collect_disease_from_raw.py
 ```
 
 
-### 3.3 drug -> SMILES using [DrugBank](https://go.drugbank.com/)
+### 3.3 drug -> SMILES 
 
+* The drugs in ClinicalTrialGov are described in natural language. 
+
+* [DrugBank](https://go.drugbank.com/) contains rich information about drugs. 
+
+* We use [DrugBank](https://go.drugbank.com/) to get the molecule structures of the drug. 
 
 input: data/drugbank_drugs_info.csv   
 
@@ -225,14 +256,15 @@ python src/drug2smiles.py
 
 ### 3.4 Aggregation
 
-input:     
-* data/diseases.csv  
-* data/drug2smiles.pkl  
-* data/all_xml         
+* input:     
+** data/diseases.csv  
+** data/drug2smiles.pkl  
+** data/all_xml         
 
-output: data/raw_data.csv
+* output: 
+** data/raw_data.csv
 ```bash
-python src/collect_raw_data.py | tee process.log 
+python src/collect_raw_data.py | tee data_process.log 
 ```
 
 
