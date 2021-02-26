@@ -299,7 +299,7 @@ python src/collect_raw_data.py | tee data_process.log
 
 
 
-<p align="center"><img src="dataset.png" alt="logo" width="400px" /></p>
+<p align="center"><img src="illustration.png" alt="logo" width="600px" /></p>
 
 
 
@@ -371,6 +371,7 @@ python src/data_split.py
 
 
 
+<p align="center"><img src="dataset.png" alt="logo" width="500px" /></p>
 
 
 
@@ -455,10 +456,10 @@ device = torch.device("cpu")
 
 We provide a guidance for quick reproduction of the main experimental results. Since the data preprocessing procedure is time- and space-consuming, we make the processed data publicly available. 
 
-* 0. Download code repo
-* 1. Installation via Conda
+* Download (0. Download code repo)
+* Setup environment (1. Installation via Conda)
 * Download the [processed data](https://drive.google.com/drive/folders/1EJvVITNRdq4BYU6L27NF5f1moHqB8DTf?usp=sharing) from Google Drive. It requires 1.0 G. Please make sure that all the data files are in the folder "./data". 
-* 5. Learn and Inference
+* Train and Test Model (5. Learn and Inference)
 
 
 
