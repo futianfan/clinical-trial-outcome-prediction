@@ -299,7 +299,7 @@ python src/collect_raw_data.py | tee data_process.log
 
 
 
-<p align="center"><img src="illustration.png" alt="logo" width="600px" /></p>
+<p align="center"><img src="dataset.png" alt="logo" width="600px" /></p>
 
 
 
@@ -371,7 +371,7 @@ python src/data_split.py
 
 
 
-<p align="center"><img src="dataset.png" alt="logo" width="500px" /></p>
+<p align="center"><img src="illustration.png" alt="logo" width="500px" /></p>
 
 
 
