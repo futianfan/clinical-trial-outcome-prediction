@@ -267,8 +267,20 @@ python src/drug2smiles.py
 ### 3.4 Aggregation
 
 - inclusion criteria 
-  - 
-  - 
+  - study-type is interventional 
+  - intervention-type is drug
+  - p-value in primary-outcome is available
+  - disease codes are available 
+  - drug molecules are available 
+  - eligibility criteria are available
+
+- exclusion criteria 
+  - study-type is observational 
+  - intervention-type is surgery, biological, device
+  - p-value in primary-outcome is not available
+  - disease codes are not available 
+  - drug molecules are not available 
+  - eligibility criteria are not available
 
 - input    
   - data/diseases.csv  
@@ -299,7 +311,7 @@ python src/collect_raw_data.py | tee data_process.log
 
 
 
-<p align="center"><img src="dataset.png" alt="logo" width="600px" /></p>
+<p align="center"><img src="./figure/dataset.png" alt="logo" width="600px" /></p>
 
 
 
@@ -371,7 +383,7 @@ python src/data_split.py
 
 
 
-<p align="center"><img src="illustration.png" alt="logo" width="500px" /></p>
+<p align="center"><img src="./figure/illustration.png" alt="logo" width="500px" /></p>
 
 
 
@@ -435,7 +447,8 @@ device = torch.device("cpu")
  
 
  
- 
+ <p align="center"><img src="./figure/architecture.png" alt="logo" width="500px" /></p>
+
 
 
 
