@@ -211,10 +211,10 @@ It describes many important information about clinical trials, including NCT ID 
 
 ### 3.1 Collect all the NCTIDs.
 - input
-  - ClinicalTrialGov/  
+  - `ClinicalTrialGov/`  
 
 - output
-  - data/all_xml 
+  - `data/all_xml` 
 
 ```bash
 find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
@@ -291,7 +291,7 @@ python src/drug2smiles.py
 
 
 - output 
-  - data/raw_data.csv
+  - data/raw_data.csv (9568 trials)
 
 
 
@@ -451,7 +451,7 @@ device = torch.device("cpu")
 ```
 
  
-
+### File Layout
  
  <p align="center"><img src="./figure/architecture.png" alt="logo" width="500px" /></p>
 
