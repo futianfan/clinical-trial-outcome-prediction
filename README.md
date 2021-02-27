@@ -274,6 +274,7 @@ python src/drug2smiles.py
   - drug molecules are available 
   - eligibility criteria are available
 
+
 - exclusion criteria 
   - study-type is observational 
   - intervention-type is surgery, biological, device
@@ -282,10 +283,12 @@ python src/drug2smiles.py
   - drug molecules are not available 
   - eligibility criteria are not available
 
+
 - input    
   - data/diseases.csv  
   - data/drug2smiles.pkl  
   - data/all_xml         
+
 
 - output 
   - data/raw_data.csv
@@ -328,7 +331,10 @@ python src/collect_raw_data.py | tee data_process.log
 ### 4.1 Data Split 
 
 - Split criteria
-
+  - phase I: xxxxx
+  - phase II: xxxxx 
+  - phase III: xxxxx
+  - indication: xxxxx 
 
 - input
   - data/raw_data.csv 
@@ -355,7 +361,7 @@ python src/data_split.py
 | Phase III |  4286  |  612  |  1225 |  6123  |  04/07/2014  | 
 | Indication |  3767  |  538  |  1077   |  5382  |  05/21/2014  | 
 
-
+We use temporal split, where the earlier trials (before split date) are used for training and validationg, the later trials (after split date) are used for testing. 
 
 
 
