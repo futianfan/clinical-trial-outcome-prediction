@@ -222,7 +222,7 @@ find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
 The current version has 348,891 trial IDs. 
 
 
-### 3.2 diseaes -> icd10 using 
+### 3.2 diseaes -> icd10 
 
 - description
 
@@ -250,7 +250,7 @@ python src/collect_disease_from_raw.py
 
   - [DrugBank](https://go.drugbank.com/) contains rich information about drugs. 
 
-  - We use [DrugBank](https://go.drugbank.com/) to get the molecule structures of the drug. 
+  - We use [DrugBank](https://go.drugbank.com/) to get the molecule structures ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system), simplified molecular-input line-entry system) of the drug. 
 
 - input
   - `data/drugbank_drugs_info.csv `  
@@ -293,6 +293,18 @@ python src/drug2smiles.py
 - output 
   - `data/raw_data.csv` (9568 trials)
 
+The csv file contains following features:
+
+* `nctid`: NCT ID, e.g., NCT00000378, NCT04439305. 
+* `status`: `completed`, `terminated`, `active, not recruiting`, `withdrawn`, `unknown status`, `suspended`, `recruiting`. 
+* `why_stop`: for completed, it is empty. Otherwise, the common reasons contain `slow/low/poor accrual`, `lack of efficacy`
+* `label`: 0 (failure) or 1 (success).  
+* `phase`: I, II, III or IV. 
+* `diseases`: list of diseases. 
+* `icdcodes`: list of icd-10 codes.
+* `drugs`: list of drug names
+* `smiless`: list of SMILES
+* `criteria`: egibility criteria 
 
 
 ```bash
@@ -331,10 +343,10 @@ python src/collect_raw_data.py | tee data_process.log
 ### 4.1 Data Split 
 
 - Split criteria
-  - phase I: xxxxx
-  - phase II: xxxxx 
-  - phase III: xxxxx
-  - indication: xxxxx 
+  - phase I: phase I trials, augmented with phase IV trials as positive samples. 
+  - phase II: phase II trials, augmented with phase IV trials as positive samples.  
+  - phase III: phase III trials, augmented with failed phase I and II trials as negative samples and successed phase IV trials as positive samples. 
+  - indication: trials that fail in phase I or II or III are negative samples. Trials that pass phase III or enter phase IV are positive samples.  
 
 - input
   - `data/raw_data.csv` 
@@ -389,7 +401,7 @@ python src/protocol_encode.py
 | Phase III |  4286  |  612  |  1225 |  6123  |  04/07/2014  | 
 | Indication |  3767  |  538  |  1077   |  5382  |  05/21/2014  | 
 
-We use temporal split, where the earlier trials (before split date) are used for training and validationg, the later trials (after split date) are used for testing. 
+We use temporal split, where the earlier trials (before split date) are used for training and validation, the later trials (after split date) are used for testing. The train:valid:test ratio is 7:1:2. 
 
 
 
@@ -432,19 +444,14 @@ After processing the data, we learn the Hierarchical Interaction Network (HINT) 
 ### 5.1 Phase I Prediction
 
 ```bash
-
 python src/learn_phaseI.py
-
 ```
 
 
 ### 5.2 Phase II Prediction
 
 ```bash
-
 python src/learn_phaseII.py
-
-
 ```
 
 ### 5.3 Phase III Prediction

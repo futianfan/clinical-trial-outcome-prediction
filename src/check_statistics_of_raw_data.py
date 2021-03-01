@@ -33,7 +33,7 @@ for row in reader:
 	label = row[3]
 	phase = row[4]
 
-	text2cnt[why_stop] += 1
+	text2cnt[status] += 1
 
 	# if status == 'Suspended':
 	# 	text2cnt[label] += 1
