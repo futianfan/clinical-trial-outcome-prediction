@@ -2,7 +2,9 @@
 input:
 	data/raw_data.csv
 
-
+output:
+	data/sentence2embedding.pkl (preprocessing)
+	protocol_embedding 
 '''
 
 import csv, pickle 

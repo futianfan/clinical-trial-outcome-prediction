@@ -2,6 +2,9 @@
 input:
 	data/raw_data.csv
 
+output: 
+	data/icdcode2ancestor_dict.pkl (icdcode to its ancestors)
+	icdcode_embedding 
 
 '''
 

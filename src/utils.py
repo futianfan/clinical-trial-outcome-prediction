@@ -60,7 +60,7 @@ def dynamic_programming(s1, s2):
 
 
 def get_path_of_all_xml_file():
-	input_file = "all_xml"
+	input_file = "./data/all_xml"
 	with open(input_file, 'r') as fin:
 		lines = fin.readlines()
 	input_file_lst = [i.strip() for i in lines]

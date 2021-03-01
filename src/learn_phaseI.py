@@ -30,11 +30,12 @@ valid_file = os.path.join(datafolder, base_name + '_valid.csv')
 test_file = os.path.join(datafolder, base_name + '_test.csv')
 
 
-mpnn_model = MPNN(mpnn_hidden_size = 50, mpnn_depth=3, device = device)
 
 
 
 # # ## 3. pretrain 
+mpnn_model = MPNN(mpnn_hidden_size = 50, mpnn_depth=3, device = device)
+
 admet_model_path = "save_model/admet_model.ckpt"
 if not os.path.exists(admet_model_path):
 	admet_dataloader_lst = generate_admet_dataloader_lst(batch_size=32)

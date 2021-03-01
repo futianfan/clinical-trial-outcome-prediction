@@ -233,11 +233,11 @@ The current version has 348,891 trial IDs.
   - We use [ClinicalTable](https://clinicaltables.nlm.nih.gov/), a public API to convert disease name (natural language) into ICD-10 code. 
 
 - input 
-  - ClinicalTrialGov/  
-  - data/all_xml   
+  - `ClinicalTrialGov/ ` 
+  - `data/all_xml`   
 
 - output
-  -	data/diseases.csv  
+  -	`data/diseases.csv ` 
 ```bash 
 python src/collect_disease_from_raw.py
 ```
@@ -253,10 +253,10 @@ python src/collect_disease_from_raw.py
   - We use [DrugBank](https://go.drugbank.com/) to get the molecule structures of the drug. 
 
 - input
-  - data/drugbank_drugs_info.csv   
+  - `data/drugbank_drugs_info.csv `  
 
 - output
-  - data/drug2smiles.pkl   
+  - `data/drug2smiles.pkl `  
 
 ```bash
 python src/drug2smiles.py 
@@ -285,13 +285,13 @@ python src/drug2smiles.py
 
 
 - input    
-  - data/diseases.csv  
-  - data/drug2smiles.pkl  
-  - data/all_xml         
+  - `data/diseases.csv ` 
+  - `data/drug2smiles.pkl`  
+  - `data/all_xml `        
 
 
 - output 
-  - data/raw_data.csv (9568 trials)
+  - `data/raw_data.csv` (9568 trials)
 
 
 
@@ -337,14 +337,14 @@ python src/collect_raw_data.py | tee data_process.log
   - indication: xxxxx 
 
 - input
-  - data/raw_data.csv 
+  - `data/raw_data.csv` 
 
 
 - output: 
-  - data/phase_I_{train/valid/test}.csv 
-  - data/phase_II_{train/valid/test}.csv 
-  - data/phase_III_{train/valid/test}.csv 
-  - data/indication_{train/valid/test}.csv 
+  - `data/phase_I_{train/valid/test}.csv` 
+  - `data/phase_II_{train/valid/test}.csv` 
+  - `data/phase_III_{train/valid/test}.csv` 
+  - `data/indication_{train/valid/test}.csv` 
 
 
 ```bash
@@ -352,7 +352,35 @@ python src/data_split.py
 ```
 
 
-### 4.2 Data Statistics 
+### 4.2 ICD-10 code hierarchy 
+
+- input
+  - `data/raw_data.csv` 
+
+- output: 
+  - `data/icdcode2ancestor_dict.pkl` 
+
+
+```bash 
+python src/icdcode_encode.py 
+```
+
+### 4.3 sentence embedding 
+
+
+- input
+  - `data/raw_data.csv` 
+
+- output: 
+  - `data/sentence2embedding.pkl` 
+
+
+```bash 
+python src/protocol_encode.py 
+```
+
+
+### 4.4 Data Statistics 
 
 | Dataset  | \# Train | \# Valid | \# Test | \# Total | Split Date |
 |-----------------|-------------|-------------|------------|-------------|------------|
