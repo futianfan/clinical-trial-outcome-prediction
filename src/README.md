@@ -24,6 +24,34 @@
     - three model classes 
     ```python
     from torch import nn 
+    class Interaction(nn.Sequential):
+
+    	def __init__(self, ...):
+			super(Interaction, self).__init__()
+			... 
+
+		def forward(self, ...):
+
+    	def evaluation(self, ...):
+    		...
+
+    	def bootstrap_test(self, ...):
+    		... 
+
+    class HINT_nograph(Interaction):
+    	def __init__(self, ...):
+			super(HINT_nograph, self).__init__(....,) 
+			...
+
+		def forward(self, ...):
+			...
+	class HINT(HINT_nograph):
+    	def __init__(self, ...):
+			super(HINT, self).__init__(....,) 
+			...
+
+		def forward(self, ):
+			... 
     ```
   - `icdcode_encode.py`
   - `molecule_encode.py`
