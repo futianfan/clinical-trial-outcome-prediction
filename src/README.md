@@ -65,6 +65,9 @@ class HINT(HINT_nograph):
 
   - `icdcode_encode.py` 
     - preprocess ICD-10 code, building ontology of icd-10 codes.
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
     ```python
 	def build_icdcode2ancestor_dict():
 		pkl_file = "data/icdcode2ancestor_dict.pkl"
@@ -80,6 +83,9 @@ class HINT(HINT_nograph):
 	if __name__ == '__main__':
 		dic = build_icdcode2ancestor_dict()    
     ```
+
+</details>
+
     - GRAM model to model hierarchy of icd-10 code. 
     ```python
 	from torch import nn 
@@ -105,6 +111,8 @@ class HINT(HINT_nograph):
     class MPNN(nn.Sequential):
     	...
     ```
+
+
   - `protocol_encode.py`
   	- preprocess 
   	```python
