@@ -88,88 +88,156 @@ if __name__ == '__main__':
 </details>
 
     - GRAM model to model hierarchy of icd-10 code. 
-    ```python
-	from torch import nn 
-	class GRAM(nn.Sequential):
-    ```
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+from torch import nn 
+class GRAM(nn.Sequential):
+	def __init__(self, ...):
+		...
+
+	def forward(self, ...):
+		...
+```
+
+</details>
+
   - `molecule_encode.py`
     - mpn features 
-    ```python
-    def smiles2mpnnfeature(smiles):
-    	... 
-    ```
-    - dataloader
-    ```python
-    from torch.utils import data   
-    class smiles_dataset(data.Dataset):
-		...
-	def mpnn_collate_func(x):
-		...
-    ```
-    - mpn 
-    ```python
-    from torch import nn
-    class MPNN(nn.Sequential):
-    	...
-    ```
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
 
+```python
+def smiles2mpnnfeature(smiles):
+	... 
+```
+
+</details>
+
+    - dataloader
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+from torch.utils import data   
+class smiles_dataset(data.Dataset):
+	...
+def mpnn_collate_func(x):
+	...
+```
+
+</details>
+
+    - mpn 
+
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+from torch import nn
+class MPNN(nn.Sequential):
+	...
+```
+
+</details>
 
   - `protocol_encode.py`
   	- preprocess 
-  	```python
-  	def save_sentence_bert_dict_pkl():
-		cleaned_sentence_set = collect_cleaned_sentence_set() 
-		from biobert_embedding.embedding import BiobertEmbedding
-		biobert = BiobertEmbedding()
-		def text2vec(text):
-			return biobert.sentence_vector(text)
-		protocol_sentence_2_embedding = dict()
-		for sentence in tqdm(cleaned_sentence_set):
-			protocol_sentence_2_embedding[sentence] = text2vec(sentence)
-		pickle.dump(protocol_sentence_2_embedding, open('data/sentence2embedding.pkl', 'wb'))
-		return 
 
-	if __name__ == "__main__":
-		save_sentence_bert_dict_pkl() 
-  	```
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+def save_sentence_bert_dict_pkl():
+	cleaned_sentence_set = collect_cleaned_sentence_set() 
+	from biobert_embedding.embedding import BiobertEmbedding
+	biobert = BiobertEmbedding()
+	def text2vec(text):
+		return biobert.sentence_vector(text)
+	protocol_sentence_2_embedding = dict()
+	for sentence in tqdm(cleaned_sentence_set):
+		protocol_sentence_2_embedding[sentence] = text2vec(sentence)
+	pickle.dump(protocol_sentence_2_embedding, open('data/sentence2embedding.pkl', 'wb'))
+	return 
+
+if __name__ == "__main__":
+	save_sentence_bert_dict_pkl() 
+```
+
+</details>
+
   	- protocol embeddor
-  	```python
-  	from torch import nn 
-  	class Protocol_Embedding(nn.Sequential):
-  		...
-  	```
+
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+from torch import nn 
+class Protocol_Embedding(nn.Sequential):
+	...
+```
+
+</details>
+
   - `gnn_layers.py` contains standard implementation of existing GNN's building block (**single layer gnn**).
     - Graph Convolutional Network 
-    ```python
-    from torch.nn.modules.module import Module
-    class GraphConvolution(Module):
-    	...
-    ```
+
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+from torch.nn.modules.module import Module
+class GraphConvolution(Module):
+	...
+```
+</details>
+
     - Graph Attention Network
-    ```python
-    from torch.nn.modules.module import Module
-	class GraphAttention(nn.Module):
-		...
-    ```
+
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+from torch.nn.modules.module import Module
+class GraphAttention(nn.Module):
+	...
+```
+
+</details>
+
   - `module.py` contains standard implementation of existing neural module, e.g., highway, GCN
   	- Highway Network 
-  	```python
-  	import torch.nn as nn
-  	class Highway(nn.Module):
-  		def __init__(self, ...):
-  			...
-  		def forward(self, ...):
-  			...
+
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+import torch.nn as nn
+class Highway(nn.Module):
+	def __init__(self, ...):
+		...
+	def forward(self, ...):
+		...
   	```
+
+</details>
+
   	- GCN 
-  	```python
-  	import torch.nn as nn
-  	class GCN(nn.Module):
-  		def __init__(self, ...):
-  			...
-  		def forward(self, ...):
-  			...  	
-  	```
+
+<details>
+  <summary><font color=red>Click here for the code!</font></summary>
+
+```python
+import torch.nn as nn
+class GCN(nn.Module):
+	def __init__(self, ...):
+		...
+	def forward(self, ...):
+		...  	
+```
+
+</details>
 
 
 
