@@ -356,6 +356,8 @@ python src/collect_raw_data.py | tee data_process.log
 <details>
   <summary>Click here for the code!</summary>
 
+```python
+
 def process_all():
   from raw_data_to_feature import load_drug2smiles_pkl, drug_hit_smiles
   ### input 
@@ -438,6 +440,7 @@ def process_all():
   # print("disease hit icdcode", disease_hit, "disease all", disease_all, "\n drug hit smiles", drug_hit, "drug all", drug_all)
   print(str(int((t2-t1)/60)) + " minutes. " + str(data_count) + " data samples. ")
   return 
+```
 
 </details>
 
