@@ -67,16 +67,68 @@
 			find_ancestor_for_icdcode(code, icdcode2ancestor)
 		pickle.dump(icdcode2ancestor, open(pkl_file,'wb'))
 		return icdcode2ancestor 
-
 	if __name__ == '__main__':
 		dic = build_icdcode2ancestor_dict()    
     ```
     - GRAM model to model hierarchy of icd-10 code. 
     ```python
-from torch import nn 
-class GRAM(nn.Sequential):
+	from torch import nn 
+	class GRAM(nn.Sequential):
     ```
   - `molecule_encode.py`
+    - mpn features 
+    ```python
+    def smiles2mpnnfeature(smiles):
+    	... 
+    ```
+    - dataloader
+    ```python
+    from torch.utils import data   
+    class smiles_dataset(data.Dataset):
+		...
+	def mpnn_collate_func(x):
+		...
+    ```
+    - mpn 
+    ```python
+    from torch import nn
+    class MPNN(nn.Sequential):
+    	...
+    ```
   - `protocol_encode.py`
-  - `gnn_layers.py`
-  - `module.py` 
+  - `gnn_layers.py` contains standard implementation of existing GNN's building block (**single layer gnn**).
+    - Graph Convolutional Network 
+    ```python
+    from torch.nn.modules.module import Module
+    class GraphConvolution(Module):
+    	...
+    ```
+    - Graph Attention Network
+    ```python
+    from torch.nn.modules.module import Module
+	class GraphAttention(nn.Module):
+		...
+    ```
+  - `module.py` contains standard implementation of existing neural module, e.g., highway, GCN
+  	- Highway Network 
+  	```python
+  	import torch.nn as nn
+  	class Highway(nn.Module):
+  		def __init__(self, ...):
+  			...
+  		def forward(self, ...):
+  			...
+  	```
+  	- GCN 
+  	```python
+  	import torch.nn as nn
+  	class GCN(nn.Module):
+  		def __init__(self, ...):
+  			...
+  		def forward(self, ...):
+  			...  	
+  	```
+
+
+
+
