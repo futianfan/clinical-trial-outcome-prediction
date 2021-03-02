@@ -19,9 +19,25 @@
   - `learn_phaseIII.py`: predict whether the trial can pass phase III.
   - `learn_indication.py`: predict whether the trial can pass the indication (phase I-III).
 
+
+<details>
+  <summary>Click here for the code!</summary>
+
+```python
+from DeepPurpose import PPI as models
+```
+
+</details>
+
 - model architecture 
   - `model.py`
     - three model classes, build model from simple to complex. 
+
+
+
+<details>
+  <summary>Click here for the code!</summary>
+
     ```python
     from torch import nn 
     class Interaction(nn.Sequential):
@@ -53,6 +69,11 @@
 		def forward(self, ):
 			... 
     ```
+
+</details>
+
+
+
   - `icdcode_encode.py` 
     - preprocess ICD-10 code, building ontology of icd-10 codes.
     ```python
