@@ -69,15 +69,24 @@ mkdir -p data save_model figure
 
 ## 1. Installation via Conda 
 
+### 1.1 Setup conda environment
 ```bash
-
 conda env create -f conda.yml
+```
+An alternative way is to build conda environment step-by-step.  
+```bash
+conda create -n predict_drug_clinical_trial python==3.7 
+conda activate predict_drug_clinical_trial 
+conda install xxxx 
+pip install xxxx==yyy
+```
+Both may take a long time. 
 
-
+### 1.2 Activate conda environment
+```bash
 conda activate predict_drug_clinical_trial
 ```
 
-The user can use conda.yml as reference to setup conda environment. 
 
 
 
@@ -127,7 +136,7 @@ ls ./ClinicalTrialGov
 
 It is downloaded from [ClinicalTrial.gov](https://clinicaltrials.gov/). 
 It is 8.6+G, containing 348,891+ clinical trial records. 
-The data size grows with time because more clinical trial records are added.  
+The data size grows with time because more clinical trial records are added. 
 It describes many important information about clinical trials, including NCT ID (i.e.,  identifiers to each clinical study), disease names, drugs, brief title and summary, phase, criteria, and statistical analysis results.  
 
 
@@ -246,6 +255,7 @@ python src/collect_disease_from_raw.py
 ### 3.3 drug -> SMILES 
 
 - description
+
   - The drugs in ClinicalTrialGov are described in natural language. 
 
   - [DrugBank](https://go.drugbank.com/) contains rich information about drugs. 
