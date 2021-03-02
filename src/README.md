@@ -26,6 +26,7 @@
     - three model classes, build model from simple to complex. 
 <details>
   <summary>Click here for the code!</summary>
+
 ```python
 from torch import nn 
 class Interaction(nn.Sequential):
