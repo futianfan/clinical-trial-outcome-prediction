@@ -96,6 +96,29 @@
     	...
     ```
   - `protocol_encode.py`
+  	- preprocess 
+  	```python
+  	def save_sentence_bert_dict_pkl():
+		cleaned_sentence_set = collect_cleaned_sentence_set() 
+		from biobert_embedding.embedding import BiobertEmbedding
+		biobert = BiobertEmbedding()
+		def text2vec(text):
+			return biobert.sentence_vector(text)
+		protocol_sentence_2_embedding = dict()
+		for sentence in tqdm(cleaned_sentence_set):
+			protocol_sentence_2_embedding[sentence] = text2vec(sentence)
+		pickle.dump(protocol_sentence_2_embedding, open('data/sentence2embedding.pkl', 'wb'))
+		return 
+
+	if __name__ == "__main__":
+		save_sentence_bert_dict_pkl() 
+  	```
+  	- protocol embeddor
+  	```python
+  	from torch import nn 
+  	class Protocol_Embedding(nn.Sequential):
+  		...
+  	```
   - `gnn_layers.py` contains standard implementation of existing GNN's building block (**single layer gnn**).
     - Graph Convolutional Network 
     ```python
