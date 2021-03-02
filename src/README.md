@@ -130,7 +130,6 @@ def mpnn_collate_func(x):
 </details>
 
     - mpn 
-
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
@@ -143,8 +142,7 @@ class MPNN(nn.Sequential):
 </details>
 
   - `protocol_encode.py`
-  	- preprocess 
-
+    - preprocess 
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
@@ -167,8 +165,7 @@ if __name__ == "__main__":
 
 </details>
 
-  	- protocol embeddor
-
+    - protocol embeddor
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
@@ -182,7 +179,6 @@ class Protocol_Embedding(nn.Sequential):
 
   - `gnn_layers.py` contains standard implementation of existing GNN's building block (**single layer gnn**).
     - Graph Convolutional Network 
-
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
@@ -194,7 +190,6 @@ class GraphConvolution(Module):
 </details>
 
     - Graph Attention Network
-
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
@@ -207,8 +202,7 @@ class GraphAttention(nn.Module):
 </details>
 
   - `module.py` contains standard implementation of existing neural module, e.g., highway, GCN
-  	- Highway Network 
-
+    - Highway Network 
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
@@ -223,8 +217,7 @@ class Highway(nn.Module):
 
 </details>
 
-  	- GCN 
-
+    - GCN 
 <details>
   <summary><font color=red>Click here for the code!</font></summary>
 
