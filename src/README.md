@@ -23,10 +23,7 @@
   - `model.py`
     - three model classes 
     ```python
-from torch import nn
-class Interaction(nn.Sequential)
-
-
+    from torch import nn 
     ```
   - `icdcode_encode.py`
   - `molecule_encode.py`
