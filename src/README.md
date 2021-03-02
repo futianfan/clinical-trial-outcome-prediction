@@ -14,13 +14,14 @@
 ## model 
 
 - learn and inference on various task
-  - `learn_phaseI.py`
-  - `learn_phaseII.py`
-  - `learn_phaseIII.py`
-  - `learn_indication.py`
+  - `learn_phaseI.py`: predict whether the trial can pass phase I. 
+  - `learn_phaseII.py`: predict whether the trial can pass phase II.
+  - `learn_phaseIII.py`: predict whether the trial can pass phase III.
+  - `learn_indication.py`: predict whether the trial can pass the indication (phase I-III).
 
 - model architecture 
   - `model.py`
+    - abc
   - `icdcode_encode.py`
   - `molecule_encode.py`
   - `protocol_encode.py`
