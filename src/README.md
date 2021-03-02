@@ -23,11 +23,7 @@
 
 - model architecture 
   - `model.py`
-    - three model classes, build model from simple to complex. 
-
-
-
-<details>
+    - three model classes, build model from simple to complex. <details>
   <summary>Click here for the code!</summary>
 
 ```python
@@ -62,7 +58,6 @@ class HINT(HINT_nograph):
 	def forward(self, ):
 		... 
 ```
-
 </details>
 
 
