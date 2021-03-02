@@ -21,7 +21,13 @@
 
 - model architecture 
   - `model.py`
-    - abc
+    - three model classes 
+    ```python
+from torch import nn
+class Interaction(nn.Sequential)
+
+
+    ```
   - `icdcode_encode.py`
   - `molecule_encode.py`
   - `protocol_encode.py`
