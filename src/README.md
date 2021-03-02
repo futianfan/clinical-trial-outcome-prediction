@@ -25,7 +25,7 @@
   - `model.py`
     - three model classes, build model from simple to complex. 
 <details>
-  <summary>Click here for the code!</summary>
+  <summary><font color=red>Click here for the code!</font></summary>
 
 ```python
 from torch import nn 
