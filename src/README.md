@@ -21,7 +21,7 @@
 
 - model architecture 
   - `model.py`
-    - three model classes 
+    - three model classes, build model from simple to complex. 
     ```python
     from torch import nn 
     class Interaction(nn.Sequential):
@@ -53,7 +53,29 @@
 		def forward(self, ):
 			... 
     ```
-  - `icdcode_encode.py`
+  - `icdcode_encode.py` 
+    - preprocess ICD-10 code, building ontology of icd-10 codes.
+    ```python
+def build_icdcode2ancestor_dict():
+	pkl_file = "data/icdcode2ancestor_dict.pkl"
+	if os.path.exists(pkl_file):
+		icdcode2ancestor = pickle.load(open(pkl_file, 'rb'))
+		return icdcode2ancestor 
+	all_code = collect_all_icdcodes() 
+	icdcode2ancestor = defaultdict(list)
+	for code in all_code:
+		find_ancestor_for_icdcode(code, icdcode2ancestor)
+	pickle.dump(icdcode2ancestor, open(pkl_file,'wb'))
+	return icdcode2ancestor 
+
+if __name__ == '__main__':
+	dic = build_icdcode2ancestor_dict()     
+    ```
+    - GRAM model to model hierarchy of icd-10 code. 
+    ```python
+from torch import nn 
+class GRAM(nn.Sequential):
+    ```
   - `molecule_encode.py`
   - `protocol_encode.py`
   - `gnn_layers.py`
