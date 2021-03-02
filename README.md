@@ -80,6 +80,13 @@ conda activate predict_drug_clinical_trial
 conda install xxxx 
 pip install xxxx==yyy
 ```
+
+Concretely, it includes 
+```bash 
+conda install -c rdkit rdkit
+```
+
+
 Both may take a long time. 
 
 ### 1.2 Activate conda environment
@@ -220,10 +227,10 @@ It describes many important information about clinical trials, including NCT ID 
 
 ### 3.1 Collect all the NCTIDs.
 - input
-  - `ClinicalTrialGov/`  
+  - `ClinicalTrialGov/`: raw data.   
 
 - output
-  - `data/all_xml` 
+  - `data/all_xml`: store all the xml files for all the trials (identified by NCT ID).  
 
 ```bash
 find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
@@ -251,6 +258,29 @@ The current version has 348,891 trial IDs.
 python src/collect_disease_from_raw.py
 ```
 
+<details>
+  <summary>Click here for the code!</summary>
+
+```python
+def get_icd_from_nih(name):
+  prefix = 'https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms='
+  name_lst = normalize_disease(name)
+  for name in name_lst:
+    url = prefix + name 
+    response = requests.get(url)
+    text = response.text 
+    if text == '[0,[],null,[]]':
+      continue  
+    text = text[1:-1]
+    idx1 = text.find('[')
+    idx2 = text.find(']')
+    codes = text[idx1+1:idx2].split(',')
+    codes = [i[1:-1] for i in codes]
+    return codes 
+  return None 
+```
+
+</details>
 
 ### 3.3 drug -> SMILES 
 
@@ -502,7 +532,7 @@ device = torch.device("cpu")
 
 
 
-
+[README FILE for model build](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/src)
 
 
 
