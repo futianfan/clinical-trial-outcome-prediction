@@ -1,7 +1,7 @@
 # Clinical Trial Outcome Prediction
 
 
-
+This repository is the implementation of the clinical trial outcome prediction paper https://arxiv.org/pdf/2102.04252.pdf
 
 
 
