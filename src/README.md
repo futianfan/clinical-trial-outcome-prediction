@@ -2,15 +2,6 @@
 
 
 
-## data preprocessing 
-
-- data script
-
-  - `collect_all.py`
-  - `data_split.py`
-
-
-
 ## model 
 
 - learn and inference on various task
@@ -183,7 +174,7 @@
 			...
 		def forward(self, ...):
 			...
-	  	```
+	```
 
 
     - GCN 

@@ -21,8 +21,6 @@ base_name = 'phase_III'
 train_file = 'data/' + base_name + '_train.csv'
 valid_file = 'data/' + base_name + '_valid.csv'
 test_file = 'data/' + base_name + '_test.csv'
-subgroup_lst = ['digest', 'nervous', 'infection', 'respiratory']
-subgroup_file_lst = ['data/' + base_name +'_' + subgroup + '_test.csv' for subgroup in subgroup_lst]
 
 
 mpnn_model = MPNN(mpnn_hidden_size = 50, mpnn_depth=3, device = device)
@@ -52,7 +50,6 @@ train_loader = csv_three_feature_2_dataloader(train_file, shuffle=True, batch_si
 valid_loader = csv_three_feature_2_dataloader(valid_file, shuffle=False, batch_size=32) 
 test_loader = csv_three_feature_2_dataloader(test_file, shuffle=False, batch_size=32) 
 test_complete_loader = csv_three_feature_2_complete_dataloader(test_file, shuffle=False, batch_size = 32)
-subgroup_test_loader_lst = [csv_three_feature_2_dataloader(subgroup_file, shuffle=False, batch_size=32) for subgroup_file in subgroup_file_lst]
 icdcode2ancestor_dict = build_icdcode2ancestor_dict()
 gram_model = GRAM(embedding_dim = 50, icdcode2ancestor = icdcode2ancestor_dict, device = device)
 protocol_model = Protocol_Embedding(output_dim = 50, highway_num=3, device = device)
