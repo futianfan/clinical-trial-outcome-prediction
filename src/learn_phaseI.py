@@ -53,6 +53,7 @@ if not os.path.exists(admet_model_path):
 else:
 	admet_model = torch.load(admet_model_path)
 	admet_model = admet_model.to(device)
+	admet_model.set_device(device)
 
 
 ## 4. dataloader, model build, train, inference

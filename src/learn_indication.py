@@ -13,7 +13,7 @@ from molecule_encode import MPNN, ADMET
 from icdcode_encode import GRAM, build_icdcode2ancestor_dict
 from protocol_encode import Protocol_Embedding
 from model import Interaction, HINT_nograph, HINT
-device = torch.device("cuda:0")
+device = torch.device("cuda:1")
 
 ## 2. input & hyperparameter 
 base_name = 'indication' 
@@ -45,6 +45,7 @@ if not os.path.exists(admet_model_path):
 else:
 	admet_model = torch.load(admet_model_path)
 	admet_model = admet_model.to(device)
+	admet_model.set_device(device)
 
 
 

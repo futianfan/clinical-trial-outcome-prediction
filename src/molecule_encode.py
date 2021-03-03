@@ -233,6 +233,10 @@ class MPNN(nn.Sequential):
 		self.device = device
 		self = self.to(self.device)
 
+	def set_device(self, device):
+		self.device = device 
+
+
 	@property
 	def embedding_size(self):
 		return self.mpnn_hidden_size 
@@ -348,6 +352,11 @@ class ADMET(nn.Sequential):
 
 		self.device = device 
 		self = self.to(device)
+
+	def set_device(self, device):
+		self.device = device 
+		self.molecule_encoder.set_device(device)
+
 
 	def forward_smiles_lst_embedding(self, smiles_lst, idx):
 		embed_all = self.molecule_encoder.forward_smiles_lst(smiles_lst)
