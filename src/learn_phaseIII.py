@@ -13,7 +13,7 @@ from molecule_encode import MPNN, ADMET
 from icdcode_encode import GRAM, build_icdcode2ancestor_dict
 from protocol_encode import Protocol_Embedding
 from model import Interaction, HINT_nograph, HINT
-device = torch.device("cpu")
+device = torch.device("cuda:0")
 
 ## 2. input & hyperparameter
 base_name = 'phase_III'
@@ -35,6 +35,7 @@ if not os.path.exists(admet_model_path):
 	admet_testloader_lst = [i[1] for i in admet_dataloader_lst]
 	admet_model = ADMET(molecule_encoder = mpnn_model, 
 						highway_num=2, 
+						device = device, 
 						epoch=3, 
 						lr=5e-4, 
 						weight_decay=0, 
@@ -43,6 +44,7 @@ if not os.path.exists(admet_model_path):
 	torch.save(admet_model, admet_model_path)
 else:
 	admet_model = torch.load(admet_model_path)
+	admet_model = admet_model.to(device)
 
 
 ## 4. dataloader, model build, train, inference

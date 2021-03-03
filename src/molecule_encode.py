@@ -330,7 +330,7 @@ class MPNN(nn.Sequential):
 
 class ADMET(nn.Sequential):
 
-	def __init__(self, molecule_encoder, highway_num, 
+	def __init__(self, molecule_encoder, highway_num, device,  
 					epoch, lr, weight_decay, save_name):
 		super(ADMET, self).__init__()
 		self.molecule_encoder = molecule_encoder 
@@ -344,7 +344,10 @@ class ADMET(nn.Sequential):
 		self.epoch = epoch 
 		self.lr = lr 
 		self.weight_decay = weight_decay 
-		self.save_name = save_name
+		self.save_name = save_name 
+
+		self.device = device 
+		self = self.to(device)
 
 	def forward_smiles_lst_embedding(self, smiles_lst, idx):
 		embed_all = self.molecule_encoder.forward_smiles_lst(smiles_lst)
@@ -365,7 +368,7 @@ class ADMET(nn.Sequential):
 			single_loss_lst = []
 			for smiles_lst, label_vec in dataloader_lst[idx]:
 				output = self.forward_smiles_lst_pred(smiles_lst, idx).view(-1)
-				loss = self.loss(output, label_vec.float())
+				loss = self.loss(output, label_vec.to(self.device).float())
 				single_loss_lst.append(loss.item())
 			loss_lst.append(np.mean(single_loss_lst))
 		return np.mean(loss_lst)
@@ -375,7 +378,8 @@ class ADMET(nn.Sequential):
 		train_loss_record = [] 
 		valid_loss = self.test(valid_loader_lst, return_loss=True)
 		valid_loss_record = [valid_loss]
-		best_valid_loss = valid_loss
+		best_valid_loss = valid_loss 
+		best_model = deepcopy(self)
 		for ep in tqdm(range(self.epoch)):
 			data_iterator_lst = [iter(train_loader_lst[idx]) for idx in range(5)]
 			try: 
