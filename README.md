@@ -81,11 +81,11 @@ conda install xxxx
 pip install xxxx==yyy
 ```
 
-Concretely, it includes 
+For example, it uses conda or pip to install the required packages.
 ```bash 
-conda install -c rdkit rdkit
+conda install -c rdkit rdkit 
+pip install torch
 ```
-
 
 Both may take a long time. 
 
@@ -135,16 +135,28 @@ conda activate predict_drug_clinical_trial
 
 ## 2. Raw Data 
 
-```bash
+- output
+  - `./ClinicalTrialGov`: store all the xml files for all the trials (identified by NCT ID).  
 
-ls ./ClinicalTrialGov  
-
+### Download the data
+```bash 
+mkdir -p raw_data
+cd raw_data
+wget https://clinicaltrials.gov/AllPublicXML.zip
 ```
-
-It is downloaded from [ClinicalTrial.gov](https://clinicaltrials.gov/). 
-It is 8.6+G, containing 348,891+ clinical trial records. 
-The data size grows with time because more clinical trial records are added. 
+It is downloaded from [ClinicalTrial.gov](https://clinicaltrials.gov/AllPublicXML.zip). 
+It contains 348,891+ clinical trial records. The data size grows with time because more clinical trial records are added. 
 It describes many important information about clinical trials, including NCT ID (i.e.,  identifiers to each clinical study), disease names, drugs, brief title and summary, phase, criteria, and statistical analysis results.  
+
+
+### unzip the ZIP file 
+```bash 
+unzip AllPublicXML.zip
+cd ../
+```
+The unzipped file occupies 8.6+G. Please make sure you have enough space. 
+
+
 
 
 
@@ -227,13 +239,13 @@ It describes many important information about clinical trials, including NCT ID 
 
 ### 3.1 Collect all the NCTIDs.
 - input
-  - `ClinicalTrialGov/`: raw data.   
+  - `raw_data/`: raw data, store all the xml files for all the trials (identified by NCT ID).   
 
 - output
-  - `data/all_xml`: store all the xml files for all the trials (identified by NCT ID).  
+  - `data/all_xml`: store NCT IDs for all the xml files for all the trials.  
 
 ```bash
-find ClinicalTrialGov/ -name NCT*.xml | sort > data/all_xml
+find raw_data/ -name NCT*.xml | sort > data/all_xml
 ```
 The current version has 348,891 trial IDs. 
 
@@ -249,7 +261,7 @@ The current version has 348,891 trial IDs.
   - We use [ClinicalTable](https://clinicaltables.nlm.nih.gov/), a public API to convert disease name (natural language) into ICD-10 code. 
 
 - input 
-  - `ClinicalTrialGov/ ` 
+  - `raw_data/ ` 
   - `data/all_xml`   
 
 - output
