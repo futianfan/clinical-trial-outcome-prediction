@@ -81,7 +81,7 @@ conda install xxxx
 pip install xxxx==yyy
 ```
 
-For example, it uses conda or pip to install the required packages.
+For example, it uses `conda` or `pip` to install the required packages.
 ```bash 
 conda install -c rdkit rdkit 
 pip install torch
@@ -136,7 +136,7 @@ conda activate predict_drug_clinical_trial
 ## 2. Raw Data 
 
 - output
-  - `./ClinicalTrialGov`: store all the xml files for all the trials (identified by NCT ID).  
+  - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
 
 ### Download the data
 ```bash 
@@ -362,106 +362,6 @@ The csv file contains following features:
 ```bash
 python src/collect_raw_data.py | tee data_process.log 
 ```
-
-
-
-<details>
-  <summary>Click here for the code!</summary>
-
-```python
-
-def process_all():
-  from raw_data_to_feature import load_drug2smiles_pkl, drug_hit_smiles
-  ### input 
-  drug2smiles = load_drug2smiles_pkl()
-  disease2icd = load_disease2icd() 
-  input_file_lst = get_path_of_all_xml_file()
-  ### output 
-  output_file = 'data/raw_data.csv'
-  # iqvia_disease2icd, public_disease2icd = load_disease2icd_pkl() 
-  # iqvia_disease2diseaseset = disease_dict_reorganize(iqvia_disease2icd)
-  # disease2icd = public_disease2icd 
-  # disease2diseaseset = disease_dict_reorganize(public_disease2icd)
-
-
-
-  t1 = time()
-  disease_hit, disease_all, drug_hit, drug_all = 0,0,0,0 ### disease hit icd && drug hit smiles
-  # fieldname = ['nctid', 'status', 'why_stop', 'label', 'phase', 
-  #        'diseases', 'icdcodes', 'drugs', 'smiless', 
-  #        'title', 'criteria', 'summary']
-  fieldname = ['nctid', 'status', 'why_stop', 'label', 'phase', 
-         'diseases', 'icdcodes', 'drugs', 'smiless', 
-         'criteria']
-  with open(output_file, 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=fieldname)
-    writer.writeheader()
-    data_count = 0
-    for file in tqdm(input_file_lst[:]):
-      result = xml_file_2_tuple(file)
-      ## 0.1 & 0.2 
-      if len(result)==1:
-        continue  ### only interventions
-      nctid, status, why_stop, label, phase, conditions, drugs, criteria = result
-      # nctid, status, why_stop, label, phase, conditions, drugs, title, criteria, summary = result
-
-      ## 0.4 
-      if (label == -1) and ('lack of efficacy' in why_stop or 'efficacy concern' in why_stop or \
-        'accrual' in why_stop):
-        label = 0 
-      ## 0.5
-      if label == -1:
-        continue  
-
-      ## 1. disease -> icd
-      icdcode_lst = []
-      for disease in conditions:
-        icdcode = disease2icd[disease] if disease in disease2icd else None
-        icdcode_lst.append(icdcode)
-      ## 2. drug -> smiles 
-      smiles_lst = []
-      print("drugs ", drugs)
-      for drug in drugs:
-        # drug_all += 1
-        smiles = drug_hit_smiles(drug, drug2smiles)
-        if smiles is not None: 
-          # drug_hit += 1
-          smiles_lst.append(smiles)
-        else:
-          print("unfounded drug:  ", drug)
-
-
-      if smiles_lst == []:
-        continue
-      icdcode_lst = list(filter(lambda x:x!='None' and x!=None, icdcode_lst))
-      if icdcode_lst == []:
-        continue 
-
-      data_count += 1     
-      writer.writerow({'nctid':nctid, \
-               'status': status, \
-               'why_stop': why_stop, \
-               'label':label, \
-               'phase':phase, \
-               'diseases':conditions, \
-               'icdcodes': icdcode_lst, \
-               'drugs':drugs, \
-               'smiless': smiles_lst, \
-               'criteria':criteria, })
-  t2 = time()
-  # print("disease hit icdcode", disease_hit, "disease all", disease_all, "\n drug hit smiles", drug_hit, "drug all", drug_all)
-  print(str(int((t2-t1)/60)) + " minutes. " + str(data_count) + " data samples. ")
-  return 
-```
-
-</details>
-
-
-
-
-
-
-
 
 
 
@@ -1029,12 +929,18 @@ device = torch.device("cpu")
 
 
 
+### Trained Model for Prediction 
+
+We provide more than 4 trained models that can be loaded for prediction of trial's success probability. 
+
+```python
+
+```
 
 
+### Jupyter Notebook Tutorial 
 
-
-
-
+Please see `learn_phaseI.ipynb` for details. 
 
 
 
