@@ -68,6 +68,33 @@ def load_disease2icd():
 	return disease2icd 
 
 
+def nctid2label_dict():
+	nctid2outcome = dict() 
+	outcome2label = dict() 
+	nctid2label = dict() 
+	with open("trialtrove/outcome2label.txt", 'r') as fin: 
+		lines = fin.readlines() 
+		for line in lines:
+			outcome = line.split('\t')[0]
+			label = int(line.strip().split('\t')[1])
+			outcome2label[outcome] = label 
+
+	with open("trialtrove/trial_outcomes_v1.csv", 'r') as csvfile: 
+		csvreader = list(csv.reader(csvfile))[1:]
+		for row in csvreader:
+			nctid = row[0]
+			outcome = row[1]
+			nctid2outcome[nctid] = outcome 
+
+	for nctid,outcome in nctid2outcome.items():
+		nctid2label[nctid] = outcome2label[outcome]
+
+	return nctid2label 
+
+nctid2label = nctid2label_dict()
+
+
+
 def root2outcome(root):
 	result_list = []
 	walkData(root, prefix = '', result_list = result_list) 
@@ -116,8 +143,14 @@ def xml_file_2_tuple(xml_file):
 		why_stop = root.find('why_stopped').text
 	except:
 		why_stop = ''
-	label = root2outcome(root)
-	label = -1 if label is None else label 
+
+
+	# label = root2outcome(root)
+	# label = -1 if label is None else label 
+	label = nctid2label[nctid] 
+
+
+
 	try:
 		phase = root.find('phase').text 
 		# print("phase\n\t\t", phase)
