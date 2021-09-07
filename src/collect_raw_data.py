@@ -147,7 +147,10 @@ def xml_file_2_tuple(xml_file):
 
 	# label = root2outcome(root)
 	# label = -1 if label is None else label 
-	label = nctid2label[nctid] 
+	if nctid not in nctid2label:
+		label = -1 
+	else:
+		label = nctid2label[nctid] 
 
 
 

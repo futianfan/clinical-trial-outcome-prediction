@@ -33,7 +33,7 @@ from functools import reduce
 
 from ccs_utils import file2_icd2ccs_and_ccs2description, file2_icd2ccsr
 # icd2ccs, ccscode2description = file2_icd2ccs_and_ccs2description() 
-icd2ccsr = file2_icd2ccsr()
+# icd2ccsr = file2_icd2ccsr()
 
 
 def csvfile2rows(input_file):
@@ -315,21 +315,21 @@ def select_and_split_data(input_file, filter_func, output_file_name, train_valid
 
 
 
-	subset_test_row = list(filter(filter_respiratory, test_row))
-	output_file = output_file_name.replace('.csv', '_respiratory_test.csv')
-	write_row_to_csvfile(subset_test_row, fieldname, output_file)
+	# subset_test_row = list(filter(filter_respiratory, test_row))
+	# output_file = output_file_name.replace('.csv', '_respiratory_test.csv')
+	# write_row_to_csvfile(subset_test_row, fieldname, output_file)
 
-	subset_test_row = list(filter(filter_infect, test_row))
-	output_file = output_file_name.replace('.csv', '_infection_test.csv')
-	write_row_to_csvfile(subset_test_row, fieldname, output_file)
+	# subset_test_row = list(filter(filter_infect, test_row))
+	# output_file = output_file_name.replace('.csv', '_infection_test.csv')
+	# write_row_to_csvfile(subset_test_row, fieldname, output_file)
 
-	subset_test_row = list(filter(filter_nervous, test_row))
-	output_file = output_file_name.replace('.csv', '_nervous_test.csv')
-	write_row_to_csvfile(subset_test_row, fieldname, output_file)
+	# subset_test_row = list(filter(filter_nervous, test_row))
+	# output_file = output_file_name.replace('.csv', '_nervous_test.csv')
+	# write_row_to_csvfile(subset_test_row, fieldname, output_file)
 
-	subset_test_row = list(filter(filter_digest, test_row))
-	output_file = output_file_name.replace('.csv', '_digest_test.csv')
-	write_row_to_csvfile(subset_test_row, fieldname, output_file)
+	# subset_test_row = list(filter(filter_digest, test_row))
+	# output_file = output_file_name.replace('.csv', '_digest_test.csv')
+	# write_row_to_csvfile(subset_test_row, fieldname, output_file)
 
 	return
 

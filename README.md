@@ -6,16 +6,6 @@ This repository is the implementation of the clinical trial outcome prediction p
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## 0. Download code repo
 
 ```bash 
@@ -27,42 +17,6 @@ cd clinical-trial-outcome-prediction
 mkdir -p data save_model figure
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -100,43 +54,11 @@ conda activate predict_drug_clinical_trial
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 2. Raw Data 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
+  - `./trialtrove/trial_outcomes_v1.csv`  
 
 ### Download the data
 ```bash 
@@ -155,74 +77,6 @@ unzip AllPublicXML.zip
 cd ../
 ```
 The unzipped file occupies 8.6+G. Please make sure you have enough space. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -339,11 +193,16 @@ python src/drug2smiles.py
 - input    
   - `data/diseases.csv ` 
   - `data/drug2smiles.pkl`  
-  - `data/all_xml `        
+  - `data/all_xml ` 
+  - `trialtrove/*`       
 
 
 - output 
-  - `data/raw_data.csv` (9568 trials)
+  - `data/raw_data.csv` (17,592 trials)
+
+```bash
+grep ^NCT data/raw_data.csv | wc -l
+```
 
 The csv file contains following features:
 

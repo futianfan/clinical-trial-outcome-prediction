@@ -174,7 +174,7 @@ class GRAM(nn.Sequential):
 			['C05.2', 'C10.0', 'C16.0', 'C16.4', 'C17.0', 'C17.1', 'C17.2'], length is 32 
 			32 is length of code_lst; 5 is maxlength; 50 is embedding_dim; 
 		"""
-		idx_lst = [self.code2index[code] for code in code_lst] ### 32
+		idx_lst = [self.code2index[code] for code in code_lst if code in self.code2index] ### 32
 		ancestor_mat = self.padding_matrix[idx_lst,:].to(self.device)  ##### 32,5
 		mask_mat = self.mask_matrix[idx_lst,:].to(self.device)  #### 32,5
 		embeded = self.embedding(ancestor_mat)  #### 32,5,50
