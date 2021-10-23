@@ -1,5 +1,4 @@
 # HINT: Hierarchical Interaction Network for Predicting Clinical Trial Approval Probability
-
 [toc]
 
 --- 
