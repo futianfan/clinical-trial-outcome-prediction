@@ -2,13 +2,14 @@
 
 ## Table Of Contents 
 
-- [Installtion](##Installation)
-  * setup 
-  * activate 
+- Installtion
+  * Setup 
+  * Activate 
 - Raw Data 
-
-
-
+- Data Preprocessing 
+- Benchmark Dataset
+- Learn
+- Contact 
 
 --- 
 
@@ -817,6 +818,17 @@ We provide a guidance for quick reproduction of the main experimental results. S
 * Setup environment (1. Installation via Conda)
 * Download the [processed data](https://drive.google.com/drive/folders/1EJvVITNRdq4BYU6L27NF5f1moHqB8DTf?usp=sharing) from Google Drive. It requires 1.0 G. Please make sure that all the data files are in the folder "./data". 
 * Train and Test Model (5. Learn and Inference)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
