@@ -2,7 +2,7 @@
 
 ## Table Of Contents 
 
-- Installtion
+- [Installtion](## Installation)
   * setup 
   * activate 
 - Raw Data 
@@ -27,7 +27,7 @@ mkdir -p data save_model figure
 
 
 
-## 1. Installation via Conda 
+## Installation
 
 ### 1.1 Setup conda environment
 ```bash
