@@ -1,12 +1,9 @@
-# Clinical Trial Outcome Prediction
+# HINT: Hierarchical Interaction Network for Predicting Clinical Trial Approval Probability
+
+[toc]
 
 
-This repository is the implementation of the clinical trial outcome prediction paper https://arxiv.org/pdf/2102.04252.pdf
-
-
-
-
-## 0. Download code repo
+## 1. Download code repo
 
 ```bash 
 
