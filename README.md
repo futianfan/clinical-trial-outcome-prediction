@@ -2,7 +2,7 @@
 
 ## Table Of Contents 
 
-- [Installtion](## Installation)
+- [Installtion](##Installation)
   * setup 
   * activate 
 - Raw Data 
