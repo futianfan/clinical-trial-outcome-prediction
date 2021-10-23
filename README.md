@@ -3,28 +3,23 @@
 ## Table Of Contents 
 
 - Installtion
-  * Setup 
-  * Activate 
+  * Setup conda environment 
+  * Activate conda
 - Raw Data 
+  * clinicaltrial.gov
+  * DrugBank
+  * MoleculeNet 
 - Data Preprocessing 
-- Benchmark Dataset
-- Learn
+  * Data split 
+  * ICD-10 code hierarchy
+  * Sentence Embedding for trial protocol 
+  * Generated Dataset and Statistics  
+- Learn and Inference 
+  * Phase I/II/III prediction
+  * Indication prediction 
 - Contact 
 
 --- 
-
-## 1. Download code repo
-
-```bash 
-
-git clone git@github.com:futianfan/clinical-trial-outcome-prediction.git
-
-cd clinical-trial-outcome-prediction 
-
-mkdir -p data save_model figure
-
-```
-
 
 
 
