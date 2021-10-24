@@ -64,7 +64,7 @@ It describes many important information about clinical trials, including NCT ID 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
-  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv` 
+  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial approval label due to privacy issue. 
 
 
 ```bash 
@@ -371,10 +371,10 @@ The empirical results are given for reference. The mean and standard deviation o
 
 | Dataset  | PR-AUC | F1 | ROC-AUC |
 |-----------------|-------------|-------------|------------|
-| Phase I | 0.7406 (0.0221) | 0.8474 (0.0144) |  0.8383 (0.0186) |    
-| Phase II | 0.6030 (0.0198) | 0.7127 (0.0163) | 0.7850 (0.0136)  |    
-| Phase III | 0.6279 (0.0165) | 0.6419 (0.0183) | 0.7257 (0.0109) |    
-| Indication | 0.7136 (0.0120) | 0.7798 (0.0087) | 0.7987 (0.0111)  |   
+| Phase I | 0.745 (0.009) | 0.820 (0.007) |  0.726 (0.009) |    
+| Phase II | 0.685 (0.011) | 0.754 (0.010) | 0.698 (0.008)  |    
+| Phase III | 0.709 (0.009) | 0.757 (0.008) | 0.784 (0.009) |    
+| Indication | 0.702 (0.008) | 0.776 (0.009) | 0.786 (0.008)  |   
 
 
 
