@@ -64,7 +64,7 @@ It describes many important information about clinical trials, including NCT ID 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
-  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial approval label due to privacy issue. 
+  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial approval label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov. When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `src/pseudolabel.py`. 
 
 
 ```bash 
