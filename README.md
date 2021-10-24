@@ -280,37 +280,16 @@ python src/protocol_encode.py
 
 ### Data Statistics 
 
-| Dataset  | \# Train | \# Valid | \# Test | \# Total | Split Date |
+
 |-----------------|-------------|-------------|------------|-------------|------------|
-| Phase I |  1028  |  146  |  295  |   1469  |  08/13/2014  | 
-| Phase II | 2667 |  381 | 762  |   3810  |  03/20/2014  | 
-| Phase III |  4286  |  612  |  1225 |  6123  |  04/07/2014  | 
-| Indication |  3767  |  538  |  1077   |  5382  |  05/21/2014  | 
-
-We use temporal split, where the earlier trials (before split date) are used for training and validation, the later trials (after split date) are used for testing. The train:valid:test ratio is 7:1:2. 
-
+| Settings  | Train Pass | Train Failure | Test Pass | Test Failure |  Split date |  
+| Phase I  | 1,920 | 702 | 534 | 217  |  Aug 13, 2014 | 
+| Phase II  | 3,540 | 2,856 | 1,151 | 678 |  March 20, 2014 | 
+| Phase III  | 3,445 | 3,891 | 1,184 | 913 | April 7, 2014 | 
+| Indication | 3,561 | 3,257 | 1,083 | 865 | May 21, 2014 | 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+We use temporal split, where the earlier trials (before split date) are used for training and validation, the later trials (after split date) are used for testing. 
 
 
 
@@ -387,21 +366,9 @@ Please see `learn_phaseI.ipynb` for details.
 
 
 
-
-
-
-
-
 ## Contact
 
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
-
-
-
-
-
-
-
 
 
 
