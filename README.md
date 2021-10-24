@@ -1,5 +1,11 @@
 # HINT: Hierarchical Interaction Network for Predicting Clinical Trial Approval Probability
 
+The following figure illustrates the pipeline of HINT. 
+
+<p align="center"><img src="./figure/hint.png" alt="logo" width="810px" /></p>
+
+
+
 ## Table Of Contents 
 
 - Installation
