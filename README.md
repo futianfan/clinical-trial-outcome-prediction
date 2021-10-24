@@ -280,9 +280,8 @@ python src/protocol_encode.py
 
 ### Data Statistics 
 
-
-|-----------------|-------------|-------------|------------|-------------|------------|
 | Settings  | Train Pass | Train Failure | Test Pass | Test Failure |  Split date |  
+|-----------------|-------------|-------------|------------|-------------|------------|
 | Phase I  | 1,920 | 702 | 534 | 217  |  Aug 13, 2014 | 
 | Phase II  | 3,540 | 2,856 | 1,151 | 678 |  March 20, 2014 | 
 | Phase III  | 3,445 | 3,891 | 1,184 | 913 | April 7, 2014 | 
