@@ -41,19 +41,11 @@ The following figure illustrates the pipeline of HINT.
 
 ## Installation
 
-### Setup conda environment
-```bash
-conda env create -f conda.yml
-```
-An alternative way is to build conda environment step-by-step.  
+We build conda environment and uses `conda` or `pip` to install the required packages. See `conda.yml` for all the packages. 
+
 ```bash
 conda create -n predict_drug_clinical_trial python==3.7 
 conda activate predict_drug_clinical_trial 
-```
-
-For example, it uses `conda` or `pip` to install the required packages. It may take a long time. 
-
-```bash 
 conda install -c rdkit rdkit  
 pip install tqdm scikit-learn 
 pip install torch
@@ -62,8 +54,7 @@ pip install scipy
 pip install icd10-cm
 ```
 
-
-### Activate conda environment
+We use following command to activate conda environment. 
 ```bash
 conda activate predict_drug_clinical_trial
 ```
