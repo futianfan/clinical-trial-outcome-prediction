@@ -1,6 +1,9 @@
 # HINT: Hierarchical Interaction Network for Predicting Clinical Trial Approval Probability
 
-
+This repository hosts HINT, a deep learning based method for clinical trial approval prediction. 
+The repository can be mainly divided into two parts:
+- `benchmark` describes the process of curating benchmark dataset named **Trial Approval Prediction (TAP)** for clinical trial approval prediction. 
+- `HINT` is the Hierarchical Interaction Network, a deep learning based method. 
 
 
 The following figure illustrates the pipeline of HINT. 
@@ -83,7 +86,7 @@ It describes many important information about clinical trials, including NCT ID 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
-  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial approval label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov. When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `src/pseudolabel.py`. 
+  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial approval label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov. When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `benchmark/pseudolabel.py`. 
 
 
 ```bash 
@@ -161,7 +164,7 @@ find raw_data/ -name NCT*.xml | sort > data/all_xml
   -	`data/diseases.csv ` 
 
 ```bash 
-python src/collect_disease_from_raw.py
+python benchmark/collect_disease_from_raw.py
 ```
 
 
@@ -183,7 +186,7 @@ python src/collect_disease_from_raw.py
   - `data/drug2smiles.pkl `  
 
 ```bash
-python src/drug2smiles.py 
+python benchmark/drug2smiles.py 
 ```
 
 
@@ -233,7 +236,7 @@ The csv file contains following features:
 
 
 ```bash
-python src/collect_raw_data.py | tee data_process.log 
+python benchmark/collect_raw_data.py | tee data_process.log 
 ```
 
 
@@ -262,7 +265,7 @@ python src/collect_raw_data.py | tee data_process.log
 
 
 ```bash
-python src/data_split.py 
+python benchmark/data_split.py 
 ```
 
 
@@ -279,7 +282,7 @@ python src/data_split.py
 
 
 ```bash 
-python src/icdcode_encode.py 
+python benchmark/icdcode_encode.py 
 ```
 
 #### Sentence embedding 
@@ -295,7 +298,7 @@ python src/icdcode_encode.py
 
 
 ```bash 
-python src/protocol_encode.py 
+python benchmark/protocol_encode.py 
 ```
 
 
