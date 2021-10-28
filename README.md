@@ -60,6 +60,8 @@ pip install scipy
 conda activate predict_drug_clinical_trial
 ```
 
+---
+
 ## Benchmark
 
 ### Raw Data 
@@ -112,6 +114,8 @@ cd ../
 
 - output 
   - `data/ADMET`
+
+---
 
 ### Data Preprocessing 
 
@@ -300,10 +304,10 @@ We use temporal split, where the earlier trials (before split date) are used for
 
 
 
+---
 
 
-
-## Learn and Inference 
+## HINT: Learn and Inference 
 
 
 After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. 
