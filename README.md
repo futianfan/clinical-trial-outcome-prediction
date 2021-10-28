@@ -8,7 +8,7 @@ The repository can be mainly divided into two parts:
 
 The following figure illustrates the pipeline of HINT. 
 
-<p align="center"><img src="./figure/hint.png" alt="logo" width="810px" /></p>
+<p align="center"><img src="./HINT/hint.png" alt="logo" width="810px" /></p>
 
 
 
