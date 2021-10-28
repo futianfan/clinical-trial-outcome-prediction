@@ -9,24 +9,25 @@ The following figure illustrates the pipeline of HINT.
 ## Table Of Contents 
 
 - Installation
-  * Setup conda environment 
-  * Activate conda
-- Raw Data 
-  * clinicaltrial.gov
-  * DrugBank
-  * MoleculeNet 
-- Data Preprocessing 
-  * Collect all the records
-  * diseases to icd10 
-  * drug to SMILES 
-  * ICD-10 code hierarchy
-  * Sentence Embedding for trial protocol 
-  * Selection of clinical trial
-  * Data split 
-  * Generated Dataset and Statistics  
+  - Setup conda environment 
+  - Activate conda
+- Benchmark
+  - Raw Data 
+    - clinicaltrial.gov
+    - DrugBank
+    - MoleculeNet 
+  - Data Preprocessing 
+    - Collect all the records
+    - diseases to icd10 
+    - drug to SMILES 
+    - ICD-10 code hierarchy
+    - Sentence Embedding for trial protocol 
+    - Selection of clinical trial
+    - Data split 
+    - Generated Dataset and Statistics  
 - Learn and Inference 
-  * Phase I/II/III prediction
-  * Indication prediction 
+  - Phase I/II/III prediction
+  - Indication prediction 
 - Contact 
 
 --- 
