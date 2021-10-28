@@ -64,6 +64,9 @@ conda activate predict_drug_clinical_trial
 
 ## Benchmark
 
+To standardize the clinical trial approval prediction, we create a benchmark dataset for Trial Approval Prediction named TAP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
+
+
 ### Raw Data 
 
 #### ClinicalTrial.gov
