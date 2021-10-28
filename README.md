@@ -15,8 +15,6 @@ The following figure illustrates the pipeline of HINT.
 ## Table Of Contents 
 
 - Installation
-  - Setup conda environment 
-  - Activate conda
 - Benchmark
   - Raw Data 
     - clinicaltrial.gov
@@ -67,12 +65,9 @@ To standardize the clinical trial approval prediction, we create a benchmark dat
 All the scripts are in the folder `benchmark`. 
 Please see `benchmark/README.md` for details. 
 
-
 ---
 
-
 ## HINT: Learn and Inference 
-
 
 After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder `HINT`. 
 Please see `HINT/README.md` for details. 
