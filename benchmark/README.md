@@ -185,7 +185,7 @@ python benchmark/collect_raw_data.py | tee data_process.log
 
 
 
-<p align="center"><img src="./figure/dataset.png" alt="logo" width="650px" /></p>
+<p align="center"><img src="./dataset.png" alt="logo" width="650px" /></p>
 
 
 

@@ -34,7 +34,7 @@ The following figure illustrates the pipeline of HINT.
 - HINT: Learn and Inference 
   - Phase I/II/III prediction
   - Indication prediction 
-- Tutorial (Jupyter Notebook)
+  - Tutorial (Jupyter Notebook)
 - Contact 
 
 --- 
@@ -85,65 +85,6 @@ Please see `benchmark/README.md` for details.
 
 After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder `HINT`. 
 Please see `HINT/README.md` for details. 
-
-
-<p align="center"><img src="./figure/hint.png" alt="logo" width="810px" /></p>
-
-
-### Tutorial (Jupyter Notebook) 
-
-`learn_phaseI.ipynb` is a tutorial to learn and evaluate HINT step by step. 
-
-
-
-### Phase I/II/III Prediction (Bash command line)
-
-Phase-level prediction predicts the approval probability of a single phase study. 
-
-```bash
-python HINT/learn_phaseI.py
-```
-
-
-```bash
-python HINT/learn_phaseII.py
-```
-
-
-```bash
-python HINT/learn_phaseIII.py
-```
-
-
-### Indication level Prediction (Bash command line)
-
-Indication-level prediction predicts if the drug can pass all three phases for the final market approval.
-
-```bash
-python HINT/learn_indication.py 
-```
-
-
-
-
-
-### METRICS
-
-- **PR-AUC** (Precision-Recall Area Under Curve). Precision-Recall curves summarize the trade-off between the true positive rate and the positive predictive value for a predictive model using different probability thresholds.
-- **F1**. The F1 score is the harmonic mean of the precision and recall.
-- **ROC-AUC** (Area Under the Receiver Operating Characteristic Curve). ROC curve summarize the trade-off between the true positive rate and false positive rate for a predictive model using different probability thresholds. 
-
-
-### Result 
-
-The empirical results are given for reference. The mean and standard deviation of 5 independent runs are reported. 
-
-| Dataset  | PR-AUC | F1 | ROC-AUC |
-|-----------------|-------------|-------------|------------|
-| Phase I | 0.745 (0.009) | 0.820 (0.007) |  0.726 (0.009) |    
-| Phase II | 0.685 (0.011) | 0.754 (0.010) | 0.698 (0.008)  |    
-| Phase III | 0.709 (0.009) | 0.757 (0.008) | 0.784 (0.009) |    
-| Indication | 0.702 (0.008) | 0.776 (0.009) | 0.786 (0.008)  |   
 
 
 
