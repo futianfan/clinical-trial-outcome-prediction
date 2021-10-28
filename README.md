@@ -1,5 +1,8 @@
 # HINT: Hierarchical Interaction Network for Predicting Clinical Trial Approval Probability
 
+
+
+
 The following figure illustrates the pipeline of HINT. 
 
 <p align="center"><img src="./figure/hint.png" alt="logo" width="810px" /></p>
@@ -16,7 +19,7 @@ The following figure illustrates the pipeline of HINT.
     - clinicaltrial.gov
     - DrugBank
     - MoleculeNet 
-  - Data Preprocessing 
+  - Data Curation Process
     - Collect all the records
     - diseases to icd10 
     - drug to SMILES 
@@ -24,10 +27,11 @@ The following figure illustrates the pipeline of HINT.
     - Sentence Embedding for trial protocol 
     - Selection of clinical trial
     - Data split 
-    - Generated Dataset and Statistics  
+    - Statistics of Dataset 
 - HINT: Learn and Inference 
   - Phase I/II/III prediction
   - Indication prediction 
+- Tutorial (Jupyter Notebook)
 - Contact 
 
 --- 
@@ -52,6 +56,7 @@ pip install tqdm scikit-learn
 pip install torch
 pip install seaborn 
 pip install scipy
+pip install icd10-cm
 ```
 
 
@@ -65,6 +70,7 @@ conda activate predict_drug_clinical_trial
 ## Benchmark
 
 To standardize the clinical trial approval prediction, we create a benchmark dataset for Trial Approval Prediction named TAP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
+All the scripts are in the folder `benchmark`.
 
 
 ### Raw Data 
@@ -120,7 +126,7 @@ cd ../
 
 ---
 
-### Data Preprocessing 
+### Data Curation Process 
 
 #### Collect all the records
 - description
@@ -276,7 +282,7 @@ python src/data_split.py
 python src/icdcode_encode.py 
 ```
 
-#### sentence embedding 
+#### Sentence embedding 
 
 - description 
   - BERT embedding to get sentence embedding for sentence in clinical protocol. 
@@ -293,7 +299,7 @@ python src/protocol_encode.py
 ```
 
 
-#### Data Statistics 
+#### Statistics of Dataset
 
 | Settings  | Train Pass | Train Failure | Test Pass | Test Failure |  Split date |  
 |-----------------|-------------|-------------|------------|-------------|------------|
@@ -313,38 +319,42 @@ We use temporal split, where the earlier trials (before split date) are used for
 ## HINT: Learn and Inference 
 
 
-After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. 
+After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder `HINT`. 
 
 <p align="center"><img src="./figure/hint.png" alt="logo" width="810px" /></p>
 
 
+### Tutorial (Jupyter Notebook) 
 
-### Phase I/II/III Prediction
+`learn_phaseI.ipynb` is a tutorial to learn and evaluate HINT step by step. 
+
+
+
+### Phase I/II/III Prediction (Bash command line)
 
 Phase-level prediction predicts the approval probability of a single phase study. 
 
 ```bash
-python src/learn_phaseI.py
+python HINT/learn_phaseI.py
 ```
 
 
 ```bash
-python src/learn_phaseII.py
+python HINT/learn_phaseII.py
 ```
 
 
 ```bash
-python src/learn_phaseIII.py
+python HINT/learn_phaseIII.py
 ```
 
 
-
-### Indication level Prediction
+### Indication level Prediction (Bash command line)
 
 Indication-level prediction predicts if the drug can pass all three phases for the final market approval.
 
 ```bash
-python src/learn_indication.py 
+python HINT/learn_indication.py 
 ```
 
 
@@ -368,15 +378,6 @@ The empirical results are given for reference. The mean and standard deviation o
 | Phase II | 0.685 (0.011) | 0.754 (0.010) | 0.698 (0.008)  |    
 | Phase III | 0.709 (0.009) | 0.757 (0.008) | 0.784 (0.009) |    
 | Indication | 0.702 (0.008) | 0.776 (0.009) | 0.786 (0.008)  |   
-
-
-
-
-### Jupyter Notebook Tutorial 
-
-Please see `learn_phaseI.ipynb` for details. 
-
-
 
 
 
