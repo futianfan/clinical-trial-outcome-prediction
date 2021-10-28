@@ -25,7 +25,7 @@ The following figure illustrates the pipeline of HINT.
     - Selection of clinical trial
     - Data split 
     - Generated Dataset and Statistics  
-- Learn and Inference 
+- HINT: Learn and Inference 
   - Phase I/II/III prediction
   - Indication prediction 
 - Contact 
@@ -60,10 +60,11 @@ pip install scipy
 conda activate predict_drug_clinical_trial
 ```
 
+## Benchmark
 
-## Raw Data 
+### Raw Data 
 
-### ClinicalTrial.gov
+#### ClinicalTrial.gov
 - description
   - We download all the clinical trials records from [ClinicalTrial.gov](https://clinicaltrials.gov/AllPublicXML.zip). 
 It contains 348,891 clinical trial records. The data size grows with time because more clinical trial records are added. 
@@ -87,7 +88,7 @@ unzip AllPublicXML.zip
 cd ../
 ```
 
-### DrugBank
+#### DrugBank
 
 - description
   - We use [DrugBank](https://go.drugbank.com/) to get the molecule structures ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system), simplified molecular-input line-entry system) of the drug. 
@@ -98,11 +99,11 @@ cd ../
 - output
   - `data/drugbank_drugs_info.csv `  
 
-### ClinicalTable
+#### ClinicalTable
 
 [ClinicalTable](https://clinicaltables.nlm.nih.gov/) is a public API to convert disease name (natural language) into ICD-10 code. 
 
-### MoleculeNet
+#### MoleculeNet
 - description
   - [MoleculeNet](https://moleculenet.org/) include five datasets across the main categories of drug pharmaco-kinetics (PK). For absorption, we use the bioavailability dataset. For distribution, we use the blood-brain-barrier experimental results provided. For metabolism, we use the CYP2C19 experiment paper, which is hosted in the PubChem biassay portal under AID 1851. For excretion, we use the clearance dataset from the eDrug3D database. For toxicity, we use the ToxCast dataset, provided by MoleculeNet. We consider drugs that are not toxic across all toxicology assays as not toxic and otherwise toxic. 
 
@@ -112,9 +113,9 @@ cd ../
 - output 
   - `data/ADMET`
 
-## Data Preprocessing 
+### Data Preprocessing 
 
-### Collect all the records
+#### Collect all the records
 - description
   - download all the records from clinicaltrial.gov. The current version has 348,891 trial IDs. 
 
@@ -129,7 +130,7 @@ find raw_data/ -name NCT*.xml | sort > data/all_xml
 ```
 
 
-### Disease to ICD-10 code
+#### Disease to ICD-10 code
 
 - description
 
@@ -151,7 +152,7 @@ python src/collect_disease_from_raw.py
 ```
 
 
-### drug to SMILES 
+#### drug to SMILES 
 
 - description
   - [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) is simplified molecular-input line-entry system of the molecule. 
@@ -174,7 +175,7 @@ python src/drug2smiles.py
 
 
 
-### Selection of clinical trial
+#### Selection of clinical trial
 
 We design the following inclusion/exclusion criteria to select eligible clinical trials for learning. 
 
@@ -231,7 +232,7 @@ python src/collect_raw_data.py | tee data_process.log
 
 
 
-### Data Split 
+#### Data Split 
 - description (Split criteria)
   - phase I: phase I trials, augmented with phase IV trials as positive samples. 
   - phase II: phase II trials, augmented with phase IV trials as positive samples.  
@@ -252,7 +253,7 @@ python src/data_split.py
 ```
 
 
-### ICD-10 code hierarchy 
+#### ICD-10 code hierarchy 
 
 - description 
   - get all the ancestor code for the current icd-10 code. 
@@ -268,7 +269,7 @@ python src/data_split.py
 python src/icdcode_encode.py 
 ```
 
-### sentence embedding 
+#### sentence embedding 
 
 - description 
   - BERT embedding to get sentence embedding for sentence in clinical protocol. 
@@ -285,7 +286,7 @@ python src/protocol_encode.py
 ```
 
 
-### Data Statistics 
+#### Data Statistics 
 
 | Settings  | Train Pass | Train Failure | Test Pass | Test Failure |  Split date |  
 |-----------------|-------------|-------------|------------|-------------|------------|
