@@ -2,10 +2,9 @@
 
 
 After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder `HINT`. 
-Please see `HINT/README.md` for details. 
 
 
-<p align="center"><img src="./figure/hint.png" alt="logo" width="810px" /></p>
+<p align="center"><img src="./hint.png" alt="logo" width="810px" /></p>
 
 
 ### Tutorial (Jupyter Notebook) 
