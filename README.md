@@ -15,23 +15,8 @@ The following figure illustrates the pipeline of HINT.
 ## Table Of Contents 
 
 - Installation
-- Benchmark
-  - Raw Data 
-    - clinicaltrial.gov
-    - DrugBank
-    - MoleculeNet 
-  - Data Curation Process
-    - Collect all the records
-    - diseases to icd10 
-    - drug to molecules  
-    - ICD-10 code hierarchy
-    - Sentence Embedding for trial protocol 
-    - Selection criteria of clinical trial
-    - Data split 
-    - Statistics of Dataset  
+- Benchmark 
 - HINT: Learn and Inference 
-  - Phase I/II/III prediction
-  - Indication prediction 
 - Tutorial (Jupyter Notebook)
 - Contact 
 
