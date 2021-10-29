@@ -82,8 +82,8 @@ def load_sentence_2_vec():
 def protocol2feature(protocol, sentence_2_vec):
 	result = split_protocol(protocol)
 	inclusion_criteria, exclusion_criteria = result[0], result[-1]
-	inclusion_feature = [sentence_2_vec[sentence].view(1,-1) for sentence in inclusion_criteria]
-	exclusion_feature = [sentence_2_vec[sentence].view(1,-1) for sentence in exclusion_criteria]
+	inclusion_feature = [sentence_2_vec[sentence].view(1,-1) for sentence in inclusion_criteria if sentence in sentence_2_vec]
+	exclusion_feature = [sentence_2_vec[sentence].view(1,-1) for sentence in exclusion_criteria if sentence in sentence_2_vec]
 	if inclusion_feature == []:
 		inclusion_feature = torch.zeros(1,768)
 	else:
