@@ -2,8 +2,8 @@
 
 This repository hosts HINT, a deep learning based method for clinical trial approval prediction. 
 The repository can be mainly divided into two parts:
-- `benchmark` describes the process of curating benchmark dataset named **Trial Approval Prediction (TAP)** for clinical trial approval prediction. 
-- `HINT` is the Hierarchical Interaction Network, a deep learning based method. 
+- [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark) describes the process of curating benchmark dataset named **Trial Approval Prediction (TAP)** for clinical trial approval prediction. 
+- [`HINT`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/HINT) is the Hierarchical Interaction Network, a deep learning based method. 
 
 
 The following figure illustrates the pipeline of HINT. 
@@ -24,7 +24,7 @@ The following figure illustrates the pipeline of HINT.
 
 ## Installation
 
-We build conda environment and uses `conda` or `pip` to install the required packages. See `conda.yml` for all the packages. 
+We build conda environment and uses `conda` or `pip` to install the required packages. See [`conda.yml`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/conda.yml) for all the packages. 
 
 ```bash
 conda create -n predict_drug_clinical_trial python==3.7 
