@@ -86,13 +86,10 @@ Please contact futianfan@gmail.com for help or submit an issue. This is a joint 
   - `molecule_encode.py`
     - message passing network (MPN)
   - `protocol_encode.py`
-    - protocol embeddor
-  - `gnn_layers.py` contains standard implementation of existing GNN's building block (**single layer gnn**).
-    - Graph Convolutional Network 
-    - Graph Attention Network
+    - protocol embeddor 
   - `module.py` contains standard implementation of existing neural module, e.g., highway, GCN
     - Highway Network 
-    - GCN 
+    - Graph Convolutional Network (GCN) 
 
 
 

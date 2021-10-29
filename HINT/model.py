@@ -84,15 +84,15 @@ class Interaction(nn.Sequential):
 		figure_folder = "figure"
 		#### ROC-curve 
 		fpr, tpr, thresholds = roc_curve(label_all, predict_all, pos_label=1)
-		roc_curve =plt.figure()
-		plt.plot(fpr,tpr,'-',label=self.save_name + ' ROC Curve ')
-		plt.legend(fontsize = 15)
+		# roc_curve =plt.figure()
+		# plt.plot(fpr,tpr,'-',label=self.save_name + ' ROC Curve ')
+		# plt.legend(fontsize = 15)
 		#plt.savefig(os.path.join(figure_folder,name+"_roc_curve.png"))
 		#### PR-curve
 		precision, recall, thresholds = precision_recall_curve(label_all, predict_all)
-		plt.plot(recall,precision, label = self.save_name + ' PR Curve')
-		plt.legend(fontsize = 15)
-		plt.savefig(os.path.join(figure_folder,self.save_name + "_pr_curve.png"))
+		# plt.plot(recall,precision, label = self.save_name + ' PR Curve')
+		# plt.legend(fontsize = 15)
+		# plt.savefig(os.path.join(figure_folder,self.save_name + "_pr_curve.png"))
 		label_all = [int(i) for i in label_all]
 		float2binary = lambda x:0 if x<threshold else 1
 		predict_all = list(map(float2binary, predict_all))
@@ -139,6 +139,10 @@ class Interaction(nn.Sequential):
 		self.eval()
 		best_threshold = 0.5 
 		whole_loss, predict_all, label_all = self.generate_predict(dataloader)
+		from HINT.utils import plot_hist
+		plt.clf()
+		prefix_name = "./figure/" + self.save_name 
+		plot_hist(prefix_name, predict_all, label_all)		
 		def bootstrap(length, sample_num):
 			idx = [i for i in range(length)]
 			from random import choices 
@@ -155,9 +159,9 @@ class Interaction(nn.Sequential):
 		auc = [results[0] for results in results_lst]
 		f1score = [results[1] for results in results_lst]
 		prauc_score = [results[2] for results in results_lst]
-		print("prauc --- mean: "+str(np.mean(prauc_score))[:6], "std: "+str(np.std(prauc_score))[:6])
-		print("f1score --- mean: "+str(np.mean(f1score))[:6], "std: "+str(np.std(f1score))[:6])
-		print("rocauc --- mean: "+ str(np.mean(auc))[:6], "std: " + str(np.std(auc))[:6])
+		print("PR-AUC   mean: "+str(np.mean(prauc_score))[:6], "std: "+str(np.std(prauc_score))[:6])
+		print("F1       mean: "+str(np.mean(f1score))[:6], "std: "+str(np.std(f1score))[:6])
+		print("ROC-AUC  mean: "+ str(np.mean(auc))[:6], "std: " + str(np.std(auc))[:6])
 
 
 	def test(self, dataloader, return_loss = True, validloader=None):
@@ -166,10 +170,10 @@ class Interaction(nn.Sequential):
 		self.eval()
 		best_threshold = 0.5 
 		whole_loss, predict_all, label_all = self.generate_predict(dataloader)
-		from HINT.utils import plot_hist
-		plt.clf()
-		prefix_name = "./figure/" + self.save_name 
-		plot_hist(prefix_name, predict_all, label_all)
+		# from HINT.utils import plot_hist
+		# plt.clf()
+		# prefix_name = "./figure/" + self.save_name 
+		# plot_hist(prefix_name, predict_all, label_all)
 		self.train()
 		if return_loss:
 			return whole_loss
@@ -634,15 +638,15 @@ class FFNN(nn.Sequential):
 		figure_folder = "figure"
 		#### ROC-curve 
 		fpr, tpr, thresholds = roc_curve(label_all, predict_all, pos_label=1)
-		roc_curve =plt.figure()
-		plt.plot(fpr,tpr,'-',label=self.save_name + ' ROC Curve ')
-		plt.legend(fontsize = 15)
+		# roc_curve =plt.figure()
+		# plt.plot(fpr,tpr,'-',label=self.save_name + ' ROC Curve ')
+		# plt.legend(fontsize = 15)
 		#plt.savefig(os.path.join(figure_folder,name+"_roc_curve.png"))
 		#### PR-curve
 		precision, recall, thresholds = precision_recall_curve(label_all, predict_all)
-		plt.plot(recall,precision, label = self.save_name + ' PR Curve')
-		plt.legend(fontsize = 15)
-		plt.savefig(os.path.join(figure_folder,self.save_name + "_pr_curve.png"))
+		# plt.plot(recall,precision, label = self.save_name + ' PR Curve')
+		# plt.legend(fontsize = 15)
+		# plt.savefig(os.path.join(figure_folder,self.save_name + "_pr_curve.png"))
 		label_all = [int(i) for i in label_all]
 		float2binary = lambda x:0 if x<threshold else 1
 		predict_all = list(map(float2binary, predict_all))
@@ -676,6 +680,10 @@ class FFNN(nn.Sequential):
 		self.eval()
 		best_threshold = 0.5 
 		whole_loss, predict_all, label_all = self.generate_predict(dataloader)
+		from HINT.utils import plot_hist
+		plt.clf()
+		prefix_name = "./figure/" + self.save_name 
+		plot_hist(prefix_name, predict_all, label_all)		
 		def bootstrap(length, sample_num):
 			idx = [i for i in range(length)]
 			from random import choices 
@@ -692,9 +700,9 @@ class FFNN(nn.Sequential):
 		auc = [results[0] for results in results_lst]
 		f1score = [results[1] for results in results_lst]
 		prauc_score = [results[2] for results in results_lst]
-		print("prauc --- mean: "+str(np.mean(prauc_score))[:6], "std: "+str(np.std(prauc_score))[:6])
-		print("f1score --- mean: "+str(np.mean(f1score))[:6], "std: "+str(np.std(f1score))[:6])
-		print("rocauc --- mean: "+ str(np.mean(auc))[:6], "std: " + str(np.std(auc))[:6])
+		print("PR-AUC   mean: "+str(np.mean(prauc_score))[:6], "std: "+str(np.std(prauc_score))[:6])
+		print("F1       mean: "+str(np.mean(f1score))[:6], "std: "+str(np.std(f1score))[:6])
+		print("ROC-AUC  mean: "+ str(np.mean(auc))[:6], "std: " + str(np.std(auc))[:6])
 
 
 	def test(self, dataloader, return_loss = True, validloader=None):
@@ -703,10 +711,10 @@ class FFNN(nn.Sequential):
 		self.eval()
 		best_threshold = 0.5 
 		whole_loss, predict_all, label_all = self.generate_predict(dataloader)
-		from HINT.utils import plot_hist
-		plt.clf()
-		prefix_name = "./figure/" + self.save_name 
-		plot_hist(prefix_name, predict_all, label_all)
+		# from HINT.utils import plot_hist
+		# plt.clf()
+		# prefix_name = "./figure/" + self.save_name 
+		# plot_hist(prefix_name, predict_all, label_all)
 		self.train()
 		if return_loss:
 			return whole_loss

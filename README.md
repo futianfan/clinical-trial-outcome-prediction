@@ -23,12 +23,12 @@ The following figure illustrates the pipeline of HINT.
   - Data Curation Process
     - Collect all the records
     - diseases to icd10 
-    - drug to SMILES 
+    - drug to molecules  
     - ICD-10 code hierarchy
     - Sentence Embedding for trial protocol 
-    - Selection of clinical trial
+    - Selection criteria of clinical trial
     - Data split 
-    - Statistics of Dataset 
+    - Statistics of Dataset  
 - HINT: Learn and Inference 
   - Phase I/II/III prediction
   - Indication prediction 

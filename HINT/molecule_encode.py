@@ -35,8 +35,8 @@ import matplotlib.pyplot as plt
 import rdkit
 import rdkit.Chem as Chem 
 from rdkit import RDLogger  
-RDLogger.DisableLog('rdApp.info')                                                                                                                                                       
-
+RDLogger.DisableLog('rdApp.info')
+RDLogger.DisableLog('rdApp.*')  
 # from rdkit.Chem.EnumerateStereoisomers import EnumerateStereoisomers, StereoEnumerationOptions
 import torch 
 torch.manual_seed(0)
@@ -170,7 +170,7 @@ def smiles2mpnnfeature(smiles):
 				if all_bonds[b2][0] != y:
 					bgraph[b1,i] = b2
 	else: 
-		print('Molecules not found and change to zero vectors..')
+		# print('Molecules not found and change to zero vectors..')
 		fatoms = torch.zeros(0,39)
 		fbonds = torch.zeros(0,50)
 		agraph = torch.zeros(0,6)

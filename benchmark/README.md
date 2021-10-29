@@ -13,7 +13,7 @@ Benchmark can be mainly divided into two parts:
   - drug to SMILES 
   - ICD-10 code hierarchy
   - Sentence Embedding for trial protocol 
-  - Selection of clinical trial
+  - Selection criteria of clinical trial
   - Data split 
   - Statistics of Dataset 
 
@@ -133,7 +133,7 @@ python benchmark/drug2smiles.py
 
 
 
-### Selection of clinical trial
+### Selection criteria of clinical trial
 
 We design the following inclusion/exclusion criteria to select eligible clinical trials for learning. 
 
@@ -262,6 +262,7 @@ We use temporal split, where the earlier trials (before split date) are used for
 ## Contact
 
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
+
 
 
 

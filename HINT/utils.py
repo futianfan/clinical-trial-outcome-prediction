@@ -4,6 +4,9 @@
 import numpy as np 
 from rdkit import Chem 
 from rdkit.Chem import AllChem
+from rdkit import RDLogger  
+RDLogger.DisableLog('rdApp.info')
+RDLogger.DisableLog('rdApp.*')
 ###### import ######
 
 
@@ -16,8 +19,11 @@ def plot_hist(prefix_name, prediction, label):
 	negative_prediction = [prediction[i] for i in range(len(label)) if label[i]==0]
 	sns.distplot(positive_prediction, hist=True,  kde=False, bins=50, color = 'blue', label = 'positive')
 	sns.distplot(negative_prediction, hist=True,  kde=False, bins=50, color = 'red', label = 'negative')
+	plt.xlabel("predicted approval probability", fontsize=20)
+	plt.ylabel("frequencies", fontsize = 20)
 	plt.legend()
-	plt.savefig(figure_name)
+	plt.show()
+	# plt.savefig(figure_name)
 	return 
 
 def replace_strange_symbol(text):
