@@ -1,0 +1,524 @@
+<clinical_study>
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on March 05, 2021</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT00000378</url>
+  </required_header>
+  <id_info>
+    <org_study_id>#3105</org_study_id>
+    <secondary_id>R01MH055716</secondary_id>
+    <nct_id>NCT00000378</nct_id>
+  </id_info>
+  <brief_title>Antidepressant Treatment of Melancholia in Late Life</brief_title>
+  <official_title>Antidepressant Treatment of Melancholia in Late :Ife</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>New York State Psychiatric Institute</agency>
+      <agency_class>Other</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>National Institute of Mental Health (NIMH)</agency>
+      <agency_class>NIH</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>New York State Psychiatric Institute</source>
+  <oversight_info>
+    <has_dmc>No</has_dmc>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      The purpose of this study is to compare the safety and effectiveness of a select serotonin&#xD;
+      re-uptake inhibitor (SSRI, sertraline) and a tricyclic antidepressant (TCA, nortriptyline) in&#xD;
+      outpatients over the age of 60 who have major depression.&#xD;
+&#xD;
+      SSRIs are effective in the treatment of major depression. However, there is also evidence&#xD;
+      that SSRIs may be significantly less effective than TCAs for patients with late-life major&#xD;
+      depression with melancholia. Since SSRIs seem to be easier to take than TCAs and are more&#xD;
+      widely prescribed, it is important to determine which of these types of antidepressants works&#xD;
+      best to treat these patients.&#xD;
+&#xD;
+      Patients will be assigned randomly to receive either sertraline (a SSRI) or nortriptyline (a&#xD;
+      TCA) for 12 weeks. Patients will be monitored for symptoms, side effects, and quality of&#xD;
+      life. If a patient responds to treatment, he/she will participate in a 6-month continuation&#xD;
+      phase in which he/she will continue to receive the same medication.&#xD;
+&#xD;
+      An individual may be eligible for this study if he/she:&#xD;
+&#xD;
+      Has unipolar major depression (with some exceptions) and is over 60 years old.&#xD;
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      To compare the efficacy and safety of a select serotonin re-uptake inhibitor (SSRI,&#xD;
+      sertraline) and a tricyclic antidepressant (TCA, nortriptyline) in outpatients over the age&#xD;
+      of 60 who meet Diagnostic and Statistical Manuel-IV criteria for unipolar major depression,&#xD;
+      excluding patients who meet criteria for psychotic or atypical subtype. To test the&#xD;
+      hypothesis that medication condition interacts with diagnostic subtype (melancholic vs&#xD;
+      non-melancholic) in determining antidepressant response. To examine the roles of symptom&#xD;
+      severity and alternative diagnostic subtyping in contributing to this pattern.&#xD;
+&#xD;
+      SSRIs are effective in the treatment of major depression. However, there is also evidence&#xD;
+      that SSRIs may be significantly less effective than TCAs for depressed patients with&#xD;
+      melancholia. This issue is of particular concern in late-life major depression. SSRIs have&#xD;
+      important safety advantages with respect to overdose and a benign cardiovascular profile.&#xD;
+      Furthermore, the SSRIs do not have significant anticholinergic effects, and appear to be&#xD;
+      better tolerated than the TCAs. Perhaps most important, the SSRIs currently are prescribed&#xD;
+      widely as the medication treatment of first choice for major depression in late life.&#xD;
+      Therefore, if it were determined that SSRIs are considerably less effective than TCAs in the&#xD;
+      treatment of melancholia in the elderly, there would be significant ramifications for&#xD;
+      clinical practice.&#xD;
+&#xD;
+      Randomization to sertraline (a SSRI) or nortriptyline (a TCA) is stratified by the presence&#xD;
+      or absence of melancholia. Outcome measures for the 12-week acute phase include clinician and&#xD;
+      patient ratings of symptoms, side effects, and an evaluation of the health-related quality of&#xD;
+      life (HRQOL). At the end of the acute treatment phase, patients who meet criteria for&#xD;
+      clinical response participate in a 6-month continuation phase.&#xD;
+    </textblock>
+  </detailed_description>
+  <overall_status>Completed</overall_status>
+  <start_date>July 1997</start_date>
+  <completion_date type="Actual">June 2002</completion_date>
+  <primary_completion_date type="Actual">June 2002</primary_completion_date>
+  <phase>Phase 4</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>No</has_expanded_access>
+  <study_design_info>
+    <allocation>Randomized</allocation>
+    <intervention_model>Parallel Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>Triple (Participant, Investigator, Outcomes Assessor)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>HAMILTON Rating Scale for DEPRESSION Range</measure>
+    <time_frame>BASELINE COMPARED TO 12 WEEK MEASUREMENT</time_frame>
+    <description>Hamilton scale range 0-40, values below 7 are considered normal. the higher the number the more severe the depression weekly assessments, The primary outcome is a comparison of the baseline Hamilton to the 12 week measurement</description>
+  </primary_outcome>
+  <number_of_arms>2</number_of_arms>
+  <enrollment type="Actual">110</enrollment>
+  <condition>Depression</condition>
+  <condition>Melancholia</condition>
+  <arm_group>
+    <arm_group_label>sertaline</arm_group_label>
+    <arm_group_type>Active Comparator</arm_group_type>
+    <description>patients randomized to sertraline 12 week trial does up to 200mgs</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>nortriptyline</arm_group_label>
+    <arm_group_type>Active Comparator</arm_group_type>
+    <description>patients randomized to nortriptyline dose adjusted to therapeutic level</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Sertraline</intervention_name>
+    <description>12 week trial dose up to 200mgs</description>
+    <arm_group_label>sertaline</arm_group_label>
+  </intervention>
+  <intervention>
+    <intervention_type>Drug</intervention_type>
+    <intervention_name>Nortriptyline</intervention_name>
+    <description>12 week trial dose adjusted to therapeutic level</description>
+    <arm_group_label>nortriptyline</arm_group_label>
+    <other_name>nortiptyline</other_name>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        Inclusion Criteria:&#xD;
+&#xD;
+        -&#xD;
+&#xD;
+        Patients must have:&#xD;
+&#xD;
+        Unipolar major depression (per Diagnostic and Statistical Manuel-IV criteria) with or&#xD;
+        without melancholia.&#xD;
+&#xD;
+        Exclusion Criteria:&#xD;
+&#xD;
+        -&#xD;
+&#xD;
+        Patients with the following symptoms or conditions are excluded:&#xD;
+&#xD;
+        Psychotic or atypical subtype of unipolar major depression.&#xD;
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>60 Years</minimum_age>
+    <maximum_age>95 Years</maximum_age>
+    <healthy_volunteers>No</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Steven P. Roose, MD</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>New York State Psychiatric Institute</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>1051 Riverside Drive</name>
+      <address>
+        <city>New York</city>
+        <state>New York</state>
+        <zip>10032</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <verification_date>September 2008</verification_date>
+  <study_first_submitted>November 2, 1999</study_first_submitted>
+  <study_first_submitted_qc>November 2, 1999</study_first_submitted_qc>
+  <study_first_posted type="Estimate">November 3, 1999</study_first_posted>
+  <results_first_submitted>April 2, 2015</results_first_submitted>
+  <results_first_submitted_qc>April 17, 2015</results_first_submitted_qc>
+  <results_first_posted type="Estimate">April 21, 2015</results_first_posted>
+  <last_update_submitted>October 6, 2015</last_update_submitted>
+  <last_update_submitted_qc>October 6, 2015</last_update_submitted_qc>
+  <last_update_posted type="Estimate">October 7, 2015</last_update_posted>
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Aged</keyword>
+  <keyword>Antidepressive Agents, Tricyclic</keyword>
+  <keyword>Depression</keyword>
+  <keyword>Female</keyword>
+  <keyword>Human</keyword>
+  <keyword>Male</keyword>
+  <keyword>Middle Age</keyword>
+  <keyword>Nortriptyline</keyword>
+  <keyword>Sertraline</keyword>
+  <keyword>Serotonin Uptake Inhibitors</keyword>
+  <keyword>Antidepressive Agents, Tricyclic -- *therapeutic use</keyword>
+  <keyword>Antidepressive Agents, Tricyclic -- adverse effects</keyword>
+  <keyword>Depression -- *drug therapy</keyword>
+  <keyword>Nortriptyline -- *therapeutic use</keyword>
+  <keyword>Nortriptyline -- adverse effects</keyword>
+  <keyword>Sertraline -- *therapeutic use</keyword>
+  <keyword>Sertraline -- adverse effects</keyword>
+  <keyword>Serotonin Uptake Inhibitors -- *therapeutic use</keyword>
+  <keyword>Serotonin Uptake Inhibitors -- adverse effects</keyword>
+  <condition_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Depression</mesh_term>
+    <mesh_term>Depressive Disorder</mesh_term>
+  </condition_browse>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Sertraline</mesh_term>
+    <mesh_term>Nortriptyline</mesh_term>
+  </intervention_browse>
+
+  <clinical_results>
+
+    <participant_flow>
+      <group_list>
+        <group group_id="P1">
+          <title>Sertaline</title>
+          <description>patients randomized to sertraline 12 week trial does up to 200mgs&#xD;
+Sertraline: 12 week trial dose up to 200mgs</description>
+        </group>
+        <group group_id="P2">
+          <title>Nortriptyline</title>
+          <description>patients randomized to nortriptyline dose adjusted to therapeutic level&#xD;
+Nortriptyline: 12 week trial dose adjusted to therapeutic level</description>
+        </group>
+      </group_list>
+      <period_list>
+        <period>
+          <title>Overall Study</title>
+          <milestone_list>
+            <milestone>
+              <title>STARTED</title>
+              <participants_list>
+                <participants group_id="P1" count="58"/>
+                <participants group_id="P2" count="52"/>
+              </participants_list>
+            </milestone>
+            <milestone>
+              <title>COMPLETED</title>
+              <participants_list>
+                <participants group_id="P1" count="42"/>
+                <participants group_id="P2" count="38"/>
+              </participants_list>
+            </milestone>
+            <milestone>
+              <title>NOT COMPLETED</title>
+              <participants_list>
+                <participants group_id="P1" count="16"/>
+                <participants group_id="P2" count="14"/>
+              </participants_list>
+            </milestone>
+          </milestone_list>
+          <drop_withdraw_reason_list>
+            <drop_withdraw_reason>
+              <title>Lack of Efficacy</title>
+              <participants_list>
+                <participants group_id="P1" count="16"/>
+                <participants group_id="P2" count="14"/>
+              </participants_list>
+            </drop_withdraw_reason>
+          </drop_withdraw_reason_list>
+        </period>
+      </period_list>
+    </participant_flow>
+
+    <baseline>
+      <group_list>
+        <group group_id="B1">
+          <title>Sertaline</title>
+          <description>patients randomized to sertraline 12 week trial does up to 200mgs&#xD;
+Sertraline: 12 week trial dose up to 200mgs</description>
+        </group>
+        <group group_id="B2">
+          <title>Nortriptyline</title>
+          <description>patients randomized to nortriptyline dose adjusted to therapeutic level&#xD;
+Nortriptyline: 12 week trial dose adjusted to therapeutic level</description>
+        </group>
+        <group group_id="B3">
+          <title>Total</title>
+          <description>Total of all reporting groups</description>
+        </group>
+      </group_list>
+      <analyzed_list>
+        <analyzed>
+          <units>Participants</units>
+          <scope>Overall</scope>
+          <count_list>
+            <count group_id="B1" value="58"/>
+            <count group_id="B2" value="52"/>
+            <count group_id="B3" value="110"/>
+          </count_list>
+        </analyzed>
+      </analyzed_list>
+      <measure_list>
+        <measure>
+          <title>Age</title>
+          <units>Participants</units>
+          <param>Count of Participants</param>
+          <class_list>
+            <class>
+              <category_list>
+                <category>
+                  <title>&lt;=18 years</title>
+                  <measurement_list>
+                    <measurement group_id="B1" value="0"/>
+                    <measurement group_id="B2" value="0"/>
+                    <measurement group_id="B3" value="0"/>
+                  </measurement_list>
+                </category>
+                <category>
+                  <title>Between 18 and 65 years</title>
+                  <measurement_list>
+                    <measurement group_id="B1" value="8"/>
+                    <measurement group_id="B2" value="4"/>
+                    <measurement group_id="B3" value="12"/>
+                  </measurement_list>
+                </category>
+                <category>
+                  <title>&gt;=65 years</title>
+                  <measurement_list>
+                    <measurement group_id="B1" value="50"/>
+                    <measurement group_id="B2" value="48"/>
+                    <measurement group_id="B3" value="98"/>
+                  </measurement_list>
+                </category>
+              </category_list>
+            </class>
+          </class_list>
+        </measure>
+        <measure>
+          <title>Sex: Female, Male</title>
+          <units>Participants</units>
+          <param>Count of Participants</param>
+          <class_list>
+            <class>
+              <category_list>
+                <category>
+                  <title>Female</title>
+                  <measurement_list>
+                    <measurement group_id="B1" value="34"/>
+                    <measurement group_id="B2" value="30"/>
+                    <measurement group_id="B3" value="64"/>
+                  </measurement_list>
+                </category>
+                <category>
+                  <title>Male</title>
+                  <measurement_list>
+                    <measurement group_id="B1" value="24"/>
+                    <measurement group_id="B2" value="22"/>
+                    <measurement group_id="B3" value="46"/>
+                  </measurement_list>
+                </category>
+              </category_list>
+            </class>
+          </class_list>
+        </measure>
+        <measure>
+          <title>Region of Enrollment</title>
+          <units>participants</units>
+          <param>Number</param>
+          <class_list>
+            <class>
+              <title>United States</title>
+              <category_list>
+                <category>
+                  <measurement_list>
+                    <measurement group_id="B1" value="58"/>
+                    <measurement group_id="B2" value="52"/>
+                    <measurement group_id="B3" value="110"/>
+                  </measurement_list>
+                </category>
+              </category_list>
+            </class>
+          </class_list>
+        </measure>
+      </measure_list>
+    </baseline>
+
+    <outcome_list>
+      <outcome>
+        <type>Primary</type>
+        <title>HAMILTON Rating Scale for DEPRESSION Range</title>
+        <description>Hamilton scale range 0-40, values below 7 are considered normal. the higher the number the more severe the depression weekly assessments, The primary outcome is a comparison of the baseline Hamilton to the 12 week measurement</description>
+        <time_frame>BASELINE COMPARED TO 12 WEEK MEASUREMENT</time_frame>
+        <population>intent to treat analysis</population>
+        <group_list>
+          <group group_id="O1">
+            <title>Sertaline</title>
+            <description>patients randomized to sertraline 12 week trial does up to 200mgs&#xD;
+Sertraline: 12 week trial dose up to 200mgs</description>
+          </group>
+          <group group_id="O2">
+            <title>Nortriptyline</title>
+            <description>patients randomized to nortriptyline dose adjusted to therapeutic level&#xD;
+Nortriptyline: 12 week trial dose adjusted to therapeutic level</description>
+          </group>
+        </group_list>
+        <measure>
+          <title>HAMILTON Rating Scale for DEPRESSION Range</title>
+          <description>Hamilton scale range 0-40, values below 7 are considered normal. the higher the number the more severe the depression weekly assessments, The primary outcome is a comparison of the baseline Hamilton to the 12 week measurement</description>
+          <population>intent to treat analysis</population>
+          <units>units on a scale</units>
+          <param>Mean</param>
+          <dispersion>Standard Deviation</dispersion>
+          <analyzed_list>
+            <analyzed>
+              <units>Participants</units>
+              <scope>Measure</scope>
+              <count_list>
+                <count group_id="O1" value="58"/>
+                <count group_id="O2" value="52"/>
+              </count_list>
+            </analyzed>
+          </analyzed_list>
+          <class_list>
+            <class>
+              <title>BASELINE</title>
+              <category_list>
+                <category>
+                  <measurement_list>
+                    <measurement group_id="O1" value="27.3" spread="6.6"/>
+                    <measurement group_id="O2" value="27.1" spread="4.4"/>
+                  </measurement_list>
+                </category>
+              </category_list>
+            </class>
+            <class>
+              <title>12 WEEK DATA</title>
+              <category_list>
+                <category>
+                  <measurement_list>
+                    <measurement group_id="O1" value="10.7" spread="8.3"/>
+                    <measurement group_id="O2" value="8.4" spread="7.7"/>
+                  </measurement_list>
+                </category>
+              </category_list>
+            </class>
+          </class_list>
+        </measure>
+        <analysis_list>
+          <analysis>
+            <group_id_list>
+              <group_id>O1</group_id>
+              <group_id>O2</group_id>
+            </group_id_list>
+            <groups_desc>logistic regression and mixed effects model</groups_desc>
+            <non_inferiority_type>Superiority or Other</non_inferiority_type>
+            <p_value>&lt;0.05</p_value>
+            <p_value_desc>actual calculation</p_value_desc>
+            <method>Regression, Logistic</method>
+          </analysis>
+        </analysis_list>
+      </outcome>
+    </outcome_list>
+
+    <reported_events>
+      <group_list>
+        <group group_id="E1">
+          <title>Sertaline</title>
+          <description>patients randomized to sertraline 12 week trial does up to 200mgs&#xD;
+Sertraline: 12 week trial dose up to 200mgs</description>
+        </group>
+        <group group_id="E2">
+          <title>Nortriptyline</title>
+          <description>patients randomized to nortriptyline dose adjusted to therapeutic level&#xD;
+Nortriptyline: 12 week trial dose adjusted to therapeutic level</description>
+        </group>
+      </group_list>
+      <serious_events>
+        <category_list>
+          <category>
+            <title>Total</title>
+            <event_list>
+              <event>
+                <sub_title>Total, serious adverse events</sub_title>
+                <counts group_id="E1" subjects_affected="0" subjects_at_risk="58"/>
+                <counts group_id="E2" subjects_affected="0" subjects_at_risk="52"/>
+              </event>
+            </event_list>
+          </category>
+        </category_list>
+      </serious_events>
+      <other_events>
+        <frequency_threshold>5</frequency_threshold>
+        <default_assessment>Systematic Assessment</default_assessment>
+        <category_list>
+          <category>
+            <title>Total</title>
+            <event_list>
+              <event>
+                <sub_title>Total, other adverse events</sub_title>
+                <counts group_id="E1" subjects_affected="2" subjects_at_risk="58"/>
+                <counts group_id="E2" subjects_affected="4" subjects_at_risk="52"/>
+              </event>
+            </event_list>
+          </category>
+          <category>
+            <title>Cardiac disorders</title>
+            <event_list>
+              <event>
+                <sub_title>orthostatic hypotension</sub_title>
+                <counts group_id="E1" subjects_affected="2" subjects_at_risk="58"/>
+                <counts group_id="E2" subjects_affected="4" subjects_at_risk="52"/>
+              </event>
+            </event_list>
+          </category>
+        </category_list>
+      </other_events>
+    </reported_events>
+
+    <certain_agreements>
+      <pi_employee>Principal Investigators are NOT employed by the organization sponsoring the study.</pi_employee>
+      <restrictive_agreement>There is NOT an agreement between Principal Investigators and the Sponsor (or its agents) that restricts the PI's rights to discuss or publish trial results after the trial is completed. </restrictive_agreement>
+    </certain_agreements>
+    <point_of_contact>
+      <name_or_title>Steven Roose MD</name_or_title>
+      <organization>New York State Psychiatric Institute</organization>
+      <phone>646-774-8661</phone>
+      <email>spr2@columbia.edu</email>
+    </point_of_contact>
+  </clinical_results>
+</clinical_study>
+
