@@ -9,7 +9,7 @@ After processing the data, we learn the Hierarchical Interaction Network (HINT) 
 
 ### Tutorial (Jupyter Notebook) 
 
-`learn_phaseI.ipynb` is a tutorial to learn and evaluate HINT step by step. 
+[`tutorial_HINT.ipynb`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/tutorial_HINT.ipynb) is a tutorial to learn and evaluate HINT step by step. 
 
 
 
