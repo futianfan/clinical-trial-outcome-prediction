@@ -69,6 +69,33 @@ The empirical results are given for reference. The mean and standard deviation o
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
 
 
+## Code Architecture
+
+
+- learn and inference on various task
+  - `learn_phaseI.py`: predict whether the trial can pass phase I. 
+  - `learn_phaseII.py`: predict whether the trial can pass phase II.
+  - `learn_phaseIII.py`: predict whether the trial can pass phase III.
+  - `learn_indication.py`: predict whether the trial can pass the indication (phase I-III).
+- model architecture 
+  - `model.py`
+    - three model classes (`Interaction`, `HINT_nograph`, `HINTModel`), build model from simple to complex. 
+  - `icdcode_encode.py` 
+    - preprocess ICD-10 code, building ontology of icd-10 codes.
+    - GRAM to model hierarchy of icd-10 code. 
+  - `molecule_encode.py`
+    - message passing network (MPN)
+  - `protocol_encode.py`
+    - protocol embeddor
+  - `gnn_layers.py` contains standard implementation of existing GNN's building block (**single layer gnn**).
+    - Graph Convolutional Network 
+    - Graph Attention Network
+  - `module.py` contains standard implementation of existing neural module, e.g., highway, GCN
+    - Highway Network 
+    - GCN 
+
+
+
 
 
 
