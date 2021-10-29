@@ -136,5 +136,4 @@ dependencies:
     - werkzeug==1.0.1
     - wrapt==1.12.1
     - zipp==3.1.0
-prefix: /Users/futianfan/anaconda3/envs/predict_drug_clinical_trial
 
