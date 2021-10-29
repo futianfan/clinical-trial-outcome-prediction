@@ -3,10 +3,10 @@
 To standardize the clinical trial approval prediction, we create a benchmark dataset for Trial Approval Prediction named TAP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
 Benchmark can be mainly divided into two parts:
 - `Raw Data` describes all the data sources. 
-  - `ClinicalTrial.gov`: all the clinical trials records. 
-  - `DrugBank`: molecule structures of all the drugs. 
-  - `ClinicalTable`: API for ICD-10 codes. 
-  - `MoleculeNet`: ADMET data. 
+  - [`ClinicalTrial.gov`](https://clinicaltrials.gov): all the clinical trials records. 
+  - [`DrugBank`](https://go.drugbank.com/): molecule structures of all the drugs. 
+  - [`ClinicalTable`](https://clinicaltables.nlm.nih.gov/): API for ICD-10 codes. 
+  - [`MoleculeNet`](https://moleculenet.org/): ADMET data. 
 - `Data Curation Process` describes data curation process.
   - Collect all the records
   - diseases to icd10 
