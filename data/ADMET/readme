@@ -1,0 +1,18 @@
+https://github.com/kexinhuang12345/DrugDataLoader/blob/master/DrugDataLoader/ADMET_utils.py
+
+
+Absorption可以放 Caco-2， HIA，Bioavailability； 
+Distribution可以放BBB_MolNet，PPBR；
+Metabolism 可以放CYP2C19， CYP2D6， CYP3A4； 
+Excretion可以放Half_life_eDrug3D，Clearance_eDrug3D
+
+adme就是 absorption，distribution，metabolism，excretion
+
+
+每个task就一个就行 我刚刚上面发的都是DrugDataLoader的name 你可以直接load 进去
+
+
+
+
+
+
