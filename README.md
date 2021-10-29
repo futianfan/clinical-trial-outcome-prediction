@@ -48,7 +48,6 @@ conda install -c rdkit rdkit
 pip install tqdm scikit-learn 
 pip install torch
 pip install seaborn 
-pip install scipy
 pip install icd10-cm
 ```
 
