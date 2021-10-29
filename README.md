@@ -46,21 +46,21 @@ conda activate predict_drug_clinical_trial
 ## Benchmark
 
 To standardize the clinical trial approval prediction, we create a benchmark dataset for Trial Approval Prediction named TAP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
-All the scripts are in the folder `benchmark`. 
-Please see `benchmark/README.md` for details. 
+All the scripts are in the folder [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark). 
+Please see [`benchmark/README.md`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/benchmark/README.md) for details. 
 
 ---
 
 ## HINT: Learn and Inference 
 
-After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder `HINT`. 
-Please see `HINT/README.md` for details. 
+After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder [`HINT`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/HINT). 
+Please see [`HINT/README.md`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/HINT/README.md) for details. 
 
 ## Tutorial (jupyter notebook)
 
 
-- `benchmark`: `tutorial_benchmark.ipynb` describes some key components of the data curation process. 
-- `HINT`: `tutorial_HINT.ipynb` is a tutorial to learn and evaluate HINT step by step. 
+- `benchmark`: [`tutorial_benchmark.ipynb`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/benchmark/README.md) describes some key components of the data curation process. 
+- `HINT`: [`tutorial_HINT.ipynb`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/HINT/README.md) is a tutorial to learn and evaluate HINT step by step. 
 
 
 ## Contact
