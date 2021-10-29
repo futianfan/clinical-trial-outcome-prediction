@@ -32,7 +32,7 @@ The following figure illustrates the pipeline of HINT.
 - HINT: Learn and Inference 
   - Phase I/II/III prediction
   - Indication prediction 
-  - Tutorial (Jupyter Notebook)
+- Tutorial (Jupyter Notebook)
 - Contact 
 
 --- 
@@ -72,6 +72,11 @@ Please see `benchmark/README.md` for details.
 After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder `HINT`. 
 Please see `HINT/README.md` for details. 
 
+## Tutorial (jupyter notebook)
+
+
+- `benchmark`: `tutorial_benchmark.ipynb` describes some key components of the data curation process. 
+- `HINT`: `learn_phaseI.ipynb` is a tutorial to learn and evaluate HINT step by step. 
 
 
 ## Contact

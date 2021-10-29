@@ -16,7 +16,7 @@ Benchmark can be mainly divided into two parts:
   - Selection criteria of clinical trial
   - Data split 
   - Statistics of Dataset 
-
+- Tutorial 
 
 ## Raw Data 
 
@@ -257,6 +257,9 @@ python benchmark/protocol_encode.py
 We use temporal split, where the earlier trials (before split date) are used for training and validation, the later trials (after split date) are used for testing. 
 
 
+## Tutorial 
+
+We provide a jupyter notebook tutorial in `tutorial_benchmark.ipynb` (in the main folder), which describes some key components of the data curation process. 
 
 
 ## Contact
