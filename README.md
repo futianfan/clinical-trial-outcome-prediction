@@ -76,7 +76,7 @@ Please see `HINT/README.md` for details.
 
 
 - `benchmark`: `tutorial_benchmark.ipynb` describes some key components of the data curation process. 
-- `HINT`: `learn_phaseI.ipynb` is a tutorial to learn and evaluate HINT step by step. 
+- `HINT`: `tutorial_HINT.ipynb` is a tutorial to learn and evaluate HINT step by step. 
 
 
 ## Contact
