@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*- 
-
 '''
 
-input: 	348k data  
+input: 	370K data  
 	1. ClinicalTrialGov/NCTxxxx/xxxxxx.xml & all_xml    
 	1. data/diseases.csv  
 	2. data/drug2smiles.pkl          
@@ -124,14 +122,14 @@ def xml_file_2_tuple(xml_file):
 	nctid = root.find('id_info').find('nct_id').text	### nctid: 'NCT00000102'
 	study_type = root.find('study_type').text 
 	if study_type != 'Interventional':
-		return (None,)  ### invalid 
+		return ("non-Interventional",)  ### invalid 
 
 	interventions = [i for i in root.findall('intervention')]
 	drug_interventions = [i.find('intervention_name').text for i in interventions \
 														if i.find('intervention_type').text=='Drug']
 														# or i.find('intervention_type').text=='Biological']
 	if len(drug_interventions)==0:
-		return (None,)
+		return ("Biological",)
 
 	try:
 		status = root.find('overall_status').text 
@@ -207,6 +205,10 @@ def process_all():
 	fieldname = ['nctid', 'status', 'why_stop', 'label', 'phase', 
 				 'diseases', 'icdcodes', 'drugs', 'smiless', 
 				 'criteria']
+	num_noninterventional, num_biologics = 0, 0, 
+	num_nodrug = 0 
+	num_nolabel = 0 
+	num_nodisease = 0 
 	with open(output_file, 'w') as csvfile:
 		writer = csv.DictWriter(csvfile, fieldnames=fieldname)
 		writer.writeheader()
@@ -214,8 +216,13 @@ def process_all():
 		for file in tqdm(input_file_lst[:]):
 			result = xml_file_2_tuple(file)
 			## 0.1 & 0.2 
-			if len(result)==1:
-				continue 	### only interventions
+			if len(result)==1 and result[0] == 'non-Interventional':
+				num_noninterventional += 1
+				continue 
+			elif len(result)==1 and result[0]== 'Biological':
+				num_biologics += 1
+				continue 
+
 			nctid, status, why_stop, label, phase, conditions, drugs, criteria = result
 			# nctid, status, why_stop, label, phase, conditions, drugs, title, criteria, summary = result
 
@@ -225,6 +232,7 @@ def process_all():
 				label = 0 
 			## 0.5
 			if label == -1:
+				num_nolabel += 1
 				continue 	
 
 			## 1. disease -> icd
@@ -242,13 +250,15 @@ def process_all():
 					# drug_hit += 1
 					smiles_lst.append(smiles)
 				else:
-					print("unfounded drug:  ", drug)
+					print("unfounded drug: ", drug)
 
 
 			if smiles_lst == []:
+				num_nodrug += 1
 				continue
 			icdcode_lst = list(filter(lambda x:x!='None' and x!=None, icdcode_lst))
 			if icdcode_lst == []:
+				num_nodisease += 1
 				continue 
 
 			data_count += 1			
@@ -265,6 +275,11 @@ def process_all():
 	t2 = time()
 	# print("disease hit icdcode", disease_hit, "disease all", disease_all, "\n drug hit smiles", drug_hit, "drug all", drug_all)
 	print(str(int((t2-t1)/60)) + " minutes. " + str(data_count) + " data samples. ")
+	print("number of non-Interventional:", num_noninterventional)
+	print("number of Biological:", num_biologics)
+	print("number of non-label:", num_nolabel)
+	print("number of non-drug", num_nodrug)
+	print("number of non-disease", num_nodisease)
 	return 
 
 

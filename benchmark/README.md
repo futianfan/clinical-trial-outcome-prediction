@@ -75,7 +75,7 @@ cd ../
 
 ### Collect all the records
 - description
-  - download all the records from clinicaltrial.gov. The current version has 348,891 trial IDs. 
+  - download all the records from clinicaltrial.gov. The current version has 370K trial IDs. 
 
 - input
   - `raw_data/`: raw data, store all the xml files for all the trials (identified by NCT ID).   
