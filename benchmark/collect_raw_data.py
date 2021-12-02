@@ -122,7 +122,7 @@ def xml_file_2_tuple(xml_file):
 	nctid = root.find('id_info').find('nct_id').text	### nctid: 'NCT00000102'
 	study_type = root.find('study_type').text 
 	if study_type != 'Interventional':
-		return ("non-Interventional",)  ### invalid 
+		return ("non-Interventional",) 
 
 	interventions = [i for i in root.findall('intervention')]
 	drug_interventions = [i.find('intervention_name').text for i in interventions \

@@ -42,7 +42,8 @@ def file2patientnumber(xml_file):
 	num = int(line.split('"')[3])
 	return num 
 
-if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2patientnumber.pkl")):
+# if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2patientnumber.pkl")):
+if True:
 	year_lst = []
 	nctid2year = dict()
 	nctid2patientnumber = dict() 
@@ -67,21 +68,29 @@ if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2pat
 	data = list(filter(lambda x:x>1998, data))
 	pickle.dump(nctid2year, open("data/nctid2year.pkl", 'wb'))
 	pickle.dump(nctid2patientnumber, open("data/nctid2patientnumber.pkl", 'wb'))
+
+	plt.cla()
 	fig, ax = plt.subplots()
 	num_bins = 23
 	n, bins, patches = ax.hist(data, num_bins, )
 	plt.tick_params(labelsize=15)
-	ax.set_xlabel('Year', fontsize = 20)  
-	ax.set_ylabel('Selected trial number', fontsize = 20)  
+	ax.set_xlabel('Year', fontsize = 25)  
+	ax.set_ylabel('Number of selected trials', fontsize = 24)  
 	plt.tight_layout() 
 	# ax.set_title(r'Histogram of trial number in each year') 
 	# fig.set_facecolor('cyan')  #
 	plt.savefig("histogram.png")
-else:
-	nctid2year = pickle.load(open("data/nctid2year.pkl", 'rb'))
-	nctid2patientnumber = pickle.load(open("data/nctid2patientnumber.pkl", 'rb'))
+	plt.cla()
 
-if not os.path.exists("data/nctid2label.pkl"):
+# else:
+# 	nctid2year = pickle.load(open("data/nctid2year.pkl", 'rb'))
+# 	nctid2patientnumber = pickle.load(open("data/nctid2patientnumber.pkl", 'rb'))
+
+
+
+
+# if not os.path.exists("data/nctid2label.pkl"):
+if True:
 	nctid2label = dict() 
 	nctid2drug = dict() 
 	nctid2disease = dict() 
@@ -121,6 +130,38 @@ drug_lst = list(reduce(lambda x,y:x+y, drug_lst))
 print("total drug", len(set(drug_lst)))
 
 
+##### year vs % of approval 
+from collections import defaultdict 
+year2num = defaultdict(lambda:[0,0])
+for nctid, year in nctid2year.items():
+	label = nctid2label[nctid]
+	year2num[year][0] += label 
+	year2num[year][1] += 1 
+
+year2approvalrate = []
+for year in range(1998,2021):
+	year2approvalrate.append(year2num[year][0] / year2num[year][1] * 100)
+pickle.dump(year2approvalrate, open("data/year2approvalrate.pkl", 'wb'))
+plt.plot(list(range(1998,2021)),year2approvalrate)
+plt.xlabel("Year", fontsize = 24)
+plt.ylabel("Success rate (%)", fontsize=25)
+plt.savefig("year2approvalrate.png")
+
+
+##### year vs # of recruit
+year2recruitnum = defaultdict(lambda:[0,0])
+for nctid, patientnumber in nctid2patientnumber.items():
+	year = nctid2year[nctid]
+	year2recruitnum[year][0] += patientnumber 
+	year2recruitnum[year][1] += 1 
+year2recruitnum_lst = []
+for year in range(1998, 2021): 
+	year2recruitnum_lst.append(year2recruitnum[year][0])
+
+plt.plot(list(range(1998,2021)),year2approvalrate)
+plt.xlabel("Year", fontsize = 24)
+plt.ylabel("# of recruited patients", fontsize=25)
+plt.savefig("year2recruitedpatients.png")
 
 
 data = [year for nctid,year in nctid2year.items()]
