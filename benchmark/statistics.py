@@ -42,6 +42,7 @@ def file2patientnumber(xml_file):
 	num = int(line.split('"')[3])
 	return num 
 
+
 # if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2patientnumber.pkl")):
 if True:
 	year_lst = []
@@ -64,7 +65,9 @@ if True:
 				year_lst.append(start_year)
 				nctid2year[nctid] = start_year 
 
-	data = year_lst 
+
+	pickle.dump(year_lst, open("data/year_histogram.pkl", 'wb'))
+	data = year_lst ##### [2008, 2007, 2000, 2006, 2007, 2008, 2000, 1999, .......]
 	data = list(filter(lambda x:x>1998, data))
 	pickle.dump(nctid2year, open("data/nctid2year.pkl", 'wb'))
 	pickle.dump(nctid2patientnumber, open("data/nctid2patientnumber.pkl", 'wb'))
@@ -145,28 +148,35 @@ pickle.dump(year2approvalrate, open("data/year2approvalrate.pkl", 'wb'))
 plt.plot(list(range(1998,2021)),year2approvalrate)
 plt.xlabel("Year", fontsize = 24)
 plt.ylabel("Success rate (%)", fontsize=25)
+plt.tight_layout() 
 plt.savefig("year2approvalrate.png")
-
+plt.cla() 
 
 ##### year vs # of recruit
 year2recruitnum = defaultdict(lambda:[0,0])
 for nctid, patientnumber in nctid2patientnumber.items():
-	year = nctid2year[nctid]
+	try:
+		year = nctid2year[nctid]
+	except:
+		continue 
 	year2recruitnum[year][0] += patientnumber 
 	year2recruitnum[year][1] += 1 
 year2recruitnum_lst = []
 for year in range(1998, 2021): 
 	year2recruitnum_lst.append(year2recruitnum[year][0])
 
-plt.plot(list(range(1998,2021)),year2approvalrate)
+pickle.dump(year2recruitnum_lst, open("data/year2recruitnum.pkl", 'wb'))
+plt.plot(list(range(1998,2021)),year2recruitnum_lst)
 plt.xlabel("Year", fontsize = 24)
 plt.ylabel("# of recruited patients", fontsize=25)
+plt.tight_layout() 
 plt.savefig("year2recruitedpatients.png")
 
-
+print('-----------------------------------------------')
 data = [year for nctid,year in nctid2year.items()]
 target_year_range = [(2000,2004), (2005,2009), (2010,2014), (2015,2020)]
 for year1, year2 in target_year_range:
+	print('-----------------------------------------------')
 	print(year1, year2)
 	selected_nctids = [nctid for nctid,year in nctid2year.items() if year>=year1 and year<=year2]
 	positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
@@ -185,7 +195,7 @@ for year1, year2 in target_year_range:
 
 print("# trials", len(selected_nctids))
 
-
+print('-----------------------------------------------')
 print('########### neoplasm ############')
 selected_nctids = [nctid for nctid,disease in nctid2disease.items() \
 						if 'neoplasm' in ' '.join(disease).lower() or \
@@ -209,7 +219,7 @@ from ccs_utils import file2_icd2ccs_and_ccs2description, file2_icd2ccsr
 # icd2ccs, ccscode2description = file2_icd2ccs_and_ccs2description() 
 icd2ccsr = file2_icd2ccsr()
 
-
+print('-----------------------------------------------')
 print('########### respiratory ############')
 selected_nctids = []
 for nctid, icdcode_lst in nctid2icd.items():
@@ -237,14 +247,7 @@ print("drug", len(drug_set))
 
 
 
-
-
-
-
-
-
-
-
+print('-----------------------------------------------')
 print('########### digestive ############')
 selected_nctids = []
 for nctid, icdcode_lst in nctid2icd.items():
@@ -272,16 +275,7 @@ print("drug", len(drug_set))
 
 
 
-
-
-
-
-
-
-
-
-
-
+print('-----------------------------------------------')
 print('########### nervous ############')
 selected_nctids = []
 for nctid, icdcode_lst in nctid2icd.items():
@@ -308,12 +302,158 @@ print("drug", len(drug_set))
 
 
 
+print('-----------------------------------------------')
+print('########### phase I ############')
+selected_nctids = []
+if True:
+	with open("data/phase_I_train.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/phase_I_test.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/phase_I_valid.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+
+positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
+print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
+patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
+print("patient number ", np.mean(patientnumber_lst))
+disease_set, drug_set = set(), set()  
+for nctid in selected_nctids:
+	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
+	disease_set = disease_set.union(set(disease_lst))
+	drug_lst = nctid2drug[nctid] if nctid in nctid2drug else []
+	drug_set = drug_set.union(set(drug_lst))
+print("disease ", len(disease_set))
+print("drug", len(drug_set)) 
 
 
 
 
 
 
+
+
+
+print('-----------------------------------------------')
+print('########### phase II ############')
+selected_nctids = []
+if True:
+	with open("data/phase_II_train.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/phase_II_test.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/phase_II_valid.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+
+positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
+print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
+patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
+print("patient number ", np.mean(patientnumber_lst))
+disease_set, drug_set = set(), set()  
+for nctid in selected_nctids:
+	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
+	disease_set = disease_set.union(set(disease_lst))
+	drug_lst = nctid2drug[nctid] if nctid in nctid2drug else []
+	drug_set = drug_set.union(set(drug_lst))
+print("disease ", len(disease_set))
+print("drug", len(drug_set)) 
+
+
+
+
+
+
+print('-----------------------------------------------')
+print('########### phase III ############')
+selected_nctids = []
+if True:
+	with open("data/phase_III_train.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/phase_III_test.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/phase_III_valid.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+
+positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
+print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
+patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
+print("patient number ", np.mean(patientnumber_lst))
+disease_set, drug_set = set(), set()  
+for nctid in selected_nctids:
+	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
+	disease_set = disease_set.union(set(disease_lst))
+	drug_lst = nctid2drug[nctid] if nctid in nctid2drug else []
+	drug_set = drug_set.union(set(drug_lst))
+print("disease ", len(disease_set))
+print("drug", len(drug_set)) 
+
+
+
+
+
+
+
+
+
+print('-----------------------------------------------')
+print('########### indication ############')
+selected_nctids = []
+if True:
+	with open("data/indication_train.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/indication_test.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+	with open("data/indication_valid.csv") as fin:
+		readers = list(csv.reader(fin))[1:]
+		for row in readers:
+			nctid = row[0]
+			selected_nctids.append(nctid)
+
+positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
+print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
+patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
+print("patient number ", np.mean(patientnumber_lst))
+disease_set, drug_set = set(), set()  
+for nctid in selected_nctids:
+	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
+	disease_set = disease_set.union(set(disease_lst))
+	drug_lst = nctid2drug[nctid] if nctid in nctid2drug else []
+	drug_set = drug_set.union(set(drug_lst))
+print("disease ", len(disease_set))
+print("drug", len(drug_set)) 
 
 
 
