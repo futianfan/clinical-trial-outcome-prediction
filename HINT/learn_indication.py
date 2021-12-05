@@ -7,6 +7,8 @@
 
 ## 1. import 
 import torch, os, sys
+if not os.path.exists("figure"):
+	os.makedirs("figure")
 torch.manual_seed(0)
 sys.path.append('.')
 from HINT.dataloader import csv_three_feature_2_dataloader, generate_admet_dataloader_lst, csv_three_feature_2_complete_dataloader

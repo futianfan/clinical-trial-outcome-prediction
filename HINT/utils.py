@@ -19,11 +19,12 @@ def plot_hist(prefix_name, prediction, label):
 	negative_prediction = [prediction[i] for i in range(len(label)) if label[i]==0]
 	sns.distplot(positive_prediction, hist=True,  kde=False, bins=50, color = 'blue', label = 'positive')
 	sns.distplot(negative_prediction, hist=True,  kde=False, bins=50, color = 'red', label = 'negative')
-	plt.xlabel("predicted approval probability", fontsize=20)
-	plt.ylabel("frequencies", fontsize = 20)
-	plt.legend()
-	plt.show()
-	# plt.savefig(figure_name)
+	plt.xlabel("predicted success probability", fontsize=24)
+	plt.ylabel("frequencies", fontsize = 25)
+	plt.legend(fontsize = 21)
+	plt.tight_layout()
+	# plt.show()
+	plt.savefig(figure_name)
 	return 
 
 def replace_strange_symbol(text):

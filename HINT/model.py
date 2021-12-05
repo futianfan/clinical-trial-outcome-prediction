@@ -367,7 +367,7 @@ class HINTModel(HINT_nograph):
 								   epoch = epoch,
 								   lr = lr, 
 								   weight_decay = weight_decay)
-		self.save_name = prefix_name + '_HINT' 
+		self.save_name = prefix_name 
 		self.gnn_hidden_size = gnn_hidden_size 
 		#### GNN 
 		self.adj = self.generate_adj()          

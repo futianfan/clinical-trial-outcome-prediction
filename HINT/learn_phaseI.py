@@ -15,13 +15,15 @@ from HINT.icdcode_encode import GRAM, build_icdcode2ancestor_dict
 from HINT.protocol_encode import Protocol_Embedding
 from HINT.model import Interaction, HINT_nograph, HINTModel
 device = torch.device("cpu")
-
+if not os.path.exists("figure"):
+	os.makedirs("figure")
 
 
 
 
 ## 2. data
 base_name = 'phase_I' 
+# base_name = "toy" 
 datafolder = "data"
 train_file = os.path.join(datafolder, base_name + '_train.csv')
 valid_file = os.path.join(datafolder, base_name + '_valid.csv')

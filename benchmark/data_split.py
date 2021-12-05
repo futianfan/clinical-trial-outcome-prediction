@@ -26,7 +26,7 @@ requires ~10 minutes.
 '''
 
 import csv 
-# from random import shuffle 
+from random import shuffle 
 ## no shuffle 
 from functools import reduce
 
@@ -45,8 +45,8 @@ def filter_phase_I(row):
 	if "phase 1" in row[4]:
 		return True	
 	## enhance 
-	if int(row[3])==1 and row[4]=='phase 4':
-		return True 
+	# if int(row[3])==1 and row[4]=='phase 4':
+	# 	return True 
 
 	return False 
 
@@ -57,8 +57,8 @@ def filter_phase_II(row):
 	if "phase 2" in row[4]:
 		return True
 	## enhance
-	if int(row[3])==1 and 'phase 4' in row[4]:
-		return True
+	# if int(row[3])==1 and 'phase 4' in row[4]:
+	# 	return True
 
 	return False
 
@@ -66,10 +66,10 @@ def filter_phase_III(row):
 	if "phase 3" in row[4]:
 		return True
 	### enhance 
-	if "phase 4" in row[4] and int(row[3])==1:
-		return True
-	if int(row[3])==0 and row[4] =='phase 2':
-		return True 
+	# if "phase 4" in row[4] and int(row[3])==1:
+	# 	return True
+	# if int(row[3])==0 and row[4] =='phase 2':
+	# 	return True 
 	return False 
 
 def filter_trial(row):
@@ -237,14 +237,42 @@ def write_row_to_csvfile(rows, fieldname, output_file):
 	return	
 
 
+nctid2year = dict() 
+with open('data/nctid_date.txt', 'r') as fin:
+	lines = fin.readlines()
+for line in lines:
+	nctid, start_year, completion_year = line.strip('\n').split('\t')
+	start_year = 0 if start_year=='' else int(start_year.split()[-1])
+	completion_year = 0 if completion_year == '' else int(completion_year.split()[-1])
+	nctid2year[nctid] = start_year, completion_year  #### 0, 2018
 
-def split_data(rows, train_valid_test_ratio):
-	n = len(rows)
-	train_num = int(n*train_valid_test_ratio[0])
-	valid_num = int(n*train_valid_test_ratio[1])	
-	train_row = rows[:train_num]
-	valid_row = rows[train_num:train_num + valid_num]
-	test_row = rows[train_num + valid_num:]
+def row2year(row):
+	nctid = row[0]
+	start_year, completion_year = nctid2year[nctid]
+	return start_year, completion_year 
+
+
+def split_data(rows, split_year):
+	learn_row = []
+	test_row = []
+	for row in rows:
+		start_year, completion_year = row2year(row)
+		if 0 < completion_year < split_year:
+			learn_row.append(row)
+		elif 0 < start_year and start_year >= split_year:
+			test_row.append(row)
+	shuffle(learn_row)
+	n = len(learn_row)
+	train_num = int(n*0.9)
+	train_row = learn_row[:train_num]
+	valid_row = learn_row[train_num:]
+
+	# n = len(rows)
+	# train_num = int(n*train_valid_test_ratio[0])
+	# valid_num = int(n*train_valid_test_ratio[1])	
+	# train_row = rows[:train_num]
+	# valid_row = rows[train_num:train_num + valid_num]
+	# test_row = rows[train_num + valid_num:]
 	return train_row, valid_row, test_row
 
 
@@ -257,14 +285,14 @@ def check_pos_and_neg(rows):
 			neg_cnt += 1
 	print("pos: ", pos_cnt, " neg:", neg_cnt)
 
-def select_and_split_data(input_file, filter_func, output_file_name, train_valid_test_ratio = [0.7,0.1,0.2]):
+def select_and_split_data(input_file, filter_func, output_file_name, split_year=2014):
 	rows = csvfile2rows(input_file)
 	rows = list(filter(filter_func, rows))
 	# shuffle(rows)
 	positive_num = len(list(filter(lambda x:int(x[3])==1, rows)))
 	negative_num = len(rows) - positive_num 
 	print("\t\tpos =", str(positive_num), "  neg =", str(negative_num))
-	train_row, valid_row, test_row = split_data(rows, train_valid_test_ratio)
+	train_row, valid_row, test_row = split_data(rows, split_year)
 	fieldname = ['nctid', 'status', 'why_stop', 'label', 'phase', 
 				 'diseases', 'icdcodes', 'drugs', 'smiless', 'criteria']
 
@@ -345,6 +373,9 @@ def smiles_txt_to_lst(text):
 from copy import deepcopy
 
 def clean_data(input_file, clean_file):
+	"""
+		remove placebo 
+	"""
 	rows = csvfile2rows(input_file)
 	newrows = []
 	fieldname = ['nctid','status','why_stop','label','phase','diseases','icdcodes','drugs','smiless','criteria']
@@ -388,19 +419,20 @@ def clean_data(input_file, clean_file):
 
 
 if __name__ == "__main__":
-	input_file = 'ctgov_data/raw_data.csv'
-	clean_file = "ctgov_data/clean_data.csv"
+	input_file = 'data/raw_data.csv'
+	clean_file = "data/clean_data.csv"
 
 	clean_data(input_file, clean_file)
+	#### remove placebo 
 
-	print("\tphase I")
-	select_and_split_data(clean_file, filter_phase_I, 'ctgov_data/phase_I.csv')
-	print("\tphase II")
-	select_and_split_data(clean_file, filter_phase_II, 'ctgov_data/phase_II.csv')
-	print("\tphase III")
-	select_and_split_data(clean_file, filter_phase_III, 'ctgov_data/phase_III.csv')
-	print("\tindication")
-	select_and_split_data(clean_file, filter_trial, 'ctgov_data/trial.csv')
+	print("------------ phase I -------------")
+	select_and_split_data(clean_file, filter_phase_I, 'data/phase_I.csv')
+	print("----------- phase II -------------")
+	select_and_split_data(clean_file, filter_phase_II, 'data/phase_II.csv')
+	print("----------- phase III ----------")
+	select_and_split_data(clean_file, filter_phase_III, 'data/phase_III.csv')
+	print("----------- indication ----------")
+	select_and_split_data(clean_file, filter_trial, 'data/indication.csv')
 
 
 

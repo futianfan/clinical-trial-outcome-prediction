@@ -15,6 +15,8 @@ from HINT.icdcode_encode import GRAM, build_icdcode2ancestor_dict
 from HINT.protocol_encode import Protocol_Embedding
 from HINT.model import HINTModel
 device = torch.device("cpu")
+if not os.path.exists("figure"):
+	os.makedirs("figure")
 
 ## 2. input & hyperparameter
 base_name = 'phase_III'

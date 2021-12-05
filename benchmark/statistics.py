@@ -36,11 +36,13 @@ def xmlfile_2_startyear(xml_file):
 	return start_date
 
 def file2patientnumber(xml_file):
-	os.system('grep "' + pattern_string + '" ' + xml_file + ' | head -1 > tmp')
+	os.system('grep "' + pattern_string + '" ' + xml_file + '  > tmp')
 	with open("tmp", 'r') as fin:
-		line = fin.readline()
-	num = int(line.split('"')[3])
-	return num 
+		lines = fin.readlines()
+	summ = 0
+	for line in lines:
+		summ += int(line.split('"')[3])
+	return summ  
 
 
 # if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2patientnumber.pkl")):
