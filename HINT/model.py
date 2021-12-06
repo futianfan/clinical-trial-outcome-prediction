@@ -240,6 +240,141 @@ class Interaction(nn.Sequential):
 
 
 
+
+
+
+
+class HINTModel_multi(Interaction):
+
+	def __init__(self, molecule_encoder, disease_encoder, protocol_encoder, 
+					device, 
+					global_embed_size, 
+					highway_num_layer,
+					prefix_name, 
+					epoch = 20,
+					lr = 3e-4, 
+					weight_decay = 0, 
+					):
+		super(HINTModel_multi, self).__init__(molecule_encoder = molecule_encoder, 
+								   disease_encoder = disease_encoder, 
+								   protocol_encoder = protocol_encoder, 
+								   device = device, 
+								   prefix_name = prefix_name, 
+								   global_embed_size = global_embed_size, 
+								   highway_num_layer = highway_num_layer,
+								   epoch = epoch,
+								   lr = lr, 
+								   weight_decay = weight_decay)
+		self.pred_nn = nn.Linear(self.global_embed_size, 4)
+		self.loss = nn.CrossEntropyLoss()
+
+	def forward(self, smiles_lst2, icdcode_lst3, criteria_lst):
+		molecule_embed, icd_embed, protocol_embed = self.forward_get_three_encoders(smiles_lst2, icdcode_lst3, criteria_lst)
+		interaction_embedding = self.forward_encoder_2_interaction(molecule_embed, icd_embed, protocol_embed)
+		output = self.pred_nn(interaction_embedding)
+		return output ### 32, 4
+
+
+	def generate_predict(self, dataloader):
+		whole_loss = 0 
+		label_all, predict_all = [], []
+		for nctid_lst, label_vec, smiles_lst2, icdcode_lst3, criteria_lst in dataloader:
+			label_vec = label_vec.to(self.device)
+			output = self.forward(smiles_lst2, icdcode_lst3, criteria_lst) 
+			loss = self.loss(output, label_vec)
+			whole_loss += loss.item()
+			predict_all.extend(torch.argmax(output, 1).tolist())
+			# predict_all.extend([i.item() for i in torch.sigmoid(output)])
+			label_all.extend([i.item() for i in label_vec])
+
+		accuracy = len(list(filter(lambda x:x[0]==x[1], zip(predict_all, label_all)))) / len(label_all)
+		return whole_loss, predict_all, label_all, accuracy
+
+
+
+	def test(self, dataloader, return_loss = True, validloader=None):
+		# if validloader is not None:
+		# 	best_threshold = self.select_threshold_for_binary(validloader)
+		self.eval()
+		whole_loss, predict_all, label_all, accuracy = self.generate_predict(dataloader)
+		self.train()
+		return whole_loss, predict_all, label_all, accuracy
+		# # from HINT.utils import plot_hist
+		# # plt.clf()
+		# # prefix_name = "./figure/" + self.save_name 
+		# # plot_hist(prefix_name, predict_all, label_all)
+		# self.train()
+		# if return_loss:
+		# 	return whole_loss
+		# else:
+		# 	print_num = 5
+		# 	auc_score, f1score, prauc_score, precision, recall, accuracy, \
+		# 	predict_1_ratio, label_1_ratio = self.evaluation(predict_all, label_all, threshold = best_threshold)
+		# 	print("ROC AUC: " + str(auc_score)[:print_num] + "\nF1: " + str(f1score)[:print_num] \
+		# 		 + "\nPR-AUC: " + str(prauc_score)[:print_num] \
+		# 		 + "\nPrecision: " + str(precision)[:print_num] \
+		# 		 + "\nrecall: "+str(recall)[:print_num] + "\naccuracy: "+str(accuracy)[:print_num] \
+		# 		 + "\npredict 1 ratio: " + str(predict_1_ratio)[:print_num] \
+		# 		 + "\nlabel 1 ratio: " + str(label_1_ratio)[:print_num])
+		# 	return auc_score, f1score, prauc_score, precision, recall, accuracy, predict_1_ratio, label_1_ratio 
+
+
+
+
+
+	def learn(self, train_loader, valid_loader, test_loader):
+		opt = torch.optim.Adam(self.parameters(), lr = self.lr, weight_decay = self.weight_decay)
+		train_loss_record = []
+		valid_loss, predict_all, label_all, accuracy = self.test(valid_loader, return_loss=True)
+		print('accuracy', accuracy)
+		# valid_loss_record = [valid_loss]
+		# best_valid_loss = valid_loss
+		best_model = deepcopy(self)
+		for ep in tqdm(range(self.epoch)):
+			self.train() 
+			for nctid_lst, label_vec, smiles_lst2, icdcode_lst3, criteria_lst in train_loader:
+				label_vec = label_vec.to(self.device)
+				output = self.forward(smiles_lst2, icdcode_lst3, criteria_lst)  #### 32, 1 -> 32, ||  label_vec 32,
+				# print(label_vec.shape, output.shape, label_vec, output)
+				loss = self.loss(output, label_vec)
+				train_loss_record.append(loss.item())
+				opt.zero_grad() 
+				loss.backward() 
+				opt.step()
+			valid_loss, predict_all, label_all, accuracy = self.test(valid_loader, return_loss=True)
+			print('accuracy', accuracy)
+		# 	valid_loss_record.append(valid_loss)
+		# 	if valid_loss < best_valid_loss:
+		# 		best_valid_loss = valid_loss 
+		# 		best_model = deepcopy(self)
+
+		# self.plot_learning_curve(train_loss_record, valid_loss_record)
+		# self = deepcopy(best_model)
+		# auc_score, f1score, prauc_score, precision, recall, accuracy, predict_1_ratio, label_1_ratio = self.test(test_loader, return_loss = False, validloader = valid_loader)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class HINT_nograph(Interaction):
 	def __init__(self, molecule_encoder, disease_encoder, protocol_encoder, device, 
 					global_embed_size, 
@@ -478,6 +613,13 @@ nn.ModuleList([ nn.ModuleList([nn.Linear(3,2) for j in range(5)] + [None]) for i
 		self.molecule_encoder = admet_model.molecule_encoder
 
 	### generate attention matrix 
+
+
+
+
+
+
+
 
 
 class Only_Molecule(Interaction):

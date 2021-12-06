@@ -105,9 +105,12 @@ find raw_data/ -name NCT*.xml | sort > data/all_xml
 - output
   -	`data/diseases.csv ` 
 
+It takes around 2 hours. 
+
 ```bash 
 python benchmark/collect_disease_from_raw.py
 ```
+
 
 
 ### drug to SMILES 
@@ -182,7 +185,16 @@ python benchmark/collect_raw_data.py | tee data_process.log
 ```
 
 
+```bash
+python benchmark/nctid2date.py 
+```
 
+- input
+  - 'data/raw_data.csv'
+  - './raw_data'
+
+- output 
+  - 'data/nctid_date.txt'
 
 
 <p align="center"><img src="./dataset.png" alt="logo" width="650px" /></p>

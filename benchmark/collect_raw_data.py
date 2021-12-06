@@ -34,7 +34,7 @@ from tqdm import tqdm
 from utils import get_path_of_all_xml_file, walkData
 
 drop_set = ['Active, not recruiting', 'Enrolling by invitation', 'No longer available',  
-			'Not yet recruiting', 'Recruiting', 'Temporarily not available', 'Unknown status']
+			'Not yet recruiting', 'Recruiting', 'Temporarily not available', 'Unknown status'] 
 
 '''
 14 overall_status 
@@ -68,21 +68,14 @@ def load_disease2icd():
 
 def nctid2label_dict():
 	nctid2outcome = dict() 
-	outcome2label = dict() 
 	nctid2label = dict() 
 	with open("trialtrove/outcome2label.txt", 'r') as fin: 
 		lines = fin.readlines() 
-		for line in lines:
-			outcome = line.split('\t')[0]
-			label = int(line.strip().split('\t')[1])
-			outcome2label[outcome] = label 
+		outcome2label = {line.split('\t')[0]:int(line.strip().split('\t')[1]) for line in lines}
 
 	with open("trialtrove/trial_outcomes_v1.csv", 'r') as csvfile: 
 		csvreader = list(csv.reader(csvfile))[1:]
-		for row in csvreader:
-			nctid = row[0]
-			outcome = row[1]
-			nctid2outcome[nctid] = outcome 
+		nctid2outcome = {row[0]:row[1] for row in csvreader}
 
 	for nctid,outcome in nctid2outcome.items():
 		nctid2label[nctid] = outcome2label[outcome]
@@ -143,14 +136,20 @@ def xml_file_2_tuple(xml_file):
 		why_stop = ''
 
 
-	# label = root2outcome(root)
+
+	##### p-value
+	# label = root2outcome(root)  ######## p-value
 	# label = -1 if label is None else label 
+
+	##### trialtrove 
 	if nctid not in nctid2label:
 		label = -1 
 	else:
 		label = nctid2label[nctid] 
 
-
+	# if nctid == "NCT00924001":
+	# 	print(nctid, label)
+	# 	exit()
 
 	try:
 		phase = root.find('phase').text 
@@ -194,8 +193,6 @@ def process_all():
 	# iqvia_disease2diseaseset = disease_dict_reorganize(iqvia_disease2icd)
 	# disease2icd = public_disease2icd 
 	# disease2diseaseset = disease_dict_reorganize(public_disease2icd)
-
-
 
 	t1 = time()
 	disease_hit, disease_all, drug_hit, drug_all = 0,0,0,0 ### disease hit icd && drug hit smiles
