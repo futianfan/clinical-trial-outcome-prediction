@@ -343,6 +343,7 @@ class HINTModel_multi(Interaction):
 				opt.step()
 			valid_loss, predict_all, label_all, accuracy = self.test(valid_loader, return_loss=True)
 			print('accuracy', accuracy)
+		return predict_all, label_all
 		# 	valid_loss_record.append(valid_loss)
 		# 	if valid_loss < best_valid_loss:
 		# 		best_valid_loss = valid_loss 

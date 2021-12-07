@@ -22,7 +22,9 @@ if not os.path.exists("figure"):
 
 
 ## 2. data
-base_name = 'phase_I' 
+base_name = 'phase_II' 
+base_name = "indication"
+# base_name = 'phase_III'
 # base_name = "toy" 
 datafolder = "auxiliary_data"
 train_file = os.path.join(datafolder, base_name + '_train.csv')
@@ -86,7 +88,7 @@ if not os.path.exists(hint_model_path):
 			 weight_decay = 0, 
 			)
 	# model.init_pretrain(admet_model)
-	model.learn(train_loader, valid_loader, test_loader)
+	pred_all, label_all = model.learn(train_loader, valid_loader, test_loader)
 	# model.bootstrap_test(test_loader)
 	# torch.save(model, hint_model_path)
 else:
@@ -95,6 +97,19 @@ else:
 
 
 
+
+import matplotlib.pyplot as plt
+import numpy as np 
+from sklearn.datasets import make_classification
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+lst = np.array([0,1,2,3])
+cm = confusion_matrix(label_all, pred_all, labels=lst)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=lst)
+disp.plot()
+plt.xlabel("predicted label", fontsize = 21)
+plt.ylabel("True label", fontsize = 20)
+plt.tight_layout()
+plt.savefig("figure/"+base_name + "_cm.png")
 
 
 
