@@ -115,20 +115,7 @@ def row2icdcodelst(row):
 	icdcode_lst = [i.replace('.', '') for i in icdcode_lst]
 	return icdcode_lst 
 
-# def filter_cancer(row):
-# 	icdcode_text = row[6]
-# 	icdcode_lst2 = icdcode_text_2_lst_of_lst(icdcode_text)
-# 	icdcode_lst = reduce(lambda x,y:x+y, icdcode_lst2)
-# 	icdcode_lst = [i.replace('.', '') for i in icdcode_lst]
-# 	for icdcode in icdcode_lst:
-# 		try:
-# 			ccs = icd2ccs[icdcode]
-# 			description = ccscode2description[ccs].lower() 	
-# 			if 'cancer' in description or 'neoplasm' in description:
-# 				return True 
-# 		except:
-# 			pass 
-# 	return False 
+
 
 
 # def filter_heart(row):
@@ -189,6 +176,36 @@ def filter_nervous(row):
 			pass 
 	return False 
 
+def filter_cancer(row):
+	icdcode_lst = row2icdcodelst(row)
+	for icdcode in icdcode_lst:
+		try:
+			ccsr = icd2ccsr[icdcode]
+			if ccsr == 'NEO':
+				return True 
+		except:
+			pass 
+	return False 
+
+
+
+# def filter_cancer(row):
+# 	icdcode_text = row[6]
+# 	if 'cancer' in icdcode_text.lower() or 'neoplasm' in icdcode_text.lower() \
+# 		or 'oncology' in icdcode_text.lower() or 'tumor' in icdcode_text.lower():
+# 		return True 
+# 	icdcode_lst2 = icdcode_text_2_lst_of_lst(icdcode_text)
+# 	icdcode_lst = reduce(lambda x,y:x+y, icdcode_lst2)
+# 	icdcode_lst = [i.replace('.', '') for i in icdcode_lst]
+# 	for icdcode in icdcode_lst:
+# 		try:
+# 			ccs = icd2ccs[icdcode]
+# 			description = ccscode2description[ccs].lower() 	
+# 			if 'cancer' in description or 'neoplasm' in description or 'oncology' in description or 'tumor' in description:
+# 				return True 
+# 		except:
+# 			pass 
+# 	return False 
 
 def filter_infect(row):
 	icdcode_lst = row2icdcodelst(row)
@@ -357,6 +374,10 @@ def select_and_split_data(input_file, filter_func, output_file_name, split_year=
 
 	subset_test_row = list(filter(filter_digest, test_row))
 	output_file = output_file_name.replace('.csv', '_digest_test.csv')
+	write_row_to_csvfile(subset_test_row, fieldname, output_file)
+
+	subset_test_row = list(filter(filter_cancer, test_row))
+	output_file = output_file_name.replace('.csv', '_cancer_test.csv')
 	write_row_to_csvfile(subset_test_row, fieldname, output_file)
 
 	return

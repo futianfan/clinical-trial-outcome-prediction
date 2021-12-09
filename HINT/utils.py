@@ -17,8 +17,8 @@ def plot_hist(prefix_name, prediction, label):
 	figure_name = prefix_name + "_histogram.png"
 	positive_prediction = [prediction[i] for i in range(len(label)) if label[i]==1]
 	negative_prediction = [prediction[i] for i in range(len(label)) if label[i]==0]
-	sns.distplot(positive_prediction, hist=True,  kde=False, bins=50, color = 'blue', label = 'positive')
-	sns.distplot(negative_prediction, hist=True,  kde=False, bins=50, color = 'red', label = 'negative')
+	sns.distplot(positive_prediction, hist=True,  kde=False, bins=50, color = 'blue', label = 'success')
+	sns.distplot(negative_prediction, hist=True,  kde=False, bins=50, color = 'red', label = 'fail')
 	plt.xlabel("predicted success probability", fontsize=24)
 	plt.ylabel("frequencies", fontsize = 25)
 	plt.legend(fontsize = 21)

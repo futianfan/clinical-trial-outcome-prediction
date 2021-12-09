@@ -94,6 +94,11 @@ else:
 	model.bootstrap_test(test_loader)
 
 
+"""
+PR-AUC   mean: 0.5645 
+F1       mean: 0.6619 
+ROC-AUC  mean: 0.5760 
+"""
 
 
 

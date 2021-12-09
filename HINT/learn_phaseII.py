@@ -87,7 +87,11 @@ else:
 
 
 
-
+"""
+PR-AUC   mean: 0.6285 
+F1       mean: 0.6197 
+ROC-AUC  mean: 0.6456 
+"""
 
 
 
