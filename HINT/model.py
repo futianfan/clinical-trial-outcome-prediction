@@ -122,8 +122,9 @@ class Interaction(nn.Sequential):
 
 	def generate_predict(self, dataloader):
 		whole_loss = 0 
-		label_all, predict_all = [], []
+		label_all, predict_all, nctid_all = [], [], []
 		for nctid_lst, label_vec, smiles_lst2, icdcode_lst3, criteria_lst in dataloader:
+			nctid_all.extend(nctid_lst)
 			label_vec = label_vec.to(self.device)
 			output = self.forward(smiles_lst2, icdcode_lst3, criteria_lst).view(-1)  
 			loss = self.loss(output, label_vec.float())
@@ -131,14 +132,14 @@ class Interaction(nn.Sequential):
 			predict_all.extend([i.item() for i in torch.sigmoid(output)])
 			label_all.extend([i.item() for i in label_vec])
 
-		return whole_loss, predict_all, label_all
+		return whole_loss, predict_all, label_all, nctid_all
 
 	def bootstrap_test(self, dataloader, sample_num = 20):
 		# if validloader is not None:
 		# 	best_threshold = self.select_threshold_for_binary(validloader)
 		self.eval()
 		best_threshold = 0.5 
-		whole_loss, predict_all, label_all = self.generate_predict(dataloader)
+		whole_loss, predict_all, label_all, nctid_all = self.generate_predict(dataloader)
 		from HINT.utils import plot_hist
 		plt.clf()
 		prefix_name = "./figure/" + self.save_name 
@@ -163,13 +164,15 @@ class Interaction(nn.Sequential):
 		print("F1       mean: "+str(np.mean(f1score))[:6], "std: "+str(np.std(f1score))[:6])
 		print("ROC-AUC  mean: "+ str(np.mean(auc))[:6], "std: " + str(np.std(auc))[:6])
 
+		for nctid, label, predict in zip(nctid_all, label_all, predict_all):
+			print(nctid, label, str(predict)[:5])
 
 	def test(self, dataloader, return_loss = True, validloader=None):
 		# if validloader is not None:
 		# 	best_threshold = self.select_threshold_for_binary(validloader)
 		self.eval()
 		best_threshold = 0.5 
-		whole_loss, predict_all, label_all = self.generate_predict(dataloader)
+		whole_loss, predict_all, label_all, nctid_all = self.generate_predict(dataloader)
 		# from HINT.utils import plot_hist
 		# plt.clf()
 		# prefix_name = "./figure/" + self.save_name 
@@ -225,7 +228,7 @@ class Interaction(nn.Sequential):
 		plt.clf() 
 
 	def select_threshold_for_binary(self, validloader):
-		_, prediction, label_all = self.generate_predict(validloader)
+		_, prediction, label_all, nctid_all = self.generate_predict(validloader)
 		best_f1 = 0
 		for threshold in prediction:
 			float2binary = lambda x:0 if x<threshold else 1

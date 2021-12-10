@@ -69,8 +69,8 @@ if True:
 
 	pickle.dump(year_lst, open("data/year_histogram.pkl", 'wb'))
 	data = year_lst ##### [2008, 2007, 2000, 2006, 2007, 2008, 2000, 1999, .......]
-	data = list(filter(lambda x:x>1998, data))
-	pickle.dump(nctid2year, open("data/nctid2year.pkl", 'wb'))
+	data = list(filter(lambda x:x>1998 and x<2020, data))
+	pickle.dump(nctid2year, open("data/nctid2year_all.pkl", 'wb'))
 	pickle.dump(nctid2patientnumber, open("data/all_nctid2patientnumber.pkl", 'wb'))
 
 	plt.cla()
@@ -83,7 +83,7 @@ if True:
 	plt.tight_layout() 
 	# ax.set_title(r'Histogram of trial number in each year') 
 	# fig.set_facecolor('cyan')  #
-	plt.savefig("all_histogram.png")
+	plt.savefig("figure/all_histogram.png")
 	plt.cla()
 
 
