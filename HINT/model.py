@@ -10,7 +10,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 from HINT.module import Highway, GCN 
 from functools import reduce 
-
+import pickle
 
 
 
@@ -165,7 +165,14 @@ class Interaction(nn.Sequential):
 		print("ROC-AUC  mean: "+ str(np.mean(auc))[:6], "std: " + str(np.std(auc))[:6])
 
 		for nctid, label, predict in zip(nctid_all, label_all, predict_all):
-			print(nctid, label, str(predict)[:5])
+			if (predict > 0.5 and label == 0) or (predict < 0.5 and label == 1):
+				print(nctid, label, str(predict)[:5])
+
+		nctid2predict = {nctid:predict for nctid, predict in zip(nctid_all, predict_all)} 
+		pickle.dump(nctid2predict, open('results/nctid2predict.pkl', 'wb'))
+
+
+
 
 	def test(self, dataloader, return_loss = True, validloader=None):
 		# if validloader is not None:

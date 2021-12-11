@@ -46,45 +46,45 @@ def file2patientnumber(xml_file):
 
 
 #### data/all_xml
-if True:
-	year_lst = []
-	nctid2year = dict()
-	nctid2patientnumber = dict() 
-	with open("data/all_xml") as fin:
-		lines = fin.readlines() 
-		for line in tqdm(lines):
-			file = line.strip()
-			nctid = line.strip().split('/')[-1].split('.')[0]
-			start_year = xmlfile_2_startyear(file)
-			try:
-				patientnumber = file2patientnumber(file)
-				nctid2patientnumber[nctid] = patientnumber
-				print(patientnumber)
-			except:
-				pass 
-			if start_year != -1:
-				year_lst.append(start_year)
-				nctid2year[nctid] = start_year 
+# if True:
+# 	year_lst = []
+# 	nctid2year = dict()
+# 	nctid2patientnumber = dict() 
+# 	with open("data/all_xml") as fin:
+# 		lines = fin.readlines() 
+# 		for line in tqdm(lines):
+# 			file = line.strip()
+# 			nctid = line.strip().split('/')[-1].split('.')[0]
+# 			start_year = xmlfile_2_startyear(file)
+# 			try:
+# 				patientnumber = file2patientnumber(file)
+# 				nctid2patientnumber[nctid] = patientnumber
+# 				print(patientnumber)
+# 			except:
+# 				pass 
+# 			if start_year != -1:
+# 				year_lst.append(start_year)
+# 				nctid2year[nctid] = start_year 
 
 
-	pickle.dump(year_lst, open("data/year_histogram.pkl", 'wb'))
-	data = year_lst ##### [2008, 2007, 2000, 2006, 2007, 2008, 2000, 1999, .......]
-	data = list(filter(lambda x:x>1998 and x<2020, data))
-	pickle.dump(nctid2year, open("data/nctid2year_all.pkl", 'wb'))
-	pickle.dump(nctid2patientnumber, open("data/all_nctid2patientnumber.pkl", 'wb'))
+# 	pickle.dump(year_lst, open("data/year_histogram.pkl", 'wb'))
+# 	data = year_lst ##### [2008, 2007, 2000, 2006, 2007, 2008, 2000, 1999, .......]
+# 	data = list(filter(lambda x:x>1998 and x<2020, data))
+# 	pickle.dump(nctid2year, open("data/nctid2year_all.pkl", 'wb'))
+# 	pickle.dump(nctid2patientnumber, open("data/all_nctid2patientnumber.pkl", 'wb'))
 
-	plt.cla()
-	fig, ax = plt.subplots()
-	num_bins = 23
-	n, bins, patches = ax.hist(data, num_bins, )
-	plt.tick_params(labelsize=15)
-	ax.set_xlabel('Year', fontsize = 25)  
-	ax.set_ylabel('Number of selected trials', fontsize = 24)  
-	plt.tight_layout() 
-	# ax.set_title(r'Histogram of trial number in each year') 
-	# fig.set_facecolor('cyan')  #
-	plt.savefig("figure/all_histogram.png")
-	plt.cla()
+# 	plt.cla()
+# 	fig, ax = plt.subplots()
+# 	num_bins = 23
+# 	n, bins, patches = ax.hist(data, num_bins, )
+# 	plt.tick_params(labelsize=15)
+# 	ax.set_xlabel('Year', fontsize = 25)  
+# 	ax.set_ylabel('Number of selected trials', fontsize = 24)  
+# 	plt.tight_layout() 
+# 	# ax.set_title(r'Histogram of trial number in each year') 
+# 	# fig.set_facecolor('cyan')  #
+# 	plt.savefig("figure/all_histogram.png")
+# 	plt.cla()
 
 
 # if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2patientnumber.pkl")):
@@ -226,7 +226,7 @@ for year1, year2 in target_year_range:
 	positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 	print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 	patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-	print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+	print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 	disease_set, drug_set = set(), set() 
 	for nctid in selected_nctids:
 		disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -248,7 +248,7 @@ selected_nctids = [nctid for nctid,disease in nctid2disease.items() \
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -278,7 +278,7 @@ for nctid, icdcode_lst in nctid2icd.items():
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -287,7 +287,6 @@ for nctid in selected_nctids:
 	drug_set = drug_set.union(set(drug_lst))
 print("disease ", len(disease_set))
 print("drug", len(drug_set)) 
-
 
 
 
@@ -306,7 +305,7 @@ for nctid, icdcode_lst in nctid2icd.items():
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -334,7 +333,7 @@ for nctid, icdcode_lst in nctid2icd.items():
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -369,7 +368,7 @@ if True:
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -410,7 +409,7 @@ if True:
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -448,7 +447,7 @@ if True:
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
@@ -489,7 +488,7 @@ if True:
 positive_sample = len(list(filter(lambda x:x in nctid2label and nctid2label[x]==1, selected_nctids)))
 print("total samples:", len(selected_nctids), "positive sample:", positive_sample, "negative sample", len(selected_nctids)-positive_sample)
 patientnumber_lst = [nctid2patientnumber[nctid] for nctid in selected_nctids if nctid in nctid2patientnumber]
-print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst))
+print("patient number ", np.mean(patientnumber_lst), np.std(patientnumber_lst), np.percentile(patientnumber_lst,[25,50,75]))
 disease_set, drug_set = set(), set()  
 for nctid in selected_nctids:
 	disease_lst = nctid2disease[nctid] if nctid in nctid2disease else []
