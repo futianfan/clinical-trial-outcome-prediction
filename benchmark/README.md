@@ -15,7 +15,6 @@ Benchmark can be mainly divided into two parts:
   - Sentence Embedding for trial protocol 
   - Selection criteria of clinical trial
   - Data split 
-  - Statistics of Dataset 
 - Tutorial 
 
 ## Raw Data 
@@ -204,10 +203,9 @@ python benchmark/nctid2date.py
 
 ### Data Split 
 - description (Split criteria)
-  - phase I: phase I trials, augmented with phase IV trials as positive samples. 
-  - phase II: phase II trials, augmented with phase IV trials as positive samples.  
-  - phase III: phase III trials, augmented with failed phase I and II trials as negative samples and successed phase IV trials as positive samples. 
-  - indication: trials that fail in phase I or II or III are negative samples. Trials that pass phase III or enter phase IV are positive samples.  
+  - phase I: phase I trials
+  - phase II: phase II trials
+  - phase III: phase III trials
 - input
   - `data/raw_data.csv` 
 
@@ -215,7 +213,6 @@ python benchmark/nctid2date.py
   - `data/phase_I_{train/valid/test}.csv` 
   - `data/phase_II_{train/valid/test}.csv` 
   - `data/phase_III_{train/valid/test}.csv` 
-  - `data/indication_{train/valid/test}.csv` 
 
 
 ```bash
