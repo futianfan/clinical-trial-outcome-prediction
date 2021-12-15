@@ -1,6 +1,6 @@
 ###### import ######
 
-
+import pickle
 import numpy as np 
 from rdkit import Chem 
 from rdkit.Chem import AllChem
@@ -17,6 +17,8 @@ def plot_hist(prefix_name, prediction, label):
 	figure_name = prefix_name + "_histogram.png"
 	positive_prediction = [prediction[i] for i in range(len(label)) if label[i]==1]
 	negative_prediction = [prediction[i] for i in range(len(label)) if label[i]==0]
+	save_file_name = "results/" + prefix_name.split('/')[-1] + "_positive_negative.pkl"
+	pickle.dump((positive_prediction, negative_prediction), open(save_file_name, 'wb'))
 	sns.distplot(positive_prediction, hist=True,  kde=False, bins=20, color = 'blue', label = 'success')  #### bins = 50 -> 20 
 	sns.distplot(negative_prediction, hist=True,  kde=False, bins=20, color = 'red', label = 'fail')
 	plt.xlabel("predicted success probability", fontsize=24)

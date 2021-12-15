@@ -256,18 +256,6 @@ python benchmark/protocol_encode.py
 ```
 
 
-### Statistics of Dataset
-
-| Settings  | Train Pass | Train Failure | Test Pass | Test Failure |  Split date |  
-|-----------------|-------------|-------------|------------|-------------|------------|
-| Phase I  | 1,920 | 702 | 534 | 217  |  Aug 13, 2014 | 
-| Phase II  | 3,540 | 2,856 | 1,151 | 678 |  March 20, 2014 | 
-| Phase III  | 3,445 | 3,891 | 1,184 | 913 | April 7, 2014 | 
-| Indication | 3,561 | 3,257 | 1,083 | 865 | May 21, 2014 | 
-
-
-We use temporal split, where the earlier trials (before split date) are used for training and validation, the later trials (after split date) are used for testing. 
-
 
 ## Tutorial 
 
