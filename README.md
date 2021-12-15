@@ -1,8 +1,8 @@
-# HINT: Hierarchical Interaction Network for Predicting Clinical Trial Approval Probability
+# HINT: Hierarchical Interaction Network for Clinical Trial Outcome Prediction
 
-This repository hosts HINT, a deep learning based method for clinical trial approval prediction. 
+This repository hosts HINT, a deep learning based method for clinical trial outcome prediction. 
 The repository can be mainly divided into two parts:
-- [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark) describes the process of curating benchmark dataset named **Trial Approval Prediction (TAP)** for clinical trial approval prediction. 
+- [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark) describes the process of curating benchmark dataset named **Trial Outcome Prediction (TOP)** for clinical trial outcome prediction. 
 - [`HINT`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/HINT) is the Hierarchical Interaction Network, a deep learning based method. 
 
 
@@ -45,7 +45,7 @@ conda activate predict_drug_clinical_trial
 
 ## Benchmark
 
-To standardize the clinical trial approval prediction, we create a benchmark dataset for Trial Approval Prediction named TAP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
+To standardize the clinical trial outcome prediction, we create a benchmark dataset for Trial Outcome Prediction named TOP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
 All the scripts are in the folder [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark). 
 Please see [`benchmark/README.md`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/benchmark/README.md) for details. 
 
