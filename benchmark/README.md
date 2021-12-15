@@ -143,20 +143,22 @@ We design the following inclusion/exclusion criteria to select eligible clinical
 
 - inclusion criteria 
   - study-type is interventional 
-  - intervention-type is drug
+  - intervention-type is small molecules drug
+  - it has outcome label
   <!-- - p-value in primary-outcome is available -->
   - disease codes are available 
   - drug molecules are available 
-  - eligibility criteria are available
+  <!-- - eligibility criteria are available -->
 
 
 - exclusion criteria 
   - study-type is observational 
   - intervention-type is surgery, biological, device
+  - outcome label is not available 
   <!-- - p-value in primary-outcome is not available -->
   - disease codes are not available 
   - drug molecules are not available 
-  - eligibility criteria are not available
+  <!-- - eligibility criteria are not available -->
 
 The csv file contains following features:
 
@@ -198,7 +200,7 @@ python benchmark/nctid2date.py
   - 'data/nctid_date.txt'
 
 
-<p align="center"><img src="./dataset.png" alt="logo" width="650px" /></p>
+<!-- <p align="center"><img src="./dataset.png" alt="logo" width="650px" /></p> -->
 
 
 
