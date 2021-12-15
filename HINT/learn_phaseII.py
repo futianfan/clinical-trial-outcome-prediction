@@ -30,25 +30,7 @@ mpnn_model = MPNN(mpnn_hidden_size = 50, mpnn_depth=3, device = device)
 
 
 
-# ## 3. pretrain 
-admet_model_path = "save_model/admet_model.ckpt"
-if not os.path.exists(admet_model_path):
-	admet_dataloader_lst = generate_admet_dataloader_lst(batch_size=32)
-	admet_trainloader_lst = [i[0] for i in admet_dataloader_lst]
-	admet_testloader_lst = [i[1] for i in admet_dataloader_lst]
-	admet_model = ADMET(molecule_encoder = mpnn_model, 
-						highway_num=2, 
-						device = device, 
-						epoch=3, 
-						lr=5e-4, 
-						weight_decay=0, 
-						save_name = 'admet_')
-	admet_model.train(admet_trainloader_lst, admet_testloader_lst)
-	torch.save(admet_model, admet_model_path)
-else:
-	admet_model = torch.load(admet_model_path)
-	admet_model = admet_model.to(device)
-	admet_model.set_device(device)
+
 
 
 ## 4. dataloader, model build, train, inference
@@ -65,6 +47,30 @@ protocol_model = Protocol_Embedding(output_dim = 50, highway_num=3, device = dev
 
 hint_model_path = "save_model/" + base_name + ".ckpt"
 if not os.path.exists(hint_model_path):
+
+
+	# ## 3. pretrain 
+	admet_model_path = "save_model/admet_model.ckpt"
+	if not os.path.exists(admet_model_path):
+		admet_dataloader_lst = generate_admet_dataloader_lst(batch_size=32)
+		admet_trainloader_lst = [i[0] for i in admet_dataloader_lst]
+		admet_testloader_lst = [i[1] for i in admet_dataloader_lst]
+		admet_model = ADMET(molecule_encoder = mpnn_model, 
+							highway_num=2, 
+							device = device, 
+							epoch=3, 
+							lr=5e-4, 
+							weight_decay=0, 
+							save_name = 'admet_')
+		admet_model.train(admet_trainloader_lst, admet_testloader_lst)
+		torch.save(admet_model, admet_model_path)
+	else:
+		admet_model = torch.load(admet_model_path)
+		admet_model = admet_model.to(device)
+		admet_model.set_device(device)
+
+
+
 	model = HINTModel(molecule_encoder = mpnn_model, 
 			 disease_encoder = gram_model, 
 			 protocol_encoder = protocol_model,
