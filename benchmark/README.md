@@ -1,6 +1,6 @@
 # Benchmark
 
-To standardize the clinical trial approval prediction, we create a benchmark dataset for Trial Approval Prediction named TAP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
+To standardize the clinical trial outcome prediction, we create a benchmark dataset for Trial Outcome Prediction named TOP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
 Benchmark can be mainly divided into two parts:
 - `Raw Data` describes all the data sources. 
   - [`ClinicalTrial.gov`](https://clinicaltrials.gov): all the clinical trials records. 
@@ -27,7 +27,9 @@ It describes many important information about clinical trials, including NCT ID 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
-  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial approval label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov. When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `benchmark/pseudolabel.py`. 
+  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial outcome label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov. 
+
+<!-- When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `benchmark/pseudolabel.py`.  -->
 
 
 ```bash 
@@ -142,7 +144,7 @@ We design the following inclusion/exclusion criteria to select eligible clinical
 - inclusion criteria 
   - study-type is interventional 
   - intervention-type is drug
-  - p-value in primary-outcome is available
+  <!-- - p-value in primary-outcome is available -->
   - disease codes are available 
   - drug molecules are available 
   - eligibility criteria are available
@@ -151,7 +153,7 @@ We design the following inclusion/exclusion criteria to select eligible clinical
 - exclusion criteria 
   - study-type is observational 
   - intervention-type is surgery, biological, device
-  - p-value in primary-outcome is not available
+  <!-- - p-value in primary-outcome is not available -->
   - disease codes are not available 
   - drug molecules are not available 
   - eligibility criteria are not available
@@ -161,7 +163,7 @@ The csv file contains following features:
 * `nctid`: NCT ID, e.g., NCT00000378, NCT04439305. 
 * `status`: `completed`, `terminated`, `active, not recruiting`, `withdrawn`, `unknown status`, `suspended`, `recruiting`. 
 * `why_stop`: for completed, it is empty. Otherwise, the common reasons contain `slow/low/poor accrual`, `lack of efficacy`
-* `label`: 0 (failure) or 1 (approved).  
+* `label`: 0 (failure) or 1 (success).  
 * `phase`: I, II, III or IV. 
 * `diseases`: list of diseases. 
 * `icdcodes`: list of icd-10 codes.
