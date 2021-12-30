@@ -27,7 +27,7 @@ It describes many important information about clinical trials, including NCT ID 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
-  - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial outcome label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov. 
+  <!-- - **TrialTrove**: `./trialtrove/trial_outcomes_v1.csv`. We do not release the real trial outcome label due to privacy issue. When the real label is not available, we use another method to get rough label via leveraging the statistical test in clinicaltrials.gov.  -->
 
 <!-- When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `benchmark/pseudolabel.py`.  -->
 
@@ -164,7 +164,7 @@ The csv file contains following features:
 
 * `nctid`: NCT ID, e.g., NCT00000378, NCT04439305. 
 * `status`: `completed`, `terminated`, `active, not recruiting`, `withdrawn`, `unknown status`, `suspended`, `recruiting`. 
-* `why_stop`: for completed, it is empty. Otherwise, the common reasons contain `slow/low/poor accrual`, `lack of efficacy`
+<!-- * `why_stop`: for completed, it is empty. Otherwise, the common reasons contain `slow/low/poor accrual`, `lack of efficacy` -->
 * `label`: 0 (failure) or 1 (success).  
 * `phase`: I, II, III or IV. 
 * `diseases`: list of diseases. 
@@ -177,7 +177,7 @@ The csv file contains following features:
   - `data/diseases.csv ` 
   - `data/drug2smiles.pkl`  
   - `data/all_xml ` 
-  - `trialtrove/*`       
+  <!-- - `trialtrove/*`        -->
 
 - output 
   - `data/raw_data.csv`
