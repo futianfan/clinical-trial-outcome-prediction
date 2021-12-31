@@ -69,11 +69,11 @@ def load_disease2icd():
 def nctid2label_dict():
 	nctid2outcome = dict() 
 	nctid2label = dict() 
-	with open("trialtrove/outcome2label.txt", 'r') as fin: 
+	with open("IQVIA/outcome2label.txt", 'r') as fin: 
 		lines = fin.readlines() 
 		outcome2label = {line.split('\t')[0]:int(line.strip().split('\t')[1]) for line in lines}
 
-	with open("trialtrove/trial_outcomes_v1.csv", 'r') as csvfile: 
+	with open("IQVIA/trial_outcomes_v1.csv", 'r') as csvfile: 
 		csvreader = list(csv.reader(csvfile))[1:]
 		nctid2outcome = {row[0]:row[1] for row in csvreader}
 
@@ -141,7 +141,7 @@ def xml_file_2_tuple(xml_file):
 	# label = root2outcome(root)  ######## p-value
 	# label = -1 if label is None else label 
 
-	##### trialtrove 
+	##### IQVIA internal data  
 	if nctid not in nctid2label:
 		label = -1 
 	else:
