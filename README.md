@@ -1,9 +1,10 @@
 # HINT: Hierarchical Interaction Network for Clinical Trial Outcome Prediction
 
 This repository hosts HINT, a deep learning based method for clinical trial outcome prediction. 
-The repository can be mainly divided into two parts:
+The repository can be mainly divided into three parts:
 - [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark) describes the process of curating benchmark dataset named **Trial Outcome Prediction (TOP)** for clinical trial outcome prediction. 
 - [`HINT`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/HINT) is the Hierarchical Interaction Network, a deep learning based method. 
+- [`data`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/data) stores processed data. 
 
 
 The following figure illustrates the pipeline of HINT. 
