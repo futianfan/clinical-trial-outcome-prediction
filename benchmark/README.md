@@ -24,10 +24,10 @@ Benchmark can be mainly divided into two parts:
   - We download all the clinical trials records from [ClinicalTrial.gov](https://clinicaltrials.gov/AllPublicXML.zip). 
 It contains 348,891 clinical trial records. The data size grows with time because more clinical trial records are added. 
 It describes many important information about clinical trials, including NCT ID (i.e.,  identifiers to each clinical study), disease names, drugs, brief title and summary, phase, criteria, and statistical analysis results. 
+  - **Outcome labels** are provided by **IQVIA**. 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
-  - Outcome labels are provided by IQVIA. 
 
 <!-- When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `benchmark/pseudolabel.py`.  -->
 
@@ -179,7 +179,7 @@ The csv file contains following features:
   - `data/all_xml ` 
 
 - output 
-  - `data/raw_data.csv`
+  - `data/raw_data.csv` 
 
 
 ```bash
