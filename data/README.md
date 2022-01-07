@@ -1,5 +1,6 @@
 # data 
 
+The processed data are based on ClinicalTrials.gov database on Feb 20, 2021.
 
 ## data file 
 
@@ -35,6 +36,9 @@ All the data files are in format of csv with the same header. We show the meanin
 - `drugs`: list of drug names. 
 - `smiless`: list of SMILES of the drugs. 
 - `criteria`: eligibility criteria. 
+
+
+
 
 ## Benchmark Usage Agreement
 
