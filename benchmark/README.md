@@ -27,6 +27,7 @@ It describes many important information about clinical trials, including NCT ID 
 
 - output
   - `./raw_data`: store all the xml files for all the trials (identified by NCT ID).  
+  - Outcome labels are provided by IQVIA. 
 
 <!-- When the `p-value` is smaller than 0.05, we take it as positive sample. Please see `benchmark/pseudolabel.py`.  -->
 
@@ -261,6 +262,9 @@ python benchmark/protocol_encode.py
 We provide a jupyter notebook tutorial in `tutorial_benchmark.ipynb` (in the main folder), which describes some key components of the data curation process. 
 
 
+
+
+
 ## Contact
 
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
@@ -268,7 +272,9 @@ Please contact futianfan@gmail.com for help or submit an issue. This is a joint 
 
 
 
+## Benchmark Usage Agreement
 
+The benchmark dataset and code (including data collection and preprocessing, model construction, learning process, evaluation), referred as the Works, are publicly available for Non-Commercial Use only at https://github.com/futianfan/clinical-trial-outcome-prediction. Non-Commercial Use is defined as for academic research or other non-profit educational use which is: (1) not-for-profit; (2) not conducted or funded (unless such funding confers no commercial rights to the funding entity) by an entity engaged in the commercial use, application or exploitation of works similar to the Works; and (3) not intended to produce works for commercial use.
 
 
 
