@@ -170,7 +170,15 @@ class Interaction(nn.Sequential):
 
 		nctid2predict = {nctid:predict for nctid, predict in zip(nctid_all, predict_all)} 
 		pickle.dump(nctid2predict, open('results/nctid2predict.pkl', 'wb'))
+		return nctid_all, predict_all 
 
+	def ongoing_test(self, dataloader, sample_num = 20):
+		self.eval()
+		best_threshold = 0.5 
+		whole_loss, predict_all, label_all, nctid_all = self.generate_predict(dataloader) 
+		self.train() 
+		return nctid_all, predict_all 
+		
 
 
 

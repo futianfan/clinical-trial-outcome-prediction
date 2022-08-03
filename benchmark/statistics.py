@@ -8,6 +8,22 @@ from functools import reduce
 from xml.etree import ElementTree as ET
 raw_folder = "raw_data"
 
+
+import seaborn as sns
+from matplotlib import font_manager
+
+font_dirs = ["./"]
+font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
+
+for font_file in font_files:
+    font_manager.fontManager.addfont(font_file)
+    
+sns.set(rc={'figure.figsize':(6,6)})
+sns.set_theme(style="ticks", rc={"axes.facecolor": (0, 0, 0, 0)}, font = "Helvetica", font_scale=1.5)
+
+
+
+
 pattern_string = "participants group_id"
 
 def icdcode_text_2_lst_of_lst(text):
@@ -87,6 +103,26 @@ def file2patientnumber(xml_file):
 # 	plt.cla()
 
 
+
+import seaborn as sns
+from matplotlib import font_manager
+
+font_dirs = ["./"]
+font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
+
+for font_file in font_files:
+    font_manager.fontManager.addfont(font_file)
+
+fig, axes = plt.subplots(1,3, figsize=(25,6))
+
+sns.set(rc={'figure.figsize':(6,6)})
+sns.set_theme(style="ticks", rc={"axes.facecolor": (0, 0, 0, 0)}, font = "Helvetica", font_scale=1.5)
+
+
+
+
+ax = axes[0]
+
 # if not (os.path.exists("data/nctid2year.pkl") and os.path.exists("data/nctid2patientnumber.pkl")):
 if True:
 	year_lst = []
@@ -102,7 +138,7 @@ if True:
 			try:
 				patientnumber = file2patientnumber(file)
 				nctid2patientnumber[nctid] = patientnumber
-				print(patientnumber)
+				# print(patientnumber)
 			except:
 				pass 
 			if start_year != -1:
@@ -116,18 +152,21 @@ if True:
 	pickle.dump(nctid2year, open("data/nctid2year.pkl", 'wb'))
 	pickle.dump(nctid2patientnumber, open("data/nctid2patientnumber.pkl", 'wb'))
 
-	plt.cla()
-	fig, ax = plt.subplots()
+	# plt.cla()
+	# fig, ax = plt.subplots()
+	ax = axes[0]
 	num_bins = 23
 	n, bins, patches = ax.hist(data, num_bins, )
 	plt.tick_params(labelsize=15)
 	ax.set_xlabel('Year', fontsize = 25)  
 	ax.set_ylabel('Number of selected trials', fontsize = 24)  
-	plt.tight_layout() 
+	ax.set_title('A', fontsize = 25)
+
+	# plt.tight_layout() 
 	# ax.set_title(r'Histogram of trial number in each year') 
 	# fig.set_facecolor('cyan')  #
-	plt.savefig("histogram.png")
-	plt.cla()
+	# plt.savefig("histogram.png")
+	# plt.cla()
 
 # else:
 # 	nctid2year = pickle.load(open("data/nctid2year.pkl", 'rb'))
@@ -135,7 +174,7 @@ if True:
 
 
 
-
+ax = axes[1]
 # if not os.path.exists("data/nctid2label.pkl"):
 if True:
 	nctid2label = dict() 
@@ -150,11 +189,11 @@ if True:
 			nctid2label[nctid] = label
 			drug = row[7].strip('"[],')
 			drug_lst = drug.strip("'").split("', '")
-			print("drug", drug_lst)
+			# print("drug", drug_lst)
 			nctid2drug[nctid] = drug_lst
 			disease = row[5].strip('"[],')
 			disease_lst = disease.strip("'").split("', '")
-			print("disease", disease_lst)
+			# print("disease", disease_lst)
 			nctid2disease[nctid] = disease_lst 	
 			icdcode_lst = row2icdcodelst(row)
 			nctid2icd[nctid] = icdcode_lst 
@@ -189,14 +228,22 @@ year2approvalrate = []
 for year in range(1998,2021):
 	year2approvalrate.append(year2num[year][0] / year2num[year][1] * 100)
 pickle.dump(year2approvalrate, open("data/year2approvalrate.pkl", 'wb'))
-plt.plot(list(range(1998,2021)),year2approvalrate)
-plt.xlabel("Year", fontsize = 24)
-plt.ylabel("Success rate (%)", fontsize=25)
-plt.tight_layout() 
-plt.savefig("year2approvalrate.png")
-plt.cla() 
+ax.plot(list(range(1998,2021)),year2approvalrate)
+ax.set_xlabel("Year", fontsize = 24)
+ax.set_ylabel("Success rate (%)", fontsize=25)
+ax.set_title('B', fontsize = 25)
+# plt.tight_layout() 
+# plt.savefig("year2approvalrate.png")
+# plt.cla() 
+
+
+
+
+
+
 
 ##### year vs # of recruit
+ax = axes[2]
 year2recruitnum = defaultdict(lambda:[0,0])
 for nctid, patientnumber in nctid2patientnumber.items():
 	try:
@@ -210,11 +257,38 @@ for year in range(1998, 2021):
 	year2recruitnum_lst.append(year2recruitnum[year][0])
 
 pickle.dump(year2recruitnum_lst, open("data/year2recruitnum.pkl", 'wb'))
-plt.plot(list(range(1998,2021)),year2recruitnum_lst)
-plt.xlabel("Year", fontsize = 24)
-plt.ylabel("# of recruited patients", fontsize=25)
-plt.tight_layout() 
-plt.savefig("year2recruitedpatients.png")
+ax.plot(list(range(1998,2021)),year2recruitnum_lst)
+ax.set_xlabel("Year", fontsize = 24)
+ax.set_ylabel("# of recruited patients", fontsize=25)
+ax.set_title('C', fontsize = 25)
+
+
+# plt.tight_layout() 
+# plt.savefig("year2recruitedpatients.png")
+plt.savefig('figure/1.pdf', bbox_inches='tight')
+# plt.savefig("time_distribution.pdf")
+exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 print('-----------------------------------------------')
 data = [year for nctid,year in nctid2year.items()]

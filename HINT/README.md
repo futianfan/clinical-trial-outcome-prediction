@@ -15,7 +15,7 @@ After processing the data, we learn the Hierarchical Interaction Network (HINT) 
 
 ### Phase I/II/III Prediction (Bash command line)
 
-Phase-level prediction predicts the approval probability of a single phase study. 
+Phase-level prediction predicts the success probability of a single phase study. 
 
 ```bash
 python HINT/learn_phaseI.py
@@ -32,14 +32,6 @@ python HINT/learn_phaseIII.py
 ```
 
 
-### Indication level Prediction (Bash command line)
-
-Indication-level prediction predicts if the drug can pass all three phases for the final market approval.
-
-```bash
-python HINT/learn_indication.py 
-```
-
 
 
 
@@ -51,7 +43,7 @@ python HINT/learn_indication.py
 - **ROC-AUC** (Area Under the Receiver Operating Characteristic Curve). ROC curve summarize the trade-off between the true positive rate and false positive rate for a predictive model using different probability thresholds. 
 
 
-### Result 
+<!-- ### Result 
 
 The empirical results are given for reference. The mean and standard deviation of 5 independent runs are reported. 
 
@@ -59,8 +51,7 @@ The empirical results are given for reference. The mean and standard deviation o
 |-----------------|-------------|-------------|------------|
 | Phase I | 0.745 (0.009) | 0.820 (0.007) |  0.726 (0.009) |    
 | Phase II | 0.685 (0.011) | 0.754 (0.010) | 0.698 (0.008)  |    
-| Phase III | 0.709 (0.009) | 0.757 (0.008) | 0.784 (0.009) |    
-| Indication | 0.702 (0.008) | 0.776 (0.009) | 0.786 (0.008)  |   
+| Phase III | 0.709 (0.009) | 0.757 (0.008) | 0.784 (0.009) |    --> 
 
 
 
