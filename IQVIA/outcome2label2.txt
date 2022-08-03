@@ -1,0 +1,15 @@
+Completed, Early positive outcome	0
+Completed, Positive outcome/primary endpoint(s) met	0
+Terminated, Lack of efficacy	1
+Completed, Negative outcome/primary endpoint(s) not met	1
+Terminated, Safety/adverse effects	2
+Terminated, Poor enrollment	3
+Completed, Outcome indeterminate	-1
+Completed, Outcome unknown	-1
+Terminated, Business decision - Drug strategy shift	-1
+Terminated, Business decision - Other	-1
+Terminated, Business decision - Pipeline reprioritization	-1
+Terminated, Lack of funding	-1
+Terminated, Other	-1
+Terminated, Planned but never initiated	-1
+Terminated, Unknown	-1
