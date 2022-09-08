@@ -1,0 +1,3882 @@
+0001 Ther ult head & neck ves
+0002 Ther ultrasound of heart
+0003 Ther ult peripheral ves
+0009 Other therapeutic ultsnd
+0010 Implant chemothera agent
+0011 Infus drotrecogin alfa
+0012 Adm inhal nitric oxide
+0013 Inject/infus nesiritide
+0014 Injection oxazolidinone
+0015 High-dose infusion IL-2
+0016 Pressurized treat graft
+0017 Infusion of vasopressor
+0018 Infus immunosup antibody
+0019 BBBD via infusion
+0021 IVUS extracran cereb ves
+0022 IVUS intrathoracic ves
+0023 IVUS peripheral vessels
+0024 IVUS coronary vessels
+0025 IVUS renal vessels
+0028 Intravascul imaging NEC
+0029 Intravascul imaging NOS
+0031 CAS w CT/CTA
+0032 CAS w MR/MRA
+0033 CAS w fluoroscopy
+0034 Imageless comp asst surg
+0035 CAS w multiple datasets
+0039 Other CAS
+0040 Procedure-one vessel
+0041 Procedure-two vessels
+0042 Procedure-three vessels
+0043 Procedure-four+ vessels
+0044 Proc-vessel bifurcation
+0045 Insert 1 vascular stent
+0046 Insert 2 vascular stents
+0047 Insert 3 vascular stents
+0048 Insert 4+ vasculr stents
+0049 SuperSat O2 therapy
+0050 Impl CRT pacemaker sys
+0051 Impl CRT defibrillat sys
+0052 Imp/rep lead lf ven sys
+0053 Imp/rep CRT pacemakr gen
+0054 Imp/rep CRT defib genat
+0055 Ins d-e stent oth periph
+0056 Ins/rep sens-crd/vsl mtr
+0057 Imp/rep subcue card dev
+0058 Ins intra-ansm pres mntr
+0059 Intravasc msmnt cor art
+0060 Ins d-e stnt sup fem art
+0061 Perc angio extracran ves
+0062 Perc angio intracran ves
+0063 Perc ins carotid stent
+0064 Perc ins extracran stent
+0065 Perc ins intracran stent
+0066 PTCA
+0067 Intravas msmnt thorc art
+0068 Intravas msmt periph art
+0069 Intravs msmt ves NEC/NOS
+0070 Rev hip repl-acetab/fem
+0071 Rev hip repl-acetab comp
+0072 Rev hip repl-fem comp
+0073 Rev hip repl-liner/head
+0074 Hip surface, metal/poly
+0075 Hip surface, metal/metal
+0076 Hip surface, cermc/cermc
+0077 Hip surface, cermc/poly
+0080 Rev knee replacemt-total
+0081 Rev knee repl-tibia comp
+0082 Rev knee repl-femur comp
+0083 Rev knee replace-patella
+0084 Rev knee repl-tibia lin
+0085 Resrf hip,total-acet/fem
+0086 Resrf hip,part-fem head
+0087 Resrf hip,part-acetablum
+0091 Trnsplnt live rel donor
+0092 Trnsplnt live nonrel don
+0093 Transplant cadaver donor
+0094 Intra-op neurophys montr
+0095 Injct/infus glucarpidase
+0096 Infusion 4F-PCC
+0101 Cisternal puncture
+0102 Ventricl shunt tube punc
+0109 Cranial puncture NEC
+0110 Intracran pressure montr
+0111 Clos cereb meninges bx
+0112 Open cereb meninges bx
+0113 Closed brain biopsy
+0114 Open brain biopsy
+0115 Skull biopsy
+0116 Intracranial 02 monitor
+0117 Brain temp monitoring
+0118 Other brain dx procedure
+0119 Other skull dx procedure
+0120 Imp/repl brain pulse gen
+0121 Cranial sinus i & d
+0122 Removal brain stim lead
+0123 Reopen craniotomy site
+0124 Other craniotomy
+0125 Other craniectomy
+0126 Ins cath cranial cav/tis
+0127 Rem cath cranial cav/tis
+0128 Intracereb cth-burr hole
+0129 Rem brain pulse generatr
+0131 Incise cerebral meninges
+0132 Lobotomy & tractotomy
+0139 Other brain incision
+0141 Thalamus operations
+0142 Globus pallidus ops
+0151 Ex cereb meningeal les
+0152 Hemispherectomy
+0153 Brain lobectomy
+0159 Other brain excision
+016  Excise skull lesion
+0201 Linear craniectomy
+0202 Elevate skull fx fragmnt
+0203 Skull flap formation
+0204 Bone graft to skull
+0205 Skull plate insertion
+0206 Cranial osteoplasty NEC
+0207 Skull plate removal
+0211 Simple suture of dura
+0212 Brain meninge repair NEC
+0213 Meninge vessel ligation
+0214 Choroid plexectomy
+0221 Insert/replace EVD
+0222 Intrcran vent shunt/anas
+0231 Ventricl shunt-head/neck
+0232 Ventri shunt-circula sys
+0233 Ventricl shunt-thorax
+0234 Ventricl shunt-abdomen
+0235 Ventri shunt-uninary sys
+0239 Vent shunt extracran NEC
+0241 Irrigate/expl vent shunt
+0242 Replace ventricle shunt
+0243 Remove ventricle shunt
+0291 Lysis cortical adhesion
+0292 Brain repair
+0293 Imp/repl brain stim lead
+0294 Insert/replac skull tong
+0295 Remove skull tongs
+0296 Insert sphenoid electrod
+0299 Skull & brain op NEC
+0301 Removal FB spinal canal
+0302 Reopen laminectomy site
+0309 Spinal canal explor NEC
+031  Intraspin nerve root div
+0321 Percutaneous chordotomy
+0329 Other chordotomy
+0331 Spinal tap
+0332 Spinal cord/meninges bx
+0339 Other spinal dx proc
+034  Excis spinal cord lesion
+0351 Spine meningocele repair
+0352 Myelomeningocel repair
+0353 Vertebral fx repair
+0359 Spinal struct repair NEC
+036  Spinal cord adhesiolysis
+0371 Subarach-periton shunt
+0372 Subarach-ureteral shunt
+0379 Oth spinal thecal shunt
+038  Destr inject-spine canal
+0390 Insert spinal canal cath
+0391 Anesth inject-spin canal
+0392 Spinal canal inject NEC
+0393 Imp/repl spine stim lead
+0394 Removal spine stim lead
+0395 Spinal patch
+0396 Percutan facet denervat
+0397 Revise spine theca shunt
+0398 Remove spine theca shunt
+0399 Spine canal struc op NEC
+0401 Excision acoustc neuroma
+0402 Trigeminal nerv division
+0403 Periph nerve div NEC
+0404 Periph nerve incis NEC
+0405 Gasserian ganglionectomy
+0406 Periph ganglionect NEC
+0407 Periph nerv excision NEC
+0411 Clos periph nerve biopsy
+0412 Open periph nerve biopsy
+0419 Periph nerve dx proc NEC
+042  Periph nerve destruction
+043  Peripheral nerve suture
+0441 Decompress trigem root
+0442 Cran nerv root decom NEC
+0443 Carpal tunnel release
+0444 Tarsal tunnel release
+0449 Per nerve adhesiolys NEC
+045  Peripheral nerve graft
+046  Periph nerve transposit
+0471 Hypogloss-facial anastom
+0472 Accessory-facial anastom
+0473 Access-hypogloss anastom
+0474 Periph nerv anastom NEC
+0475 Postop revis per nerv op
+0476 Late repair per nerv inj
+0479 Other neuroplasty
+0480 Periph nerve inject NOS
+0481 Anesth injec periph nerv
+0489 Periph nerve inject NEC
+0491 Neurectasis
+0492 Imp/repl peri stim lead
+0493 Removal peri stim lead
+0499 Peripheral nerve ops NEC
+050  Sympath nerve division
+0511 Sympathetic nerve biopsy
+0519 Sympath nrv dx proc NEC
+0521 Sphenopalatin ganglionec
+0522 Cervical sympathectomy
+0523 Lumbar sympathectomy
+0524 Presacral sympathectomy
+0525 Periart sympathectomy
+0529 Other sympathectomy
+0531 Anesth inject symp nerve
+0532 Neurolyt injec-symp nrv
+0539 Sympath nerve inject NEC
+0581 Sympathetic nerve repair
+0589 Sympathetic nerve op NEC
+059  Other nervous system ops
+0601 Thyroid field aspiration
+0602 Reopen thyroid field wnd
+0609 Incis thyroid field NEC
+0611 Closed thyroid gland bx
+0612 Open thyroid gland bx
+0613 Parathyroid biopsy
+0619 Thyr/parathy dx proc NEC
+062  Unilat thyroid lobectomy
+0631 Excision thyroid lesion
+0639 Part thyroidectomy NEC
+064  Complete thyroidectomy
+0650 Substern thyroidect NOS
+0651 Part substern thyroidect
+0652 Tot substern thyroidect
+066  Lingual thyroid excision
+067  Thyrogloss duct excision
+0681 Total parathyroidectomy
+0689 Other parathyroidectomy
+0691 Thyroid isthmus division
+0692 Thyroid vessel ligation
+0693 Thyroid suture
+0694 Thyroid reimplantation
+0695 Parathyroid reimplant
+0698 Other thyroid operations
+0699 Other parathyroid ops
+0700 Adrenal exploration NOS
+0701 Unilat adrenal explorat
+0702 Bilat adrenal explorat
+0711 Closed adrenal gland bx
+0712 Open adrenal gland bx
+0713 Transfront pituitary bx
+0714 Transphen pituitary bx
+0715 Pituitary biopsy NOS
+0716 Thymus biopsy
+0717 Pineal biopsy
+0719 Endocrine dx proc NEC
+0721 Adrenal lesion excision
+0722 Unilateral adrenalectomy
+0729 Part adrenalectomy NEC
+073  Bilateral adrenalectomy
+0741 Adrenal incision
+0742 Adrenal nerve division
+0743 Adrenal vessel ligation
+0744 Adrenal repair
+0745 Adrenal reimplantation
+0749 Adrenal operation NEC
+0751 Pineal field exploration
+0752 Pineal gland incision
+0753 Partial pinealectomy
+0754 Total pinealectomy
+0759 Pineal operation NEC
+0761 Exc pituit les-transfron
+0762 Exc pituit les-transphen
+0763 Part excis pituitary NOS
+0764 Tot exc pituit-transfron
+0765 Tot exc pituit-transphen
+0768 Total exc pituitary NEC
+0769 Total exc pituitary NOS
+0771 Pituitary fossa explorat
+0772 Pituitary gland incision
+0779 Pituitary operation NEC
+0780 Thymectomy NOS
+0781 Oth part excision thymus
+0782 Oth totl excision thymus
+0783 Thorac part exisn thymus
+0784 Thorac total exc thymus
+0791 Thymus field exploration
+0792 Other incision of thymus
+0793 Repair of thymus
+0794 Thymus transplantation
+0795 Thorac incision thymus
+0798 Oth thorac op thymus NOS
+0799 Other thymus ops NOS
+0801 Incision of lid margin
+0802 Blepharorrhaphy severing
+0809 Other eyelid incision
+0811 Eyelid biopsy
+0819 Eyelid dx procedure NEC
+0820 Remove eyelid lesion NOS
+0821 Chalazion excision
+0822 Excise minor les lid NEC
+0823 Exc maj les lid prt-thic
+0824 Exc maj les lid ful-thic
+0825 Destruction lid lesion
+0831 Ptosis rep-front mus sut
+0832 Ptosis rep-fron mus slng
+0833 Ptosis rep-levat mus adv
+0834 Ptosis rep-levat mus NEC
+0835 Ptos rep-tarsal techniq
+0836 Blepharoptos repair NEC
+0837 Reduc overcorrect ptosis
+0838 Correct lid retraction
+0841 Thermocaut/entropion rep
+0842 Suture entropion repair
+0843 Wedg resec entropion rep
+0844 Lid recons entropion rep
+0849 Entropion/ectrop rep NEC
+0851 Canthotomy
+0852 Blepharorrhaphy
+0859 Adjust lid position NEC
+0861 Lid reconst w skin graft
+0862 Lid reconst w muc graft
+0863 Lid reconst w hair graft
+0864 Lid recon-tarsoconj flap
+0869 Lid reconstr w graft NEC
+0870 Lid reconstruction NOS
+0871 Lid marg recon-part thic
+0872 Lid recons-part thic NEC
+0873 Lid marg recons ful thic
+0874 Lid reconst-ful thic NEC
+0881 Linear rep lid lacer
+0882 Lid marg lac rx-part th
+0883 Lid lacer rx-prt th NEC
+0884 Lid marg lac rx-ful thic
+0885 Lid lac rx-ful thic NEC
+0886 Lower lid rhytidectomy
+0887 Upper lid rhytidectomy
+0889 Eyelid repair NEC
+0891 Electrosurg lid epilat
+0892 Cryosurg lid epilation
+0893 Eyelid epilation NEC
+0899 Eyelid operation NEC
+090  Lacrimal gland incision
+0911 Lacrimal gland biopsy
+0912 Lacrimal sac biopsy
+0919 Lacrimal sys dx proc NEC
+0920 Exc lacrimal gland NOS
+0921 Excis les lacrimal gland
+0922 Part dacryoadenect NEC
+0923 Total dacryoadenectomy
+093  Other lacrimal gland ops
+0941 Lacrimal punctum probe
+0942 Lac canaliculi probe
+0943 Nasolacrimal duct probe
+0944 Nasolac duct intubat
+0949 Lac passage manip NEC
+0951 Lac punctum incision
+0952 Lac canaliculi incision
+0953 Lacrimal sac incision
+0959 Lacrim passage incis NEC
+096  Lacrim sac/passage excis
+0971 Correct everted punctum
+0972 Punctum repair NEC
+0973 Canaliculus repair
+0981 Dacryocystorhinostomy
+0982 Conjunctivocystorhinost
+0983 Conjunctivorhinos w tube
+0991 Lac punctum obliteration
+0999 Lacrimal system op NEC
+100  Incise/remov conjunct FB
+101  Conjunctiva incision NEC
+1021 Conjunctival biopsy
+1029 Conjunctiva dx proc NEC
+1031 Excise conjunctiv lesion
+1032 Destruct conjunc les NEC
+1033 Oth conjunc destruc proc
+1041 Symbleph rep w free grft
+1042 Graft conjunc cul-de-sac
+1043 Conjun cul-de-sac rx NEC
+1044 Conjunc free graft NEC
+1049 Conjunctivoplasty NEC
+105  Conjunc/lid adhesiolysis
+106  Repair conjunct lacerat
+1091 Subconjunctival inject
+1099 Conjunctival op NEC
+110  Magnet removal cornea FB
+111  Corneal incision
+1121 Corneal scrape for smear
+1122 Corneal biopsy
+1129 Corneal dx proc NEC
+1131 Pterygium transposition
+1132 Pteryg exc w cornea grft
+1139 Pterygium excision NEC
+1141 Mech remov cornea epith
+1142 Thermocaut cornea lesion
+1143 Cryotherap cornea lesion
+1149 Destruct cornea les NEC
+1151 Suture cornea laceration
+1152 Rep cornea postop dehisc
+1153 Rx cornea lac w conj flp
+1159 Corneal repair NEC
+1160 Corneal transplant NOS
+1161 Lam keratplast w autgrft
+1162 Lamellar keratoplast NEC
+1163 Perf keratopl w autogrft
+1164 Perforat keratoplast NEC
+1169 Corneal transplant NEC
+1171 Keratomileusis
+1172 Keratophakia
+1173 Keratoprosthesis
+1174 Thermokeratoplasty
+1175 Radial keratotomy
+1176 Epikeratophakia
+1179 Cornea reconstruct NEC
+1191 Corneal tattooing
+1192 Remove corneal implant
+1199 Corneal operation NEC
+1200 Remov ant segmnt FB NOS
+1201 Magnet remov ant seg FB
+1202 Nonmag remov ant seg FB
+1211 Iridotomy w transfixion
+1212 Iridotomy NEC
+1213 Prolapsed iris excision
+1214 Iridectomy NEC
+1221 Dx aspirat-ant chamber
+1222 Iris biopsy
+1229 Ant segment dx proc NEC
+1231 Goniosynechiae lysis
+1232 Ant synechia lysis NEC
+1233 Post synechiae lysis
+1234 Corneovitreal adhesiolys
+1235 Coreoplasty
+1239 Iridoplasty NEC
+1240 Remov ant segmnt les NOS
+1241 Nonexc destruc iris les
+1242 Excision of iris lesion
+1243 Nonexc destr cil bod les
+1244 Excise ciliary body les
+1251 Goniopuncture
+1252 Goniotomy
+1253 Goniotomy w goniopunctur
+1254 Trabeculotomy ab externo
+1255 Cyclodialysis
+1259 Facilit intraoc circ NEC
+1261 Trephin sclera w iridect
+1262 Thermcaut scler w iridec
+1263 Iridencleisis/iridotasis
+1264 Trabeculectom ab externo
+1265 Scler fistuliz w iridect
+1266 Postop revis scl fistul
+1267 Insert aqueous drain dev
+1269 Scler fistulizing op NEC
+1271 Cyclodiathermy
+1272 Cyclocryotherapy
+1273 Cyclophotocoagulation
+1274 Cil body diminution NOS
+1279 Glaucoma procedure NEC
+1281 Suture scleral lacer
+1282 Scleral fistula repair
+1283 Revis ant seg op wnd NEC
+1284 Destruct scleral lesion
+1285 Repair staphylom w graft
+1286 Rep scler staphyloma NEC
+1287 Graft reinforce sclera
+1288 Sclera reinforcement NEC
+1289 Scleral operation NEC
+1291 Therapeut evac ant chamb
+1292 Anterior chamber inject
+1293 Remov epithel downgrowth
+1297 Iris operation NEC
+1298 Ciliary body op NEC
+1299 Anterior chamber op NEC
+1300 Remove FB lens NOS
+1301 Magnet remove FB lens
+1302 Nonmagnet remove FB lens
+1311 Temp-inf intrcap lens ex
+1319 Intracapsul lens ext NEC
+132  Linear extracap lens ext
+133  Simpl aspir lens extract
+1341 Catarac phacoemuls/aspir
+1342 Post catarac frag/aspir
+1343 Cataract frag/aspir NEC
+1351 Temp-inf xtracap lens ex
+1359 Extracap lens extrac NEC
+1364 After-catar discission
+1365 After-cataract excision
+1366 After catar fragmntation
+1369 Cataract extraction NEC
+1370 Insert pseudophakos NOS
+1371 Insert lens at catar ext
+1372 Secondary insert lens
+138  Implanted lens removal
+1390 Operation on lens NEC
+1391 Impl intraoc telesc pros
+1400 Remov post segmnt FB NOS
+1401 Magnet remov post seg FB
+1402 Nonmag remov post seg FB
+1411 Diagnost vitreous aspir
+1419 Dx proc post seg NEC
+1421 Chorioret les diathermy
+1422 Chorioretin les cryother
+1423 Chorioret les xenon coag
+1424 Chorioret les laser coag
+1425 Chorioret les p/coag NOS
+1426 Chorioret les radiother
+1427 Chorioret les rad implan
+1429 Chorioret les destr NEC
+1431 Retinal tear diathermy
+1432 Retinal tear cryotherapy
+1433 Retinal tear xenon coag
+1434 Retinal tear laser coag
+1435 Retina tear photocoa NOS
+1439 Retinal tear repair NEC
+1441 Scleral buckle w implant
+1449 Scleral buckling NEC
+1451 Detach retina-diathermy
+1452 Detach retina-cryotherap
+1453 Detach retina xenon coag
+1454 Detach retina laser coag
+1455 Detach ret photocoag NOS
+1459 Repair retina detach NEC
+146  Remov pros mat post seg
+1471 Anterior remov vitreous
+1472 Vitreous removal NEC
+1473 Anterior mechan vitrect
+1474 Mech vitrectomy NEC
+1475 Vitreous substitut injec
+1479 Vitreous operation NEC
+1481 Imp epiretinal prosth
+1482 Rem epiretinal prosth
+1483 Rev/repl epiretinal pros
+149  Other post segment ops
+1501 Extraoc musc-tend biopsy
+1509 Extraoc musc dx proc NEC
+1511 One extraoc mus recess
+1512 1 extraoc muscl advance
+1513 1 extraoc muscl resect
+1519 Xtraoc mus op/detach NEC
+1521 Lengthen 1 extraoc musc
+1522 Shorten 1 extraoc musc
+1529 Op on 1 extraoc musc NEC
+153  Temp detach >1 xtroc mus
+154  Oth op on >l extraoc mus
+155  Extraocul mus transposit
+156  Revis extraoc musc surg
+157  Extraoc musc inj repair
+159  Oth extraoc mus-tend op
+1601 Orbitotomy w bone flap
+1602 Orbitotomy w implant
+1609 Orbitotomy NEC
+161  Remove penetrat FB eye
+1621 Ophthalmoscopy
+1622 Diagnostic asp of orbit
+1623 Eyeball & orbit biopsy
+1629 Eyebal/orbit dx proc NEC
+1631 Eye evisc w synch implan
+1639 Eyeball evisceration NEC
+1641 Eye enuc/implan/musc att
+1642 Eye enuc w implant NEC
+1649 Eyeball enucleation NEC
+1651 Radical orbitomaxillect
+1652 Orbit exent w bone remov
+1659 Orbital exenteration NEC
+1661 2ndry ocular imp insert
+1662 Revis/reinsert ocul imp
+1663 Revis enuc socket w grft
+1664 Enuc socket revis NEC
+1665 2ndry exent cavity graft
+1666 Revis exenter cavity NEC
+1669 2nd op post eye rem NEC
+1671 Remove ocular implant
+1672 Remove orbital implant
+1681 Repair of orbital wound
+1682 Repair eyeball rupture
+1689 Eye/orbit inj repair NEC
+1691 Retrobulbar injection
+1692 Excision orbital lesion
+1693 Excision eye lesion NOS
+1698 Operation on orbit NEC
+1699 Operation on eyeball NEC
+1711 Lap dir ing hern-graft
+1712 Lap indir ing hern-graft
+1713 Lap ing hern-graft NOS
+1721 Lap bil dir ing hrn-grft
+1722 Lap bi indir ing hrn-grf
+1723 Lap bi dr/ind ing hrn-gr
+1724 Lap bil ing hern-grf NOS
+1731 Lap mul seg res lg intes
+1732 Laparoscopic cecectomy
+1733 Lap right hemicolectomy
+1734 Lap res transverse colon
+1735 Lap left hemicolectomy
+1736 Lap sigmoidectomy
+1739 Lap pt ex lrg intest NEC
+1741 Open robotic assist proc
+1742 Lap robotic assist proc
+1743 Perc robotic assist proc
+1744 Endo robotic assist proc
+1745 Thoraco robotic ast proc
+1749 Robotic ast proc NEC/NOS
+1751 Implant CCM,total system
+1752 Implant CCM pulse genrtr
+1753 Perc ather extracran vsl
+1754 Perc ather intracran vsl
+1755 Translum cor atherectomy
+1756 Ather oth non-cor vessel
+1761 LITT lesn brain,guidance
+1762 LITT les hd/nck,guidance
+1763 LITT lesn liver,guidance
+1769 LITT lesn, guide oth/NOS
+1770 IV infusion clofarabine
+1771 Non-coronary IFVA
+1781 Insert antimicrobial env
+1801 Piercing of ear lobe
+1802 Ext auditory canal incis
+1809 External ear incis NEC
+1811 Otoscopy
+1812 External ear biopsy
+1819 Ext ear diagnos proc NEC
+1821 Preauricular sinus excis
+1829 Destruct ext ear les NEC
+1831 Rad excis ext ear les
+1839 Excis external ear NEC
+184  Suture ext ear lac
+185  Correction prominent ear
+186  Ext audit canal reconstr
+1871 Construction ear auricle
+1872 Reattach amputated ear
+1879 Plastic rep ext ear NEC
+189  Other ext ear operations
+190  Stapes mobilization
+1911 Stapedect w replac incus
+1919 Stapedectomy NEC
+1921 Rev stapdec w incus repl
+1929 Stapedectomy revis NEC
+193  Ossicular chain op NEC
+194  Myringoplasty
+1952 Type 2 tympanoplasty
+1953 Type 3 tympanoplasty
+1954 Type 4 tympanoplasty
+1955 Type 5 tympanoplasty
+196  Tympanoplasty revision
+199  Middle ear repair NEC
+2001 Myringotomy w intubation
+2009 Myringotomy NEC
+201  Tympanostomy tube remove
+2021 Mastoid incision
+2022 Petrus pyram air cel inc
+2023 Middle ear incision
+2031 Electrocochleography
+2032 Mid & inner ear biopsy
+2039 Mid/in ear dx proc NEC
+2041 Simple mastoidectomy
+2042 Radical mastoidectomy
+2049 Mastoidectomy NEC
+2051 Excise middle ear lesion
+2059 Middle ear excision NEC
+2061 Inner ear fenestration
+2062 Revis inner ear fenestra
+2071 Endolymphatic shunt
+2072 Inner ear injection
+2079 Inc/exc/destr in ear NEC
+208  Eustachian tube ops
+2091 Tympanosympathectomy
+2092 Mastoidectomy revision
+2093 Repair oval/round window
+2094 Tympanic injection
+2095 Elecmag hear dev implant
+2096 Implt cochlear prost NOS
+2097 Imp/rep schan coch pros
+2098 Imp/rep mchan cochl pros
+2099 Mid-inner ear ops NEC
+2100 Control of epistaxis NOS
+2101 Ant nasal pack for epist
+2102 Post nasal pac for epist
+2103 Cautery to stop epistax
+2104 Ethmoid art ligat-epist
+2105 Max art lig for epistax
+2106 Ext carot art lig-epist
+2107 Nasal sept grft-epistax
+2109 Epistaxis control NEC
+211  Incision of nose
+2121 Rhinoscopy
+2122 Nasal biopsy
+2129 Nasal dx proc NEC
+2130 Nasal lesion excis NOS
+2131 Intranas les destruction
+2132 Nasal les destruct NEC
+214  Resection of nose
+215  Submuc nasal sept resect
+2161 Diather/cryo turbinectom
+2162 Turbinate fracture
+2169 Turbinectomy NEC
+2171 Clos reduction nasal fx
+2172 Open reduction nasal fx
+2181 Nasal laceration suture
+2182 Nasal fistula closure
+2183 Tot nasal reconstruction
+2184 Revision rhinoplasty
+2185 Augmentation rhinoplasty
+2186 Limited rhinoplasty
+2187 Rhinoplasty NEC
+2188 Septoplasty NEC
+2189 Nasal repair NEC
+2191 Lysis of nasal adhesions
+2199 Nasal operation NEC
+2200 Sinus aspirat/lavage NOS
+2201 Sinus punct for lavage
+2202 Sinus lavage thru ostium
+2211 Closed nasal sinus bx
+2212 Open biopsy nasal sinus
+2219 Nasal sinus dx proc NEC
+222  Intranasal antrotomy
+2231 Radical maxillary antrot
+2239 Ext maxillary antrot NEC
+2241 Frontal sinusotomy
+2242 Frontal sinusectomy
+2250 Sinusotomy NOS
+2251 Ethmoidotomy
+2252 Sphenoidotomy
+2253 Multiple sinus incision
+2260 Sinusectomy NOS
+2261 C-luc exc max sinus les
+2262 Exc max sinus lesion NEC
+2263 Ethmoidectomy
+2264 Sphenoidectomy
+2271 Nasal sinus fistula clos
+2279 Nasal sinus repair NEC
+229  Other nasal sinus ops
+2301 Deciduous tooth extract
+2309 Tooth extraction NEC
+2311 Residual root removal
+2319 Surg tooth extract NEC
+232  Tooth restor by filling
+233  Tooth restorat by inlay
+2341 Crown application
+2342 Fixed bridge insertion
+2343 Insert removable bridge
+2349 Dental restoration NEC
+235  Tooth implantation
+236  Prosthet dental implant
+2370 Root canal NOS
+2371 Root canal w irrigation
+2372 Root canal w apicoectomy
+2373 Apicoectomy
+240  Gum or alveolar incision
+2411 Gum biopsy
+2412 Alveolus biopsy
+2419 Tooth & gum dx proc NEC
+242  Gingivoplasty
+2431 Gum lesion excision
+2432 Suture of gum laceration
+2439 Gum operation NEC
+244  Exc of dental les of jaw
+245  Alveoloplasty
+246  Exposure of tooth
+247  Orthodon applianc applic
+248  Other orthodontic operat
+2491 Exten buccolabial/sulcus
+2499 Dental operation NEC
+2501 Closed biopsy of tongue
+2502 Open biopsy of tongue
+2509 Tongue dx procedure NEC
+251  Destruction tongue les
+252  Partial glossectomy
+253  Complete glossectomy
+254  Radical glossectomy
+2551 Suture of tongue lacerat
+2559 Repair of tongue NEC
+2591 Lingual frenotomy
+2592 Lingual frenectomy
+2593 Lysis of tongue adhesion
+2594 Other glossotomy
+2599 Tongue operation NEC
+260  Incis salivary glnd/duct
+2611 Clos bx saliv gland/duct
+2612 Open bx saliv gland/duct
+2619 Saliv glnd dx proc NEC
+2621 Salivary cyst marsupial
+2629 Saliv lesion excis NEC
+2630 Sialoadenectomy NOS
+2631 Partial sialoadenectomy
+2632 Complete sialoadenectomy
+2641 Suture of saliv glnd lac
+2642 Salivary fistula closure
+2649 Salivary repair NEC
+2691 Salivary duct probing
+2699 Salivary operation NEC
+270  Drain face & mouth floor
+271  Incision of palate
+2721 Bony palate biopsy
+2722 Uvula and soft palate bx
+2723 Lip biopsy
+2724 Mouth biopsy NOS
+2729 Oral cavity dx proc NEC
+2731 Loc exc bony palate les
+2732 Wide exc bony palate les
+2741 Labial frenumectomy
+2742 Wide excision of lip les
+2743 Excision of lip les NEC
+2749 Excision of mouth NEC
+2751 Suture of lip laceration
+2752 Suture of mouth lac NEC
+2753 Closure of mouth fistula
+2754 Repair of cleft lip
+2755 Full-thick grft to mouth
+2756 Skin graft to mouth NEC
+2757 Pedicle attach to mouth
+2759 Mouth repair NEC
+2761 Suture of palate lacerat
+2762 Cleft palate correction
+2763 Revis cleft palat repair
+2764 Insert palatal implant
+2769 Oth plastic repair palat
+2771 Incision of uvula
+2772 Excision of uvula
+2773 Repair of uvula
+2779 Other uvula operations
+2791 Labial frenotomy
+2792 Mouth incision NOS
+2799 Oral cavity ops NEC
+280  Peritonsillar i & d
+2811 Tonsil&adenoid biopsy
+2819 Tonsil&adenoid dx op NEC
+282  Tonsillectomy
+283  Tonsillectomy/adenoidec
+284  Excision of tonsil tag
+285  Excision lingual tonsil
+286  Adenoidectomy
+287  Hemorr contrl post T & A
+2891 Incis to remov tonsil FB
+2892 Excis tonsil/adenoid les
+2899 Tonsil/adenoid ops NEC
+290  Pharyngotomy
+2911 Pharyngoscopy
+2912 Pharyngeal biopsy
+2919 Pharyngeal dx proc NEC
+292  Exc branchial cleft cyst
+2931 Cricopharyngeal myotomy
+2932 Pharyngeal diverticulec
+2933 Pharyngectomy
+2939 Excis/destr les phar NEC
+294  Plastic op on pharynx
+2951 Suture of pharyngeal lac
+2952 Clos branch cleft fistul
+2953 Clos pharynx fistula NEC
+2954 Lysis pharyngeal adhes
+2959 Pharyngeal repair NEC
+2991 Pharyngeal dilation
+2992 Divis glossopharyng nerv
+2999 Pharyngeal operation NEC
+3001 Larynx cyst marsupializ
+3009 Destruct larynx les NEC
+301  Hemilaryngectomy
+3021 Epiglottidectomy
+3022 Vocal cordectomy
+3029 Other part laryngectomy
+303  Complete laryngectomy
+304  Radical laryngectomy
+310  Injection of larynx
+311  Temporary tracheostomy
+3121 Mediastinal tracheostomy
+3129 Other perm tracheostomy
+313  Incis larynx trachea NEC
+3141 Tracheoscopy thru stoma
+3142 Larygnoscopy/tracheoscop
+3143 Closed biopsy larynx
+3144 Closed biopsy trachea
+3145 Opn bx larynx or trachea
+3148 Oth larynx dx procedure
+3149 Oth trachea dx procedure
+315  Local destruc trach les
+3161 Suture of laryngeal lac
+3162 Laryngeal fistula clos
+3163 Laryngostomy revision
+3164 Laryngeal fx repair
+3169 Other laryngeal repair
+3171 Suture of tracheal lacer
+3172 Closure of tracheostomy
+3173 Trachea fistula clos NEC
+3174 Revision of tracheostomy
+3175 Tracheal reconstruction
+3179 Other tracheal repair
+3191 Laryngeal nerv division
+3192 Lysis trach/larynx adhes
+3193 Replace trac/laryn stent
+3194 Tracheal injection
+3195 Tracheoesoph fistulizat
+3198 Oth laryngeal operation
+3199 Other tracheal operation
+3201 Endosc destruc bronc les
+3209 Other destruc bronc les
+321  Other bronchial excision
+3220 Thorac exc lung lesion
+3221 Emphysema bleb plication
+3222 Lung vol reduction surg
+3223 Open abltn lung les/tiss
+3224 Perc abltn lung les/tiss
+3225 Thor abltn lung les/tiss
+3226 Abltn lung tiss NEC/NOS
+3227 Brnc thrmplsty,ablt mscl
+3228 Endosc destruc lung les
+3229 Destroy loc lung les NEC
+3230 Thorac seg lung resect
+3239 Oth seg lung resect NOS
+3241 Thorac lobectomy lung
+3249 Lobectomy of lung NEC
+3250 Thoracospc pneumonectomy
+3259 Other pneumonectomy NOS
+326  Rad dissec thorac struct
+329  Other excision of lung
+330  Incision of bronchus
+331  Incision of lung
+3320 Thoracoscopc lung biopsy
+3321 Bronchoscopy thru stoma
+3322 Fiber-optic bronchoscopy
+3323 Other bronchoscopy
+3324 Closed bronchial biopsy
+3325 Open bronchial biopsy
+3326 Closed lung biopsy
+3327 Clos endoscopic lung bx
+3328 Open lung biopsy
+3329 Bronch/lung dx proc NEC
+3331 Destr phren-lung collaps
+3332 Pnemothorax-lung collaps
+3333 Pneumoperit-lung collaps
+3334 Thoracoplasty
+3339 Surg collaps of lung NEC
+3341 Bronchial lacerat suture
+3342 Bronchial fistula clos
+3343 Lung laceration closure
+3348 Bronchial repair NEC
+3349 Lung repair NEC
+3350 Lung transplant NOS
+3351 Unilat lung transplant
+3352 Bilat lung transplant
+336  Comb heart/lung transpla
+3371 Endo ins/re bron val,one
+3372 Endo pulm arwy flow msmt
+3373 Endo ins/re brnc val,mul
+3378 Endo rem bronch devc/sub
+3379 Endo insrt bronc def/sub
+3391 Bronchial dilation
+3392 Bronchial ligation
+3393 Puncture of lung
+3398 Bronchial operation NEC
+3399 Lung operation NEC
+3401 Incision of chest wall
+3402 Exploratory thoracotomy
+3403 Reopen thoracotomy site
+3404 Insert intercostal cath
+3405 PlEuroperitoneal shunt
+3406 Thorac drain pleurl cav
+3409 Other pleural incision
+341  Incision of mediastinum
+3420 Thoracoscopic pleural bx
+3421 Transpleura thoracoscopy
+3422 Mediastinoscopy
+3423 Chest wall biopsy
+3424 Pleural biopsy NEC
+3425 Clos mediastinal biopsy
+3426 Open mediastinal biopsy
+3427 Biopsy of diaphragm
+3428 Dx procedure thorax NEC
+3429 Dx proc mediastinum NEC
+343  Destruct mediastin les
+344  Destruct chest wall les
+3451 Decortication of lung
+3452 Thoracoscopc decort lung
+3459 Other pleural excision
+346  Scarification of pleura
+3471 Suture chest wall lacer
+3472 Thoracostomy closure
+3473 Clos thoracic fistul NEC
+3474 Pectus deformity repair
+3479 Other chest wall repair
+3481 Excise diaphragm lesion
+3482 Suture diaphragm lacerat
+3483 Close diaphragm fistula
+3484 Other diaphragm repair
+3485 Implant diaphra pacemake
+3489 Diaphragm operation NEC
+3491 Thoracentesis
+3492 Inject into thorax cavit
+3493 Repair of pleura
+3499 Thoracic operation NEC
+3500 Closed valvotomy NOS
+3501 Closed aortic valvotomy
+3502 Closed mitral valvotomy
+3503 Closed pulmon valvotomy
+3504 Closed tricusp valvotomy
+3505 Endovas repl aortc valve
+3506 Trnsapcl rep aortc valve
+3507 Endovas repl pulm valve
+3508 Trnsapcl repl pulm valve
+3509 Endovas repl uns hrt vlv
+3510 Open valvuloplasty NOS
+3511 Opn aortic valvuloplasty
+3512 Opn mitral valvuloplasty
+3513 Opn pulmon valvuloplasty
+3514 Opn tricus valvuloplasty
+3520 Opn/oth rep hrt vlv NOS
+3521 Opn/oth rep aort vlv-tis
+3522 Opn/oth rep aortic valve
+3523 Opn/oth rep mtrl vlv-tis
+3524 Opn/oth rep mitral valve
+3525 Opn/oth rep pulm vlv-tis
+3526 Opn/oth repl pul valve
+3527 Opn/oth rep tcspd vlv-ts
+3528 Opn/oth repl tcspd valve
+3531 Papillary muscle ops
+3532 Chordae tendineae ops
+3533 Annuloplasty
+3534 Infundibulectomy
+3535 Trabecul carneae cord op
+3539 Tiss adj to valv ops NEC
+3541 Enlarge existing sep def
+3542 Create septal defect
+3550 Prosth rep hrt septa NOS
+3551 Pros rep atrial def-opn
+3552 Pros repair atria def-cl
+3553 Pros rep ventric def-opn
+3554 Pros rep endocar cushion
+3555 Pros rep ventrc def-clos
+3560 Grft repair hrt sept NOS
+3561 Graft repair atrial def
+3562 Graft repair ventric def
+3563 Grft rep endocar cushion
+3570 Heart septa repair NOS
+3571 Atria septa def rep NEC
+3572 Ventr septa def rep NEC
+3573 Endocar cushion rep NEC
+3581 Tot repair tetral fallot
+3582 Total repair of tapvc
+3583 Tot rep truncus arterios
+3584 Tot cor transpos grt ves
+3591 Interat ven retrn transp
+3592 Conduit rt vent-pul art
+3593 Conduit left ventr-aorta
+3594 Conduit artium-pulm art
+3595 Heart repair revision
+3596 Perc balloon valvuplasty
+3597 Perc mtrl vlv repr w imp
+3598 Other heart septa ops
+3599 Other heart valve ops
+3603 Open coronry angioplasty
+3604 Intrcoronry thromb infus
+3606 Ins nondrug elut cor st
+3607 Ins drug-elut coronry st
+3609 Rem of cor art obstr NEC
+3610 Aortocoronary bypass NOS
+3611 Aortocor bypas-1 cor art
+3612 Aortocor bypas-2 cor art
+3613 Aortocor bypas-3 cor art
+3614 Aortcor bypas-4+ cor art
+3615 1 int mam-cor art bypass
+3616 2 int mam-cor art bypass
+3617 Abd-coron artery bypass
+3619 Hrt revas byps anas NEC
+362  Arterial implant revasc
+3631 Open chest trans revasc
+3632 Oth transmyo revascular
+3633 Endo transmyo revascular
+3634 Perc transmyo revascular
+3639 Oth heart revascular
+3691 Coron vess aneurysm rep
+3699 Heart vessel op NEC
+370  Pericardiocentesis
+3710 Incision of heart NOS
+3711 Cardiotomy
+3712 Pericardiotomy
+3720 Noninvas elect stimulatn
+3721 Rt heart cardiac cath
+3722 Left heart cardiac cath
+3723 Rt/left heart card cath
+3724 Pericardial biopsy
+3725 Cardiac biopsy
+3726 Cath base invasv ep test
+3727 Cardiac mapping
+3728 Intracardiac echocardio
+3729 Hrt/pericar dx proc NEC
+3731 Pericardiectomy
+3732 Heart aneurysm excision
+3733 Exc/dest hrt lesion open
+3734 Exc/des hrt les,endovasc
+3735 Partial ventriculectomy
+3736 Exc,destrct,exclus LAA
+3737 Exc/dest hrt les, thrspc
+3741 Impl cardiac support dev
+3749 Heart/pericard repr NEC
+3751 Heart transplantation
+3752 Imp tot int bi ht rp sys
+3753 Repl/rep thr unt tot hrt
+3754 Repl/rep oth tot hrt sys
+3755 Rem int bivent hrt sys
+3760 Imp bivn ext hrt ast sys
+3761 Pulsation balloon implan
+3762 Insrt non-impl circ dev
+3763 Repair heart assist sys
+3764 Remve ext hrt assist sys
+3765 Imp vent ext hrt ast sys
+3766 Implantable hrt assist
+3767 Imp cardiomyostimul sys
+3768 Percutan hrt assist syst
+3770 Int insert pacemak lead
+3771 Int insert lead in vent
+3772 Int inser lead atri-vent
+3773 Int inser lead in atrium
+3774 Int or repl lead epicar
+3775 Revision of lead
+3776 Repl tv atri-vent lead
+3777 Removal of lead w/o repl
+3778 Inser temp pacemaker sys
+3779 Rev/reloc card dev pockt
+3780 Int or repl perm pacemkr
+3781 Int insert 1-cham, non
+3782 Int insert 1-cham, rate
+3783 Int insert dual-cham dev
+3785 Repl pacem w 1-cham, non
+3786 Repl pacem 1-cham, rate
+3787 Repl pacem w dual-cham
+3789 Revise or remove pacemak
+3790 Ins left atr append dev
+3791 Opn chest cardiac massag
+3792 Injection into heart
+3793 Injection into pericard
+3794 Implt/repl carddefib tot
+3795 Implt cardiodefib leads
+3796 Implt cardiodefib genatr
+3797 Repl cardiodefib leads
+3798 Repl cardiodefib genratr
+3799 Other heart/pericard ops
+3800 Incision of vessel NOS
+3801 Intracran vessel incis
+3802 Head/neck ves incis NEC
+3803 Upper limb vessel incis
+3804 Incision of aorta
+3805 Thoracic vessel inc NEC
+3806 Abdomen artery incision
+3807 Abdominal vein incision
+3808 Lower limb artery incis
+3809 Lower limb vein incision
+3810 Endarterectomy NOS
+3811 Intracran endarterectomy
+3812 Head & neck endarter NEC
+3813 Upper limb endarterectom
+3814 Endarterectomy of aorta
+3815 Thoracic endarterectomy
+3816 Abdominal endarterectomy
+3818 Lower limb endarterect
+3821 Blood vessel biopsy
+3822 Percutaneous angioscopy
+3823 Intravasclr spectroscopy
+3824 Intravas img cor ves OCT
+3825 Intravas img non-cor OCT
+3826 Insrt prsr snsr w/o lead
+3829 Blood vessel dx proc NEC
+3830 Vessel resect/anast NOS
+3831 Intracran ves resec-anas
+3832 Head/neck ves resec-anas
+3833 Arm vessel resect/anast
+3834 Aorta resection & anast
+3835 Thor vessel resect/anast
+3836 Abd vessel resect/anast
+3837 Abd vein resect & anast
+3838 Leg artery resect/anast
+3839 Leg vein resect/anastom
+3840 Vessel resect/replac NOS
+3841 Intracran ves resec-repl
+3842 Head/neck ves resec-repl
+3843 Arm ves resect w replace
+3844 Resect abdm aorta w repl
+3845 Resect thorac ves w repl
+3846 Abd artery resec w repla
+3847 Abd vein resect w replac
+3848 Leg artery resec w repla
+3849 Leg vein resect w replac
+3850 Varicose v lig-strip NOS
+3851 Intcran var v lig-strip
+3852 Head/neck var v lig-str
+3853 Arm varicose v lig-strip
+3855 Thorac var v lig-strip
+3857 Abd varicos v liga-strip
+3859 Leg varicos v liga-strip
+3860 Excision of vessel NOS
+3861 Intracran vessel excis
+3862 Head/neck vessel excis
+3863 Arm vessel excision
+3864 Excision of aorta
+3865 Thoracic vessel excision
+3866 Abdominal artery excis
+3867 Abdominal vein excision
+3868 Leg artery excision
+3869 Leg vein excision
+387  Interruption vena cava
+3880 Surg vessel occlus NEC
+3881 Occlus intracran ves NEC
+3882 Occlus head/neck ves NEC
+3883 Occlude arm vessel NEC
+3884 Occlude aorta NEC
+3885 Occlude thoracic ves NEC
+3886 Occlude abd artery NEC
+3887 Occlude abd vein NEC
+3888 Occlude leg artery NEC
+3889 Occlude leg vein NEC
+3891 Arterial catheterization
+3892 Umbilical vein cath
+3893 Venous cath NEC
+3894 Venous cutdown
+3895 Ven cath renal dialysis
+3897 CV cath plcmt w guidance
+3898 Arterial puncture NEC
+3899 Venous puncture NEC
+390  Systemic-pulm art shunt
+391  Intra-abd venous shunt
+3921 Caval-pulmon art anastom
+3922 Aorta-subclv-carot bypas
+3923 Intrathoracic shunt NEC
+3924 Aorta-renal bypass
+3925 Aorta-iliac-femor bypass
+3926 Intra-abdomin shunt NEC
+3927 Dialysis arteriovenostom
+3928 Extracran-intracr bypass
+3929 Vasc shunt & bypass NEC
+3930 Suture of vessel NOS
+3931 Suture of artery
+3932 Suture of vein
+3941 Postop vasc op hem contr
+3942 Revis ren dialysis shunt
+3943 Remov ren dialysis shunt
+3949 Vasc proc revision NEC
+3950 Angio oth non-coronary
+3951 Clipping of aneurysm
+3952 Aneurysm repair NEC
+3953 Arterioven fistula rep
+3954 Re-entry operation
+3955 Reimplan aberr renal ves
+3956 Repair vess w tis patch
+3957 Rep vess w synth patch
+3958 Repair vess w patch NOS
+3959 Repair of vessel NEC
+3961 Extracorporeal circulat
+3962 Hypothermia w open heart
+3963 Cardioplegia
+3964 Intraop cardiac pacemak
+3965 Extracorporeal memb oxy
+3966 Per cardiopulmon bypass
+3971 Endo imp oth grf abd aor
+3972 Endovasc embol hd/nk ves
+3973 Endo imp grft thor aorta
+3974 Endo rem obs hd/neck ves
+3975 Endo emb hd/nk,bare coil
+3976 Endo em hd/nk,bioac coil
+3977 Temp endovsc occls vessl
+3978 Endovas impln grft aorta
+3979 Oth endo proc oth vessel
+3981 Imp crtd sinus stm,totl
+3982 Imp/rep crtd sinus lead
+3983 Imp/rep crtd sinus gnrtr
+3984 Rev crtd sinus stm leads
+3985 Rev crtd sinus pulse gen
+3986 Rem crtd sinus stm, totl
+3987 Rem crtd sinus stm lead
+3988 Rem crtd sinus pulse gen
+3989 Oth cartd body/sinus op
+3990 Ins non-d-e non-cor stnt
+3991 Freeing of vessel
+3992 Vein inject-scleros agnt
+3993 Insert ves-to-ves cannul
+3994 Replac ves-to-ves cannul
+3995 Hemodialysis
+3996 Total body perfusion
+3997 Other perfusion
+3998 Hemorrhage control NOS
+3999 Vessel operation NEC
+400  Incis lymphatic structur
+4011 Lymphatic struct biopsy
+4019 Lymphatic diag proc NEC
+4021 Excis deep cervical node
+4022 Excise int mammary node
+4023 Excise axillary node
+4024 Excise inguinal node
+4029 Simp exc lymph struc NEC
+403  Regional lymph node exc
+4040 Rad neck dissection NOS
+4041 Unilat rad neck dissect
+4042 Bilat rad neck dissect
+4050 Rad node dissection NOS
+4051 Rad dissec axillary node
+4052 Rad dissec periaort node
+4053 Rad dissect iliac nodes
+4054 Radical groin dissection
+4059 Rad node dissection NEC
+4061 Thorac duct cannulation
+4062 Thoracic duct fistulizat
+4063 Close thoracic duct fist
+4064 Ligate thoracic duct
+4069 Thoracic duct op NEC
+409  Lymph structure op NEC
+4100 Bone marrow trnsplnt NOS
+4101 Auto bone mt w/o purg
+4102 Alo bone marrow trnsplnt
+4103 Allogrft bone marrow NOS
+4104 Auto hem stem ct w/o pur
+4105 Allo hem stem ct w/o pur
+4106 Cord bld stem cell trans
+4107 Auto hem stem ct w purg
+4108 Allo hem stem ct w purg
+4109 Auto bone mt w purging
+411  Puncture of spleen
+412  Splenotomy
+4131 Bone marrow biopsy
+4132 Closed spleen biopsy
+4133 Open spleen biopsy
+4138 Marrow diagnost proc NEC
+4139 Spleen diagnost proc NEC
+4141 Splenic cyst marsupial
+4142 Exc splenic lesion/tiss
+4143 Partial splenectomy
+415  Total splenectomy
+4191 Donor marrow aspiration
+4192 Injection into marrow
+4193 Exc of accessory spleen
+4194 Spleen transplantation
+4195 Repair of spleen
+4198 Bone marrow ops NEC
+4199 Spleen operation NEC
+4201 Esophageal web incision
+4209 Esophageal incision NEC
+4210 Esophagostomy NOS
+4211 Cervical esophagostomy
+4212 Esoph pouch exteriorizat
+4219 Ext fistulizat esoph NEC
+4221 Esophagoscopy by incis
+4222 Esophagoscopy thru stoma
+4223 Esophagoscopy NEC
+4224 Closed bx of esophagus
+4225 Open biopsy of esophagus
+4229 Esophageal dx proc NEC
+4231 Loc excis esoph divertic
+4232 Local excis esophag NEC
+4233 Endosc destruc esoph les
+4239 Destruct esophag les NEC
+4240 Esophagectomy NOS
+4241 Partial esophagectomy
+4242 Total esophagectomy
+4251 Thorac esophagoesophagos
+4252 Thorac esophagogastrost
+4253 Thorac sm bowel interpos
+4254 Thorac esophagoenter NEC
+4255 Thorac lg bowel interpos
+4256 Thorac esophagocolos NEC
+4258 Thorac interposition NEC
+4259 Thorac esophag anast NEC
+4261 Stern esophagoesophagost
+4262 Stern esophagogastrostom
+4263 Stern sm bowel interpos
+4264 Stern esophagoenter NEC
+4265 Stern lg bowel interpos
+4266 Stern esophagocolos NEC
+4268 Stern interposition NEC
+4269 Stern esophag anast NEC
+427  Esophagomyotomy
+4281 Insert perm tube esophag
+4282 Suture esophageal lacer
+4283 Esophagostomy closure
+4284 Esoph fistula repair NEC
+4285 Esophag stricture repair
+4286 Prod subq tunnel no anas
+4287 Esophageal graft NEC
+4289 Esophageal repair NEC
+4291 Ligation esoph varix
+4292 Esophageal dilation
+4299 Esophageal operation NEC
+430  Gastrotomy
+4311 Percu endosc gastrostomy
+4319 Other gastrostomy
+433  Pyloromyotomy
+4341 Endosc destr stomach les
+4342 Local gastr excision NEC
+4349 Local gastr destruct NEC
+435  Proximal gastrectomy
+436  Distal gastrectomy
+437  Part gastrec w jej anast
+4381 Part gast w jej transpos
+4382 Lap vertical gastrectomy
+4389 Opn/oth part gastrectomy
+4391 Tot gast w intes interpo
+4399 Total gastrectomy NEC
+4400 Vagotomy NOS
+4401 Truncal vagotomy
+4402 Highly select vagotomy
+4403 Selective vagotomy NEC
+4411 Transabdomin gastroscopy
+4412 Gastroscopy thru stoma
+4413 Gastroscopy NEC
+4414 Closed gastric biopsy
+4415 Open gastric biopsy
+4419 Gastric diagnos proc NEC
+4421 Dilate pylorus, incision
+4422 Endoscop dilate pylorus
+4429 Other pyloroplasty
+4431 High gastric bypass
+4432 Percu gastrojejunostomy
+4438 Lap gastroenterostomy
+4439 Gastroenterostomy NEC
+4440 Suture peptic ulcer NOS
+4441 Sut gastric ulcer site
+4442 Suture duoden ulcer site
+4443 Endosc control gast hem
+4444 Transcath embo gast hem
+4449 Other control gast hem
+445  Revision gastric anastom
+4461 Suture gastric lacerat
+4462 Gastrostomy closure
+4463 Close gastric fistul NEC
+4464 Gastropexy
+4465 Esophagogastroplasty
+4466 Creat esophagastr sphinc
+4467 Lap creat esoph sphinct
+4468 Laparoscop gastroplasty
+4469 Gastric repair NEC
+4491 Ligate gastric varices
+4492 Intraop gastric manipul
+4493 Insert gastric bubble
+4494 Remove gastric bubble
+4495 Lap gastric restric proc
+4496 Lap rev gast restri proc
+4497 Lap rem gast restric dev
+4498 Adjust gast restrict dev
+4499 Gastric operation NEC
+4500 Intestinal incision NOS
+4501 Duodenal incision
+4502 Small bowel incision NEC
+4503 Large bowel incision
+4511 Transab sm bowel endosc
+4512 Endosc sm bowel thru st
+4513 Sm bowel endoscopy NEC
+4514 Clos small bowel biopsy
+4515 Open small bowel biopsy
+4516 Egd with closed biopsy
+4519 Sm bowel dx proc NEC
+4521 Transab lg bowel endosc
+4522 Endosc lg bowel thru st
+4523 Colonoscopy
+4524 Flexible sigmoidoscopy
+4525 Clos large bowel biopsy
+4526 Open large bowel biopsy
+4527 Intestinal biopsy NOS
+4528 Lg bowel dx proced NEC
+4529 Bowel diagnost proc NEC
+4530 Endosc destru duoden les
+4531 Oth excise duodenum les
+4532 Destruct duoden les NEC
+4533 Local excis sm bowel NEC
+4534 Destr sm bowel les NEC
+4541 Excise lg intestine les
+4542 Endo polpectomy lrge int
+4543 Endosc destru lg int les
+4549 Destruc lg bowel les NEC
+4550 Intest seg isolat NOS
+4551 Sm bowel segment isolat
+4552 Lg bowel segment isolat
+4561 Mult seg sm bowel excis
+4562 Part sm bowel resect NEC
+4563 Total removal sm bowel
+4571 Opn mul seg lg intes NEC
+4572 Open cecectomy NEC
+4573 Opn rt hemicolectomy NEC
+4574 Opn transv colon res NEC
+4575 Opn lft hemicolectmy NEC
+4576 Open sigmoidectomy NEC
+4579 Prt lg intes exc NEC/NOS
+4581 Lap tot intr-ab colectmy
+4582 Op tot intr-abd colectmy
+4583 Tot abd colectmy NEC/NOS
+4590 Intestinal anastom NOS
+4591 Sm-to-sm bowel anastom
+4592 Sm bowel-rect stump anas
+4593 Small-to-large bowel NEC
+4594 Lg-to-lg bowel anastom
+4595 Anal anastomosis
+4601 Sm bowel exteriorization
+4602 Resect ext seg sm bowel
+4603 Lg bowel exteriorization
+4604 Resect ext seg lg bowel
+4610 Colostomy NOS
+4611 Temporary colostomy
+4613 Permanent colostomy
+4614 Delay opening colostomy
+4620 Ileostomy NOS
+4621 Temporary ileostomy
+4622 Continent ileostomy
+4623 Permanent ileostomy NEC
+4624 Delay opening ileostomy
+4631 Delay opening enterostom
+4632 Percu endosc jejunostomy
+4639 Enterostomy NEC
+4640 Intest stoma revis NOS
+4641 Sm bowel stoma revision
+4642 Pericolost hernia repair
+4643 Lg bowel stoma revis NEC
+4650 Intest stoma closure NOS
+4651 Sm bowel stoma closure
+4652 Lg bowel stoma closure
+4660 Intestinal fixation NOS
+4661 Sm bowel-abd wall fixat
+4662 Small bowel fixation NEC
+4663 Lg bowel-abd wall fixat
+4664 Large bowel fixation NEC
+4671 Duodenal lacerat suture
+4672 Duodenal fistula closure
+4673 Small bowel suture NEC
+4674 Close sm bowel fist NEC
+4675 Suture lg bowel lacerat
+4676 Close lg bowel fistula
+4679 Repair of intestine NEC
+4680 Intra-ab bowel manip NOS
+4681 Intra-abd sm bowel manip
+4682 Intra-abd lg bowel manip
+4685 Dilation of intestine
+4686 Endo insrt colonic stent
+4687 Insert colonic stent NEC
+4691 Myotomy of sigmoid colon
+4692 Myotomy of colon NEC
+4693 Revise sm bowel anastom
+4694 Revise lg bowel anastom
+4695 Local sm bowel perfusion
+4696 Local lg bowel perfusion
+4697 Transplant of intestine
+4699 Intestinal op NEC
+4701 Lap appendectomy
+4709 Other appendectomy
+4711 Lap incid appendectomy
+4719 Other incid appendectomy
+472  Drain appendiceal absc
+4791 Appendicostomy
+4792 Close appendiceal fistul
+4799 Appendiceal ops NEC
+480  Proctotomy
+481  Proctostomy
+4821 Transab proctosigmoidosc
+4822 Proctosigmoidosc thru st
+4823 Rigid proctosigmoidoscpy
+4824 Closed rectal biopsy
+4825 Open rectal biopsy
+4826 Perirectal tissue biopsy
+4829 Rect/perirect dx op NEC
+4831 Rad electrocoag-rect les
+4832 Electrocoag rect les NEC
+4833 Laser destruc rectal les
+4834 Cryosurg destr rect les
+4835 Local excis rectal les
+4836 Polypectomy of rectum
+4840 Pull-thru res rectum NOS
+4841 Soave submuc rect resect
+4842 Lap pull-thru res rectum
+4843 Opn pull-thru res rectum
+4849 Pull-thru rect resec NEC
+4850 Abdperneal res rectm NOS
+4851 Lap abdperneal resc rec
+4852 Opn abdperneal resc rec
+4859 Abdperneal resc rect NEC
+4861 Transsac rectosigmoidect
+4862 Ant rect resect w colost
+4863 Anterior rect resect NEC
+4864 Posterior rect resection
+4865 Duhamel rectal resection
+4869 Rectal resection NEC
+4871 Suture of rectal lacer
+4872 Closure of proctostomy
+4873 Close rectal fist NEC
+4874 Rectorectostomy
+4875 Abdominal proctopexy
+4876 Proctopexy NEC
+4879 Repair of rectum NEC
+4881 Perirectal incision
+4882 Perirectal excision
+4891 Incis rectal stricture
+4892 Anorectal myomectomy
+4893 Repair perirect fistula
+4899 Rectal perirect op NEC
+4901 Incis perianal abscess
+4902 Perianal incision NEC
+4903 Excis perianal skin tag
+4904 Perianal excision NEC
+4911 Anal fistulotomy
+4912 Anal fistulectomy
+4921 Anoscopy
+4922 Perianal biopsy
+4923 Anal biopsy
+4929 Anal/perian dx proc NEC
+4931 Endosc destruc anus les
+4939 Other destruc anus les
+4941 Hemorrhoid reduction
+4942 Hemorrhoid injection
+4943 Hemorrhoid cauterizat
+4944 Hemorrhoid cryotherapy
+4945 Hemorrhoid ligation
+4946 Hemorrhoidectomy
+4947 Hemorrhoid evacuation
+4949 Hemorrhoid procedure NEC
+4951 Left lat sphincterotomy
+4952 Post sphincterotomy
+4959 Anal sphincterotomy NEC
+496  Excision of anus
+4971 Suture anal laceration
+4972 Anal cerclage
+4973 Closure of anal fistula
+4974 Gracilis musc transplan
+4975 Impl or rev art anal sph
+4976 Remov art anal sphincter
+4979 Anal sphinct repair NEC
+4991 Incision of anal septum
+4992 Insert subq anal stimul
+4993 Anal incision NEC
+4994 Reduction anal prolapse
+4995 Control anal hemorrhage
+4999 Anal operation NEC
+500  Hepatotomy
+5011 Closed liver biopsy
+5012 Open liver biopsy
+5013 Transjugular liver bx
+5014 Laparoscopic liver bx
+5019 Hepatic dx proc NEC
+5021 Marsupializat liver les
+5022 Partial hepatectomy
+5023 Opn abltn liver les/tiss
+5024 Perc abltn liver les/tis
+5025 Lap abltn liver les/tiss
+5026 Abltn liver les/tiss NEC
+5029 Destruc hepatic les NEC
+503  Hepatic lobectomy
+504  Total hepatectomy
+5051 Auxiliary liver transpl
+5059 Liver transplant NEC
+5061 Closure liver lacerat
+5069 Liver repair NEC
+5091 Percutan liver aspirat
+5092 Extracorpor hepat Assis
+5093 Local perfusion liver
+5094 Hepatic injection NEC
+5099 Liver operation NEC
+5101 Percutan aspiration gb
+5102 Trocar cholecystostomy
+5103 Cholecystostomy NEC
+5104 Cholecystotomy NEC
+5110 Endosc retro cholangiopa
+5111 Endosc retro cholangio
+5112 Percu bx gb/bile duct
+5113 Open biliary tract bx
+5114 Clo endosc bx bile duct
+5115 Sphinct of oddi measure
+5119 Biliary tr dx proc NEC
+5121 Oth part cholecystectomy
+5122 Cholecystectomy
+5123 Laparoscopic cholecystec
+5124 Lap part cholecystectomy
+5131 Gb-to-hepat duct anast
+5132 Gb-to-intestine anastom
+5133 Gb-to-pancreas anastom
+5134 Gb-to-stomach anastomos
+5135 Gallbladder anastom NEC
+5136 Choledochoenterostomy
+5137 Hepatic duct-gi anastom
+5139 Bile duct anastomos NEC
+5141 Cde for calculus remov
+5142 Cde for obstruction NEC
+5143 Choledochohepat intubat
+5149 Incis obstr bile duc NEC
+5151 Common duct exploration
+5159 Bile duct incision NEC
+5161 Excis cyst duct remnant
+5162 Excis ampulla of vater
+5163 Common duct excis NEC
+5164 Endosc destru bile les
+5169 Bile duct excision NEC
+5171 Simple sut-common duct
+5172 Choledochoplasty
+5179 Bile duct repair NEC
+5181 Sphincter of oddi dilat
+5182 Pancreat sphincterotom
+5183 Pancreat sphincteroplas
+5184 Endosc dilation ampulla
+5185 Endosc sphincterotomy
+5186 Endosc inser nasobil tub
+5187 Endosc inser stent bile
+5188 Endosc remove bile stone
+5189 Sphinct of oddi op NEC
+5191 Repair gb laceration
+5192 Closure cholecystostomy
+5193 Clos biliary fistul NEC
+5194 Revis bile tract anastom
+5195 Remove bile duct prosth
+5196 Perc extrac com duc calc
+5198 Oth perc proc bil trct
+5199 Biliary tract op NEC
+5201 Cath drain-pancreat cyst
+5209 Pancreatotomy NEC
+5211 Closed pancreatic biopsy
+5212 Open pancreatic biopsy
+5213 Endosc retro pancreatog
+5214 Clo endosc bx pancre duc
+5219 Pancreatic dx proc NEC
+5221 Endosc destr pancrea les
+5222 Other destru pancrea les
+523  Pancreat cyst marsupiali
+524  Int drain pancreat cyst
+5251 Proximal pancreatectomy
+5252 Distal pancreatectomy
+5253 Rad subtot pancreatectom
+5259 Partial pancreatect NEC
+526  Total pancreatectomy
+527  Rad pancreaticoduodenect
+5280 Pancreat transplant NOS
+5281 Reimplant pancreatic tis
+5282 Pancreatic homotransplan
+5283 Pancreatic heterotranspl
+5284 Autotrnsplnt islets lang
+5285 Allotrnsplnt islets lang
+5286 Trnsplnt islets lang NOS
+5292 Cannulation pancrea duc
+5293 Endosc inser panc stent
+5294 Endosc remove panc stone
+5295 Pancreatic repair NEC
+5296 Pancreatic anastomosis
+5297 Endosc inser nasopan tub
+5298 Endosc dil pancreat duct
+5299 Pancreatic operation NEC
+5300 Unilat ing hern rep NOS
+5301 Opn rep dir ing hern NEC
+5302 Opn rep ind ing hern NEC
+5303 Opn dir ing hern-gft NEC
+5304 Opn ind ing hern-gft NEC
+5305 Ing hernia rep-graft NOS
+5310 Bilat ing hernia rep NOS
+5311 Opn bil dir ing hern NEC
+5312 Opn bil ind ing hern NEC
+5313 Opn bi dr/in ing hrn NEC
+5314 Opn bi dr ing hrn-gr NEC
+5315 Op bi in ing hrn-grf NEC
+5316 Op bi dr/in ig hr-gr NEC
+5317 Bil ing hrn rep-grft NOS
+5321 Unil femor hrn rep-grft
+5329 Unil femor hern rep NEC
+5331 Bil fem hern repair-grft
+5339 Bil fem hern repair NEC
+5341 Opn rep umb hrn-grft NEC
+5342 Lap umbil hernia-graft
+5343 Lap umbilical hernia NEC
+5349 Open rep umbil hern NEC
+5351 Incisional hernia repair
+5359 Abd wall hern repair NEC
+5361 Open incis hern-grft NEC
+5362 Lap incis hern repr-grft
+5363 Lap hern ant abd-gft NEC
+5369 Opn hern ant abd-grf NEC
+5371 Lap abd rep-diaphr hern
+5372 Opn abd diaphrm hern NEC
+5375 Abd rep-diaphr hern NOS
+5380 Thor rep-diaph hern NOS
+5381 Diaphragmatic plication
+5382 Parastern hernia repair
+5383 Lap thorc app-diaph hern
+5384 Opn thorc diaph hern NEC
+539  Other hernia repair
+540  Abdominal wall incision
+5411 Exploratory laparotomy
+5412 Reopen recent lap site
+5419 Laparotomy NEC
+5421 Laparoscopy
+5422 Abdominal wall biopsy
+5423 Peritoneal biopsy
+5424 Closed intra-abd mass bx
+5425 Peritoneal lavage
+5429 Abd region dx proc NEC
+543  Destruct abd wall lesion
+544  Destruct peritoneal tiss
+5451 Lap periton adhesiolysis
+5459 Oth periton adhesiolysis
+5461 Reclose post op disrupt
+5462 Delayed clos abd wound
+5463 Abd wall suture NEC
+5464 Peritoneal suture
+5471 Repair of gastroschisis
+5472 Abdomen wall repair NEC
+5473 Peritoneal repair NEC
+5474 Omental repair NEC
+5475 Mesenteric repair NEC
+5491 Percu abdominal drainage
+5492 Remove FB from periton
+5493 Create cutanperiton fist
+5494 Creat peritoneovas shunt
+5495 Peritoneal incision
+5496 Injec air-periton cavity
+5497 Inj therap subst periton
+5498 Peritoneal dialysis
+5499 Abdomen region ops NEC
+5501 Nephrotomy
+5502 Nephrostomy
+5503 Percu nephrostm w/o frag
+5504 Percu nephrostmy w frag
+5511 Pyelotomy
+5512 Pyelostomy
+5521 Nephroscopy
+5522 Pyeloscopy
+5523 Closed renal biopsy
+5524 Open renal biopsy
+5529 Renal diagnost proc NEC
+5531 Renal les marsupializat
+5532 Opn abltn renal les/tiss
+5533 Perc abltn renl les/tiss
+5534 Lap abltn renal les/tiss
+5535 Abltn renal les/tiss NEC
+5539 Loc destr renal les NEC
+554  Partial nephrectomy
+5551 Nephroureterectomy
+5552 Solitary kidney nephrect
+5553 Rejected kidney nephrect
+5554 Bilateral nephrectomy
+5561 Renal autotransplant
+5569 Kidney transplant NEC
+557  Nephropexy
+5581 Suture kidney laceration
+5582 Close nephrost & pyelost
+5583 Close renal fistula NEC
+5584 Reduce renal pedicl tors
+5585 Symphysiotomy
+5586 Renal anastomosis
+5587 Correct ureteropelv junc
+5589 Renal repair NEC
+5591 Renal decapsulation
+5592 Percutan renal aspirat
+5593 Replace nephrostomy tube
+5594 Replace pyelostomy tube
+5595 Local renal perfusion
+5596 Renal injection NEC
+5597 Implant mechanic kidney
+5598 Remov mechanical kidney
+5599 Renal operation NEC
+560  Tu remov ureter obstruct
+561  Ureteral meatotomy
+562  Ureterotomy
+5631 Ureteroscopy
+5632 Closed ureteral biopsy
+5633 Clos endosc ureteral bx
+5634 Open ureteral biopsy
+5635 Endoscopic ileal conduit
+5639 Ureteral dx procedur NEC
+5640 Ureterectomy NOS
+5641 Partial ureterectomy
+5642 Total ureterectomy
+5651 Form cutan ileoureterost
+5652 Revis cutan ileoureteros
+5661 Form cutan ureterostomy
+5662 Revis cutan ureteros NEC
+5671 Urin diversion to bowel
+5672 Revis ureteroenterostomy
+5673 Nephrocystanastomosi NOS
+5674 Ureteroneocystostomy
+5675 Transureteroureterostomy
+5679 Ureteral anastomosis NEC
+5681 Intralum urete adhesioly
+5682 Suture ureteral lacerat
+5683 Ureterostomy closure
+5684 Close ureter fistula NEC
+5685 Ureteropexy
+5686 Remove ureteral ligature
+5689 Repair of ureter NEC
+5691 Ureteral meatus dilation
+5692 Implant ureteral stimul
+5693 Replace ureteral stimul
+5694 Remove ureteral stimulat
+5695 Ligation of ureter
+5699 Ureteral operation NEC
+570  Tu bladder clearance
+5711 Percutan bladder aspirat
+5712 Cystotomy & adhesiolysis
+5717 Percutaneous cystostomy
+5718 Other suprapu cystostomy
+5719 Cystotomy NEC
+5721 Vesicostomy
+5722 Revise clo vesicostomy
+5731 Cystoscopy thru stoma
+5732 Cystoscopy NEC
+5733 Clos transureth bladd bx
+5734 Open bladder biopsy
+5739 Bladder diagnos proc NEC
+5741 Tu adhesiolysis bladder
+5749 Tu destruc bladd les NEC
+5751 Excision of urachus
+5759 Bladder les destruct NEC
+576  Partial cystectomy
+5771 Radical cystectomy
+5779 Total cystectomy NEC
+5781 Suture bladder lacerat
+5782 Cystostomy closure
+5783 Enterovesico fist repair
+5784 Vesic fistula repair NEC
+5785 Cystourethroplasty
+5786 Bladder exstrophy repair
+5787 Bladder reconstruction
+5788 Bladder anastomosis NEC
+5789 Bladder repair NEC
+5791 Bladder sphincterotomy
+5792 Bladder neck dilation
+5793 Control bladd hemorrhage
+5794 Insert indwelling cath
+5795 Replace indwelling cath
+5796 Implant bladder stimulat
+5797 Replace bladder stimulat
+5798 Remove bladder stimulat
+5799 Bladder operation NEC
+580  Urethrotomy
+581  Urethral meatotomy
+5821 Perineal urethroscopy
+5822 Urethroscopy NEC
+5823 Urethral biopsy
+5824 Periurethral biopsy
+5829 Urethral dx proc NEC
+5831 Endosc destr urethra les
+5839 Other destru urethra les
+5841 Suture urethral lacerat
+5842 Urethrostomy closure
+5843 Close ureth fistula NEC
+5844 Urethral reanastomosis
+5845 Hypo-epispadius repair
+5846 Ureth reconstruction NEC
+5847 Urethral meatoplasty
+5849 Urethral repair NEC
+585  Ureth stricture release
+586  Urethral dilation
+5891 Periurethral incision
+5892 Periurethral excision
+5893 Implt artf urin sphinct
+5899 Ureth/periureth op NEC
+5900 Retroperit dissect NOS
+5902 Periren adhesiolys NEC
+5903 Lap lys periren/uret adh
+5909 Periren/ureter incis NEC
+5911 Oth lys perives adhesio
+5912 Lap lys perivesureth adh
+5919 Perivesical incision NEC
+5921 Periren/ureteral biopsy
+5929 Periren/uret dx proc NEC
+593  Urethroves junct plicat
+594  Suprapubic sling op
+595  Retropubic ureth suspens
+596  Paraurethral suspension
+5971 Levator musc suspension
+5972 Inject implant urethra
+5979 Urin incontin repair NEC
+598  Ureteral catheterization
+5991 Periren/vesicle excision
+5992 Periren/vesicle op NEC
+5993 Replace ureterost tube
+5994 Replace cystostomy tube
+5995 Ultrason fragment-stone
+5999 Urinary system op NEC
+600  Incision of prostate
+6011 Closed prostatic biopsy
+6012 Open prostatic biopsy
+6013 Clos seminal vesicles bx
+6014 Open seminal vesicles bx
+6015 Periprostatic biopsy
+6018 Prostatic dx proced NEC
+6019 Semin ves dx proced NEC
+6021 Transureth prostatectomy
+6029 Oth transureth prostatec
+603  Suprapubic prostatectomy
+604  Retropubic prostatectomy
+605  Radical prostatectomy
+6061 Los excis prostatic les
+6062 Perineal prostatectomy
+6069 Prostatectomy NEC
+6071 Percut semin ves aspirat
+6072 Seminal vesicle incision
+6073 Seminal vesicle excision
+6079 Seminal vesicle op NEC
+6081 Periprostatic incision
+6082 Periprostatic excision
+6091 Percut prostatic aspirat
+6092 Injection into prostate
+6093 Repair of prostate
+6094 Control prostate hemorr
+6095 Trans bal dil pros ureth
+6096 Tu destr prostate by mt
+6097 Oth tu destr pros - rt
+6099 Prostatic operation NEC
+610  Scrotum & tunica i & d
+6111 Scrotum & tunica biopsy
+6119 Scrot/tunica dx proc NEC
+612  Excision of hydrocele
+613  Scrotal les destruction
+6141 Suture scrotal lacerat
+6142 Scrotal fistula repair
+6149 Scrotum/tunic repair NEC
+6191 Percut tunica aspiration
+6192 Excision tunica les NEC
+6199 Scrotum & tunica op NEC
+620  Incision of testes
+6211 Closed testicular biopsy
+6212 Open testicular biopsy
+6219 Testes dx procedure NEC
+622  Testicular les destruct
+623  Unilateral orchiectomy
+6241 Remove both testes
+6242 Remove solitary testis
+625  Orchiopexy
+6261 Suture testicular lacer
+6269 Testicular repair NEC
+627  Insert testicular prosth
+6291 Aspiration of testes
+6292 Injection into testes
+6299 Testicular operation NEC
+6301 Spermatic cord/vas biops
+6309 Spermat cord/vas dx NEC
+631  Exc spermatic varicocele
+632  Excise epididymis cyst
+633  Excise cord/epid les NEC
+634  Epididymectomy
+6351 Suture cord & epid lacer
+6352 Reduction torsion testes
+6353 Transplant spermat cord
+6359 Cord & epidid repair NEC
+636  Vasotomy
+6370 Male sterilization NOS
+6371 Ligation of vas deferens
+6372 Spermatic cord ligation
+6373 Vasectomy
+6381 Suture vas & epidid lac
+6382 Postop vas reconstruct
+6383 Epididymovasostomy
+6384 Removal vas ligature
+6385 Remov vas deferens valve
+6389 Vas & epididy repair NEC
+6391 Spermatocele aspiration
+6392 Epididymotomy
+6393 Spermatic cord incision
+6394 Sperm cord adhesiolysis
+6395 Insert valve in vas def
+6399 Cord/epid/vas ops NEC
+640  Circumcision
+6411 Penile biopsy
+6419 Penile diagnost proc NEC
+642  Local excis penile les
+643  Amputation of penis
+6441 Suture penile laceration
+6442 Release of chordee
+6443 Construction of penis
+6444 Reconstruction of penis
+6445 Replantation of penis
+6449 Penile repair NEC
+645  Sex transformat op NEC
+6491 Dorsal/lat slit prepuce
+6492 Incision of penis
+6493 Division of penile adhes
+6494 Fit ext penile prosthes
+6495 Ins noninfl penis prosth
+6496 Remove int penile prosth
+6497 Ins inflate penis prosth
+6498 Penile operation NEC
+6499 Male genital op NEC
+6501 Laparoscopic oophorotomy
+6509 Other oophorotomy
+6511 Ovarian aspirat biopsy
+6512 Ovarian biopsy NEC
+6513 Lap biopsy of ovary
+6514 Oth lap dx proc ovaries
+6519 Ovarian dx procedure NEC
+6521 Ovarian cyst marsupializ
+6522 Ovarian wedge resection
+6523 Lap marsup ovarian cyst
+6524 Lap wedge resect ovary
+6525 Oth lap loc exc dest ova
+6529 Local destr ova les NEC
+6531 Lap unilat oophorectomy
+6539 Oth unilat oophorectomy
+6541 Lap uni salpingo-oophor
+6549 Oth uni salpingo-oophor
+6551 Oth remove both ovaries
+6552 Oth remove remain ovary
+6553 Lap remove both ovaries
+6554 Lap remove remain ovary
+6561 Oth remove ovaries/tubes
+6562 Oth remove rem ova/tube
+6563 Lap remove ovaries/tubes
+6564 Lap remove rem ova/tube
+6571 Oth simple suture ovary
+6572 Oth reimplant of ovary
+6573 Oth salpingo-oophoroplas
+6574 Lap simple suture ovary
+6575 Lap reimplant of ovary
+6576 Lap salpingo-oophoroplas
+6579 Repair of ovary NEC
+6581 Lap adhesiolys ova/tube
+6589 Adhesiolysis ovary/tube
+6591 Aspiration of ovary
+6592 Transplantation of ovary
+6593 Manual rupt ovarian cyst
+6594 Ovarian denervation
+6595 Ovarian torsion release
+6599 Ovarian operation NEC
+6601 Salpingotomy
+6602 Salpingostomy
+6611 Fallopian tube biopsy
+6619 Fallop tube dx proc NEC
+6621 Bilat endosc crush tube
+6622 Bilat endosc divis tube
+6629 Bilat endos occ tube NEC
+6631 Bilat tubal crushing NEC
+6632 Bilat tubal division NEC
+6639 Bilat tubal destruct NEC
+664  Total unilat salpingect
+6651 Remove both fallop tubes
+6652 Remove solitary fal tube
+6661 Destroy fallop tube les
+6662 Remov tube & ectop preg
+6663 Bilat part salpingec NOS
+6669 Partial salpingectom NEC
+6671 Simpl suture fallop tube
+6672 Salpingo-oophorostomy
+6673 Salpingo-salpingostomy
+6674 Salpingo-uterostomy
+6679 Fallop tube repair NEC
+668  Fallopian tube insufflat
+6691 Fallopian tube aspirat
+6692 Unilat fallop tube destr
+6693 Impl fallop tube prosth
+6694 Remov fallop tube prosth
+6695 Blow therapeut into tube
+6696 Fallopian tube dilation
+6697 Bury fimbriae in uterus
+6699 Fallopian tube op NEC
+670  Cervical canal dilation
+6711 Endocervical biopsy
+6712 Cervical biopsy NEC
+6719 Cervical dx procedur NEC
+672  Conization of cervix
+6731 Cervical cyst marsupial
+6732 Cervical les cauterizat
+6733 Cervical les cryotherapy
+6739 Cervical les destruc NEC
+674  Amputation of cervix
+6751 Transab cerclage cervix
+6759 Oth rep int cervical os
+6761 Suture cervical lacerat
+6762 Cervical fistula repair
+6769 Cervical repair NEC
+680  Hysterotomy
+6811 Digital exam of uterus
+6812 Hysteroscopy
+6813 Open uterine biopsy
+6814 Open uterine ligament bx
+6815 Clos uterine ligament bx
+6816 Closed uterine biopsy
+6819 Uterus/adnex dx proc NEC
+6821 Endomet synechiae divis
+6822 Incision uterine septum
+6823 Endometrial ablation
+6824 Uterine art emb w coils
+6825 Uterine art emb w/o coil
+6829 Uterine les destruct NEC
+6831 Lap scervic hysterectomy
+6839 Subtotl abd hyst NEC/NOS
+6841 Lap total abdominal hyst
+6849 Total abd hyst NEC/NOS
+6851 Lap ast vag hysterectomy
+6859 Vag hysterectomy NEC/NOS
+6861 Lap radical abdomnl hyst
+6869 Radical abd hyst NEC/NOS
+6871 Lap radical vaginal hyst
+6879 Radical vag hyst NEC/NOS
+688  Pelvic evisceration
+689  Hysterectomy NEC/NOS
+6901 D & C for preg terminat
+6902 D & C post delivery
+6909 D & C NEC
+6919 Destruc uter support NEC
+6921 Interposit op uterin lig
+6922 Uterine suspension NEC
+6923 Vag repair invers uterus
+6929 Uterus/adnexa repair NEC
+693  Paracerv uterine denerv
+6941 Suture uterine lacerat
+6942 Closure uterine fistula
+6949 Uterine repair NEC
+6951 Aspirat curet-preg termi
+6952 Aspirat curet-post deliv
+6959 Aspir curett uterus NEC
+696  Menstrual extraction
+697  Insertion of iud
+6991 Insert uterine device
+6992 Artificial insemination
+6993 Insertion of laminaria
+6994 Man replace invert uter
+6995 Incision of cervix
+6996 Remove cervical cerclage
+6997 Remove penetrat cerv FB
+6998 Uterine support op NEC
+6999 Uterine operation NEC
+700  Culdocentesis
+7011 Hymenotomy
+7012 Culdotomy
+7013 Intralum vag adhesiolys
+7014 Vaginotomy NEC
+7021 Vaginoscopy
+7022 Culdoscopy
+7023 Cul-de-sac biopsy
+7024 Vaginal biopsy
+7029 Vagin/cul-de-sac dx NEC
+7031 Hymenectomy
+7032 Excis cul-de-sac lesion
+7033 Excision vaginal lesion
+704  Vaginal obliteration
+7050 Cystocel/rectocel repair
+7051 Cystocele repair
+7052 Rectocele repair
+7053 Cysto & recto w grf/pros
+7054 Rep cystocel w grft/pros
+7055 Rep rectocele w grf/pros
+7061 Vaginal construction
+7062 Vaginal reconstruction
+7063 Vaginal const w grf/pros
+7064 Vag reconst w grft/pros
+7071 Suture vagina laceration
+7072 Repair colovagin fistula
+7073 Repair rectovag fistula
+7074 Rep vaginoent fistul NEC
+7075 Repair vag fistula NEC
+7076 Hymenorrhaphy
+7077 Vaginal suspens & fixat
+7078 Vag susp/fix w grft/pros
+7079 Vaginal repair NEC
+708  Vaginal vault obliterat
+7091 Vaginal operation NEC
+7092 Cul-de-sac operation NEC
+7093 Cul-de-sac grf/pros NEC
+7094 Insert biological graft
+7095 Insert synth graft/prost
+7101 Vulvar adhesiolysis
+7109 Incis vulva/perineum NEC
+7111 Vulvar biopsy
+7119 Vulvar diagnos proc NEC
+7121 Percutan bartholin aspir
+7122 Incise bartholin's gland
+7123 Bartholin gland marsup
+7124 Destruc bartholin gland
+7129 Bartholin's gland op NEC
+713  Local vulvar excis NEC
+714  Operations on clitoris
+715  Radical vulvectomy
+7161 Unilateral vulvectomy
+7162 Bilateral vulvectomy
+7171 Suture vulvar laceration
+7172 Repair vulvar fistula
+7179 Vulvar/perin repair NEC
+718  Other vulvar operations
+719  Other female genital ops
+720  Low forceps operation
+721  Low forceps w episiotomy
+7221 Mid forceps w episiotomy
+7229 Mid forceps op NEC
+7231 High forceps w episiot
+7239 High forceps op NEC
+724  Forceps rotat fetal head
+7251 Part brch extrac w forcp
+7252 Part breech extract NEC
+7253 Tot brch extrac w forcep
+7254 Tot breech extrac NEC
+726  Forceps-aftercoming head
+7271 Vacuum ext del w episiot
+7279 Vacuum extract del NEC
+728  Instrument delivery NEC
+729  Instrument delivery NOS
+7301 Induct labor-rupt memb
+7309 Artif rupt membranes NEC
+731  Surg induct labor NEC
+7321 Int/comb version no extr
+7322 Int/comb version w extr
+733  Failed forceps
+734  Medical induction labor
+7351 Manual rotat fetal head
+7359 Manual assist deliv NEC
+736  Episiotomy
+738  Fetal ops-facilitate del
+7391 Ext version-assist deliv
+7392 Replace prolapsed cord
+7393 Incis cx to assist deliv
+7394 Pubiotomy to assist del
+7399 Ops assisting deliv NEC
+740  Classical c-section
+741  Low cervical c-section
+742  Extraperitoneal c-sect
+743  Rem extratub ectop preg
+744  Cesarean section NEC
+7491 Hysterotomy to termin pg
+7499 Cesarean section NOS
+750  Intra-amnion inj for ab
+751  Diagnostic amniocentesis
+752  Intrauterine transfusion
+7531 Amnioscopy
+7532 Fetal ekg
+7533 Fetal blood sample/bx
+7534 Other fetal monitoring
+7535 Dx proc fetus/amnion NEC
+7536 Correction fetal defect
+7537 Amnioinfusion
+7538 Fetal pulse oximetry
+754  Manual removal-placenta
+7550 Repair ob lac uterus NOS
+7551 Repair ob lacerat cervix
+7552 Repair ob lac corp uteri
+7561 Repair ob lac blad/ureth
+7562 Repair ob lac rect/anus
+7569 Repair ob laceration NEC
+757  Manual explor uterus p/p
+758  Ob tamponade uterus/vag
+7591 Evac ob inc hemat perin
+7592 Evac ob hemat vulva/vag
+7593 Surg corr invert uterus
+7594 Man replac invert uterus
+7599 Obstetric operation NEC
+7601 Facial bone sequestrect
+7609 Facial bone incision NEC
+7611 Facial bone biopsy
+7619 Facial bone dx proc NEC
+762  Destruct facial bone les
+7631 Partial mandibulectomy
+7639 Part facial ostectom NEC
+7641 Tot mandibulec w reconst
+7642 Total mandibulectomy NEC
+7643 Mandibular reconst NEC
+7644 Tot face ostect w recons
+7645 Tot face bone ostect NEC
+7646 Facial bone reconstr NEC
+765  Temporomand arthroplasty
+7661 Cl osteoplasty mand rami
+7662 Open osteoplas mand rami
+7663 Osteoplasty mandible bdy
+7664 Mand orthognathic op NEC
+7665 Seg osteoplasty maxilla
+7666 Tot osteoplasty maxilla
+7667 Reduction genioplasty
+7668 Augmentation genioplasty
+7669 Facial bone repair NEC
+7670 Reduction facial fx NOS
+7671 Cl reduct malar/zygo fx
+7672 Opn reduct malar/zygo fx
+7673 Cl reduct maxillary fx
+7674 Open reduct maxillary fx
+7675 Cl reduct mandible fx
+7676 Open reduct mandible fx
+7677 Open reduct alveolar fx
+7678 Cl reduct facial fx NEC
+7679 Open reduct face fx NEC
+7691 Bone graft to face bone
+7692 Syn implant to face bone
+7693 Clos reduct tm dislocat
+7694 Open reduct tm dislocat
+7695 Tm manipulation NEC
+7696 Injec therap sbst tm jnt
+7697 Remove int fix face bone
+7699 Facial bone/jnt op NEC
+7700 Sequestrectomy NOS
+7701 Chest cage sequestrec
+7702 Humerus sequestrectomy
+7703 Radius & ulna sequestrec
+7704 Metacarp/carp sequestrec
+7705 Femoral sequestrectomy
+7706 Patellar sequestrectomy
+7707 Tibia/fibula sequestrec
+7708 Metatar/tar sequestrec
+7709 Sequestrectomy NEC
+7710 Other bone incision NOS
+7711 Other chest cage incis
+7712 Other humerus incision
+7713 Other radius/ulna incis
+7714 Oth metacarp/carp incis
+7715 Other femoral incision
+7716 Other patellar incision
+7717 Other tibia/fibula incis
+7718 Oth metatars/tars incis
+7719 Bone incis w/o div NEC
+7720 Wedge osteotomy NOS
+7721 Chest cage wedg osteotom
+7722 Humerus wedge osteotomy
+7723 Radius/ulna wedg osteoto
+7724 Metacar/car wedg osteoto
+7725 Femoral wedge osteotomy
+7726 Patellar wedge osteotomy
+7727 Tibia/fibul wedg osteot
+7728 Metatar/tar wedg osteot
+7729 Wedge osteotomy NEC
+7730 Other bone division NOS
+7731 Chest cage bone div NEC
+7732 Humerus division NEC
+7733 Radius/ulna division NEC
+7734 Metacar/car division NEC
+7735 Femoral division NEC
+7736 Patellar division NEC
+7737 Tibia/fibula div NEC
+7738 Metatar/tar division NEC
+7739 Bone division NEC
+7740 Bone biopsy NOS
+7741 Chest cage bone biopsy
+7742 Humerus biopsy
+7743 Radius & ulna biopsy
+7744 Metacarpal/carpal biopsy
+7745 Femoral biopsy
+7746 Patellar biopsy
+7747 Tibia & fibula biopsy
+7748 Metatarsal/tarsal biopsy
+7749 Bone biopsy NEC
+7751 Bunionect/sft/osteotomy
+7752 Bunionect/sft/arthrodes
+7753 Oth bunionect w sft corr
+7754 Exc correct bunionette
+7756 Repair of hammer toe
+7757 Repair of claw toe
+7758 Oth exc, fus, repair toe
+7759 Bunionectomy NEC
+7760 Loc exc bone lesion NOS
+7761 Exc chest cage bone les
+7762 Loc exc bone les humerus
+7763 Loc exc les radius/ulna
+7764 Loc exc les metacar/car
+7765 Loc exc bone les femur
+7766 Loc exc bone les patella
+7767 Loc exc les tibia/fibula
+7768 Loc exc les metatar/tar
+7769 Loc exc bone lesion NEC
+7770 Excise bone for grft NOS
+7771 Ex chest cage bone-gft
+7772 Excise humerus for graft
+7773 Excis radius/ulna-graft
+7774 Excis metacar/car-graft
+7775 Excise femur for graft
+7776 Excise patella for graft
+7777 Excise tib/fib for graft
+7778 Excis metatar/tar-graft
+7779 Excise bone for gft NEC
+7780 Oth part ostectomy NOS
+7781 Oth chest cage ostectomy
+7782 Partial humerectomy NEC
+7783 Part ostect-radius/ulna
+7784 Part ostect-metacar/car
+7785 Part ostectomy-femur
+7786 Partial patellectomy
+7787 Part ostect-tibia/fibula
+7788 Part ostect-metatar/tar
+7789 Partial ostectomy NEC
+7790 Total ostectomy NOS
+7791 Tot chest cage ostectomy
+7792 Total ostectomy-humerus
+7793 Tot ostect-radius/ulna
+7794 Tot ostect-metacarp/carp
+7795 Tot ostectomy-femur
+7796 Total patellectomy
+7797 Tot ostect-tibia/fibula
+7798 Tot ostect-metatars/tars
+7799 Total ostectomy NEC
+7800 Bone graft NOS
+7801 Bone graft to chest cage
+7802 Bone graft to humerus
+7803 Bone graft-radius/ulna
+7804 Bone grft to metacar/car
+7805 Bone graft to femur
+7806 Bone graft to patella
+7807 Bone graft-tibia/fibula
+7808 Bone graft-metatar/tar
+7809 Bone graft NEC
+7810 Applic ext fix dev NOS
+7811 Appl ext fix-chest cage
+7812 Applic ext fix-humerus
+7813 Appl ext fix-radius/ulna
+7814 Appl ext fix-metacar/car
+7815 Applic ext fix dev-femur
+7816 Appl ext fix dev-patella
+7817 Appl ext fix-tib/fibula
+7818 Appl ext fix-metatar/tar
+7819 Applic ext fix dev NEC
+7820 Limb shorten proc NOS
+7822 Limb short proc-humerus
+7823 Limb shorten-radius/ulna
+7824 Limb shorten-metacar/car
+7825 Limb short proc-femur
+7827 Limb shorten-tib/fibula
+7828 Limb shorten-metatar/tar
+7829 Limb shorten proc NEC
+7830 Limb lengthen proc NOS
+7832 Limb length proc-humerus
+7833 Limb length-radius/ulna
+7834 Limb length-metacar/car
+7835 Limb length proc-femur
+7837 Limb lengthen-tib/fibula
+7838 Limb lengthn-metatar/tar
+7839 Limb lengthen proc NEC
+7840 Oth bone repair/plast op
+7841 Oth chest cage rep/plast
+7842 Oth humerus repair/plast
+7843 Oth rad/uln repair/plast
+7844 Oth metac/carp rep/plast
+7845 Oth femur repair/plastic
+7846 Oth patella repair/plast
+7847 Oth tib/fib repair/plast
+7848 Oth meta/tar repa/plast
+7849 Oth bone repa/plast NEC
+7850 Int fix w/o fx reduc NOS
+7851 Int fixation-chest cage
+7852 Int fixation-humerus
+7853 Int fixation-radius/ulna
+7854 Int fixation-metacar/car
+7855 Internal fixation-femur
+7856 Internal fix-patella
+7857 Int fixation-tibia/fibul
+7858 Int fixation-metatar/tar
+7859 Int fix-no fx reduct NEC
+7860 Remove imp device NOS
+7861 Remov imp dev-chest cage
+7862 Remove impl dev-humerus
+7863 Remov imp dev-radius/uln
+7864 Remov imp dev-metac/carp
+7865 Remove imp device-femur
+7866 Remov imp device-patella
+7867 Remov imp dev-tib/fibula
+7868 Remove imp dev-metat/tar
+7869 Remove impl device NEC
+7870 Osteoclasis NOS
+7871 Osteoclasis-chest cage
+7872 Osteoclasis-humerus
+7873 Osteoclasis-radius/ulna
+7874 Osteoclasis-metacar/car
+7875 Osteoclasis-femur
+7876 Osteoclasis-patella
+7877 Osteoclasis-tibia/fibula
+7878 Osteoclasis-metatar/tar
+7879 Osteoclasis NEC
+7880 Other bone dx proc NOS
+7881 Oth dx proced-chest cage
+7882 Oth dx proced-humerus
+7883 Oth dx proc-radius/ulna
+7884 Oth dx proc-metacar/car
+7885 Oth dx proced-femur
+7886 Oth dx proced-patella
+7887 Oth dx proc-tibia/fibula
+7888 Oth dx proc-metatar/tar
+7889 Other bone dx proc NEC
+7890 Insert bone stimul NOS
+7891 Insert bone stimul-chest
+7892 Insert bone stim-humerus
+7893 Inser bone stim-rad/ulna
+7894 Inser bone stim-meta/car
+7895 Insert bone stim-femur
+7896 Insert bone stim-patella
+7897 Inser bone stim-tib/fib
+7898 Inser bone stim-meta/tar
+7899 Insert bone stimul NEC
+7900 Closed fx reduction NOS
+7901 Closed fx reduct humerus
+7902 Cl fx reduc-radius/ulna
+7903 Cl fx reduc-metacar/car
+7904 Cl fx reduc-finger
+7905 Cl fx reduc-femur
+7906 Cl fx reduc-tibia/fibula
+7907 Cl fx reduc-metatar/tar
+7908 Cl fx reduc-toe
+7909 Closed fx reduction NEC
+7910 Cl fx reduc-int fix NOS
+7911 Clos red-int fix humerus
+7912 Cl red-int fix rad/ulna
+7913 Cl red-int fix metac/car
+7914 Close red-int fix finger
+7915 Closed red-int fix femur
+7916 Cl red-int fix tib/fibu
+7917 Cl red-int fix metat/tar
+7918 Close red-int fix toe fx
+7919 Cl fx reduc-int fix NEC
+7920 Open fx reduction NOS
+7921 Open reduc-humerus fx
+7922 Open reduc-radius/uln fx
+7923 Open reduc-metac/car fx
+7924 Open reduction-finger fx
+7925 Open reduction-femur fx
+7926 Open reduc-tibia/fib fx
+7927 Open reduc-metat/tars fx
+7928 Open reduction-toe fx
+7929 Open fx reduction NEC
+7930 Opn fx red w int fix NOS
+7931 Open red-int fix humerus
+7932 Op red-int fix rad/ulna
+7933 Op red-int fix metac/car
+7934 Open red-int fix finger
+7935 Open reduc-int fix femur
+7936 Op red-int fix tib/fibul
+7937 Op red-int fix metat/tar
+7938 Open reduct-int fix toe
+7939 Opn fx red w int fix NEC
+7940 Cls reduc-sep epiphy NOS
+7941 Close red-humerus epiphy
+7942 Cls red-radius/ul epiphy
+7945 Close reduc-femur epiphy
+7946 Cls red-tibia/fib epiphy
+7949 Cls reduc-sep epiphy NEC
+7950 Open red-sep epiphy NOS
+7951 Opn red-sep epiphy-humer
+7952 Op red-radius/uln epiphy
+7955 Opn red-sep epiphy-femur
+7956 Op red-tibia/fib epiphys
+7959 Open red-sep epiphy NEC
+7960 Open fx site debride NOS
+7961 Debrid open fx-humerus
+7962 Debrid opn fx-radius/uln
+7963 Debrid opn fx-metac/car
+7964 Debrid opn fx-finger
+7965 Debrid opn fx-femur
+7966 Debrid opn fx-tibia/fib
+7967 Debrid opn fx-metat/tar
+7968 Debrid opn fx-toe
+7969 Open fx site debride NEC
+7970 Cl reduc disloc NOS
+7971 Cl reduc disloc-shoulder
+7972 Cl reduc disloc-elbow
+7973 Cl reduc disloc-wrist
+7974 Cl reduc disloc-hand/fng
+7975 Cl reduc disloc-hip
+7976 Cl reduc disloc-knee
+7977 Cl reduc disloc-ankle
+7978 Cl reduc disloc-foot/toe
+7979 Cl reduc dislocation NEC
+7980 Open reduc-dislocat NOS
+7981 Opn reduc disloc-shouldr
+7982 Open reduc-elbow disloc
+7983 Open reduc-wrist disloc
+7984 Opn reduc disloc-hand
+7985 Open reduc-hip dislocat
+7986 Open reduc-knee dislocat
+7987 Open reduc-ankle disloc
+7988 Opn reduc disloc-ft/toe
+7989 Open reduc-dislocat NEC
+7990 Unspec op bone inj NOS
+7991 Humerus injury op NOS
+7992 Radius/ulna inj op NOS
+7993 Metacarp/carp inj op NOS
+7994 Finger injury op NOS
+7995 Femur injury op NOS
+7996 Tibia/fibula inj op NOS
+7997 Metatars/tars inj op NOS
+7998 Toe injury operation NOS
+7999 Unspec op-bone inj NEC
+8000 Arth/pros rem wo rep NOS
+8001 Arth/pros rem wo re-shld
+8002 Arth/pros rem wo rep-elb
+8003 Arth/pros rem wo re-wrst
+8004 Arth/pros rem wo rep-hnd
+8005 Arth/pros rem wo rep-hip
+8006 Arth/pros rem wo re-knee
+8007 Arth/pros rem wo rep-ank
+8008 Arth/pros rem wo re-foot
+8009 Arth/pros rem wo rep NEC
+8010 Other arthrotomy NOS
+8011 Oth arthrotomy-shoulder
+8012 Oth arthrotomy-elbow
+8013 Oth arthrotomy-wrist
+8014 Oth arthrotomy-hand/fngr
+8015 Oth arthrotomy-hip
+8016 Oth arthrotomy-knee
+8017 Oth arthrotomy-ankle
+8018 Oth arthrotomy-foot/toe
+8019 Other arthrotomy NEC
+8020 Arthroscopy NOS
+8021 Shoulder arthroscopy
+8022 Elbow arthroscopy
+8023 Wrist arthroscopy
+8024 Hand & finger arthroscop
+8025 Hip arthroscopy
+8026 Knee arthroscopy
+8027 Ankle arthroscopy
+8028 Foot & toe arthroscopy
+8029 Arthroscopy NEC
+8030 Joint biopsy NOS
+8031 Shoulder joint biopsy
+8032 Elbow joint biopsy
+8033 Wrist joint biopsy
+8034 Hand/finger joint biopsy
+8035 Hip joint biopsy
+8036 Knee joint biopsy
+8037 Ankle joint biopsy
+8038 Foot & toe joint biopsy
+8039 Joint biopsy NEC
+8040 Jt structur division NOS
+8041 Shoulder struct division
+8042 Elbow structure division
+8043 Wrist structure division
+8044 Hand joint struct divis
+8045 Hip structure division
+8046 Knee structure division
+8047 Ankle structure division
+8048 Foot joint struct divis
+8049 Jt structur division NEC
+8050 Exc/dest intvrt disc NOS
+8051 Excision intervert disc
+8052 Chemonucleolysis iv disc
+8053 Rep anulus fibrosus-grft
+8054 Rep anuls fibros NEC/NOS
+8059 Oth exc/dest intvrt disc
+806  Excis knee semilun cartl
+8070 Synovectomy-site NOS
+8071 Shoulder synovectomy
+8072 Elbow synovectomy
+8073 Wrist synovectomy
+8074 Hand synovectomy
+8075 Hip synovectomy
+8076 Knee synovectomy
+8077 Ankle synovectomy
+8078 Foot synovectomy
+8079 Synovectomy-site NEC
+8080 Destruct joint les NOS
+8081 Destruc-shoulder les NEC
+8082 Destruc-elbow lesion NEC
+8083 Destruc-wrist lesion NEC
+8084 Destruc-hand jt les NEC
+8085 Destruct-hip lesion NEC
+8086 Destruct-knee lesion NEC
+8087 Destruc-ankle lesion NEC
+8088 Destruc-foot jt les NEC
+8089 Destruct joint les NEC
+8090 Excision of joint NOS
+8091 Excision of shoulder NEC
+8092 Excision of elbow NEC
+8093 Excision of wrist NEC
+8094 Excision hand joint NEC
+8095 Excision of hip NEC
+8096 Excision of knee NEC
+8097 Excision of ankle NEC
+8098 Excision foot joint NEC
+8099 Excision of joint NEC
+8100 Spinal fusion NOS
+8101 Atlas-axis fusion
+8102 Oth cerv fusion ant/ant
+8103 Ot cerv fusion post/post
+8104 Drsl/drslumb fus ant/ant
+8105 Drsl/dslmb fus post/post
+8106 Lumb/lmbosac fus ant/ant
+8107 Lmb/lmbsac fus post/post
+8108 Lumb/lmbsac fus ant/post
+8111 Ankle fusion
+8112 Triple arthrodesis
+8113 Subtalar fusion
+8114 Midtarsal fusion
+8115 Tarsometatarsal fusion
+8116 Metatarsophalangeal fus
+8117 Other fusion of foot
+8118 Subtalr jt arthroereisis
+8120 Arthrodesis NOS
+8121 Arthrodesis of hip
+8122 Arthrodesis of knee
+8123 Arthrodesis of shoulder
+8124 Arthrodesis of elbow
+8125 Carporadial fusion
+8126 Metacarpocarpal fusion
+8127 Metacarpophalangeal fus
+8128 Interphalangeal fusion
+8129 Arthrodesis NEC
+8130 Spinal refusion NOS
+8131 Refusion of atlas-axis
+8132 Refus oth cervcl ant/ant
+8133 Refus oth cerv post/post
+8134 Refus drs/drslmb ant/ant
+8135 Refus drs/drslmb pst/pst
+8136 Refus lmb/lmbsac ant/ant
+8137 Refus lmb/lmbsac pst/pst
+8138 Refus lmb/lmbsc ant/post
+8139 Refusion of spine NEC
+8140 Repair of hip, NEC
+8142 Five-in-one knee repair
+8143 Triad knee repair
+8144 Patellar stabilization
+8145 Cruciate lig repair NEC
+8146 Collaterl lig repair NEC
+8147 Other repair of knee
+8149 Other repair of ankle
+8151 Total hip replacement
+8152 Partial hip replacement
+8153 Revise hip replacemt NOS
+8154 Total knee replacement
+8155 Revise knee replace NOS
+8156 Total ankle replacement
+8157 Repl joint of foot, toe
+8159 Rev jt repl low ext NEC
+8162 Fus/refus 2-3 vertebrae
+8163 Fus/refus 4-8 vertebrae
+8164 Fus/refus 9 vertebrae
+8165 Percutan vertebroplasty
+8166 Percut vertebral augment
+8171 Arthroplas metacarp wit
+8172 Arthroplasty metacar w/o
+8173 Total wrist replacement
+8174 Arthroplasty carpal wit
+8175 Arthroplasty carpal w/o
+8179 Oth repair han/fin/wris
+8180 Oth totl shouldr replace
+8181 Partial shoulder replace
+8182 Rep recur shlder disloc
+8183 Shoulder arthroplast NEC
+8184 Total elbow replacement
+8185 Elbow arthroplasty NEC
+8188 Rvrs totl shldr replacmt
+8191 Arthrocentesis
+8192 Injection into joint
+8193 Sutur capsul/ligamen arm
+8194 Suture capsul/lig ank/ft
+8195 Sutur capsul/lig leg NEC
+8196 Other repair of joint
+8197 Rev jt repl upper extrem
+8198 Other joint dx procedure
+8199 Joint structure op NEC
+8201 Explor tend sheath-hand
+8202 Myotomy of hand
+8203 Bursotomy of hand
+8204 I & d palmar/thenar spac
+8209 Inc soft tissue hand NEC
+8211 Tenotomy of hand
+8212 Fasciotomy of hand
+8219 Div soft tissue hand NEC
+8221 Exc les tend sheath hand
+8222 Excision hand muscle les
+8229 Exc les sft tiss hnd NEC
+8231 Bursectomy of hand
+8232 Excis hand tend for grft
+8233 Hand tenonectomy NEC
+8234 Exc hnd mus/fas for grft
+8235 Hand fasciectomy NEC
+8236 Other myectomy of hand
+8239 Hand soft tissue exc NEC
+8241 Suture tendn sheath hand
+8242 Delay sut flex tend hand
+8243 Delay sut hand tend NEC
+8244 Sutur flex tend hand NEC
+8245 Suture hand tendon NEC
+8246 Suture hand muscle/fasc
+8251 Hand tendon advancement
+8252 Hand tendon recession
+8253 Hand tendon reattachment
+8254 Hand muscle reattachment
+8255 Chng hnd mus/ten lng NEC
+8256 Transplant hand tend NEC
+8257 Transposit hand tend NEC
+8258 Transplant hand musc NEC
+8259 Transposit hand musc NEC
+8261 Pollicization operation
+8269 Thumb reconstruction NEC
+8271 Hand tend pulley reconst
+8272 Plast op hnd-mus/fas grf
+8279 Plast op hand w grft NEC
+8281 Transfer of finger
+8282 Repair of cleft hand
+8283 Repair of macrodactyly
+8284 Repair of mallet finger
+8285 Other tenodesis of hand
+8286 Other tenoplasty of hand
+8289 Hand plastic op NEC
+8291 Lysis of hand adhesions
+8292 Aspiration bursa of hand
+8293 Aspir soft tiss hand NEC
+8294 Inject bursa of hand
+8295 Inject tendon of hand
+8296 Hand sft tissu injec NEC
+8299 Hand mus/ten/fas/ops NEC
+8301 Tendon sheath explorat
+8302 Myotomy
+8303 Bursotomy
+8309 Soft tissue incision NEC
+8311 Achillotenotomy
+8312 Adductor tenotomy of hip
+8313 Other tenotomy
+8314 Fasciotomy
+8319 Soft tissue division NEC
+8321 Open biopsy soft tissue
+8329 Soft tissue dx proc NEC
+8331 Excis les tendon sheath
+8332 Excis lesion of muscle
+8339 Exc les soft tissue NEC
+8341 Tendon excision for grft
+8342 Other tenonectomy
+8343 Musc/fasc excis for grft
+8344 Other fasciectomy
+8345 Other myectomy
+8349 Other soft tissue excis
+835  Bursectomy
+8361 Tendon sheath suture
+8362 Delayed tendon suture
+8363 Rotator cuff repair
+8364 Other suture of tendon
+8365 Other muscle/fasc suture
+8371 Tendon advancement
+8372 Tendon recession
+8373 Tendon reattachment
+8374 Muscle reattachment
+8375 Tendon trnsfr/transplant
+8376 Other tendon transposit
+8377 Muscle trnsfr/transplant
+8379 Other muscle transposit
+8381 Tendon graft
+8382 Muscle or fascia graft
+8383 Tendon pulley reconstruc
+8384 Clubfoot release NEC
+8385 Musc/tend lng change NEC
+8386 Quadricepsplasty
+8387 Other plastic ops muscle
+8388 Other plastic ops tendon
+8389 Other plastic ops fascia
+8391 Adhesiolysis mus/ten/fas
+8392 Insert skel musc stimula
+8393 Remov skel musc stimulat
+8394 Aspiration of bursa
+8395 Soft tissue aspirat NEC
+8396 Injection into bursa
+8397 Injection into tendon
+8398 Soft tissue inject NEC
+8399 Mus/ten/fas/bur op NEC
+8400 Upper limb amputat NOS
+8401 Finger amputation
+8402 Thumb amputation
+8403 Amputation through hand
+8404 Disarticulation of wrist
+8405 Amputation thru forearm
+8406 Disarticulation of elbow
+8407 Amputation thru humerus
+8408 Shoulder disarticulation
+8409 Forequarter amputation
+8410 Lower limb amputat NOS
+8411 Toe amputation
+8412 Amputation through foot
+8413 Disarticulation of ankle
+8414 Amputat through malleoli
+8415 Below knee amputat NEC
+8416 Disarticulation of knee
+8417 Above knee amputation
+8418 Disarticulation of hip
+8419 Hindquarter amputation
+8421 Thumb reattachment
+8422 Finger reattachment
+8423 Forearm/wrist/hand reatt
+8424 Upper arm reattachment
+8425 Toe reattachment
+8426 Foot reattachment
+8427 Lower leg/ankle reattach
+8428 Thigh reattachment
+8429 Reattachment NEC
+843  Amputation stump revis
+8440 Implnt/fit pros limb NOS
+8441 Fit up arm/should prosth
+8442 Fit lo arm/hand prosthes
+8443 Fit arm prosthesis NOS
+8444 Implant arm prosthesis
+8445 Fit above knee prosthes
+8446 Fit below knee prosthes
+8447 Fit leg prosthesis NOS
+8448 Implant leg prosthesis
+8451 Ins spinal fusion device
+8452 Insert recombinant BMP
+8453 Imp limb length kinetic
+8454 Impl other limb length
+8455 Ins bone void filler
+8456 Ins or rep cement spacer
+8457 Removal of cement spacer
+8459 Insert othr spin device
+8460 Insert disc pros NOS
+8461 Ins part disc pros cerv
+8462 Ins tot disc prost cerv
+8463 Ins spin disc pros thor
+8464 Ins part disc pros lumb
+8465 Ins totl disc pros lumb
+8466 Revise disc prost cerv
+8467 Revise disc prost thora
+8468 Revise disc prosth lumb
+8469 Revise disc prosth NOS
+8471 App ext fix dev-monoplan
+8472 App ext fix dev-ring sys
+8473 App hybrid ext fix dev
+8480 Ins/repl interspine dev
+8481 Rev interspine device
+8482 Ins/repl pdcl stabil dev
+8483 Rev pedcl dyn stabil dev
+8484 Ins/repl facet replc dev
+8485 Rev facet replace device
+8491 Amputation NOS
+8492 Separat equal join twin
+8493 Separat unequl join twin
+8494 Ins strn fix w rgd plate
+8499 Musculoskeletal op NEC
+850  Mastotomy
+8511 Closed breast biopsy
+8512 Open breast biopsy
+8519 Breast dx procedure NEC
+8520 Breast tissu destruc NOS
+8521 Local excis breast les
+8522 Quadrant resect breast
+8523 Subtotal mastectomy
+8524 Exc ectopic breast tissu
+8525 Excision of nipple
+8531 Unilat reduct mammoplast
+8532 Bilat reduct mammoplasty
+8533 Unil subq mammect-implnt
+8534 Unilat subq mammect NEC
+8535 Bil subq mammect-implant
+8536 Bilat subq mammectom NEC
+8541 Unilat simple mastectomy
+8542 Bilat simple mastectomy
+8543 Unilat exten simp mastec
+8544 Bilat extend simp mastec
+8545 Unilat radical mastectom
+8546 Bilat radical mastectomy
+8547 Unil ext rad mastectomy
+8548 Bil exten rad mastectomy
+8550 Augment mammoplasty NOS
+8551 Unil breast injec-augmen
+8552 Bil breast injec-augment
+8553 Unilat breast implant
+8554 Bilateral breast implant
+8555 Fat graft to breast
+856  Mastopexy
+8570 Totl reconstc breast NOS
+8571 Latiss dorsi myocut flap
+8572 TRAM flap, pedicled
+8573 TRAM flap, free
+8574 DIEP flap, free
+8575 SIEA flap, free
+8576 GAP flap, free
+8579 Totl reconst breast NEC
+8581 Suture breast laceration
+8582 Breast split-thick graft
+8583 Breast full-thick graft
+8584 Breast pedicle graft
+8585 Breast muscle flap graft
+8586 Transposition of nipple
+8587 Nipple repair NEC
+8589 Mammoplasty NEC
+8591 Aspiration of breast
+8592 Breast injection
+8593 Breast implant revision
+8594 Breast implant removal
+8595 Inser breast tissu expan
+8596 Remov breast tissu expan
+8599 Breast operation NEC
+8601 Aspiration skin & subq
+8602 Skin defect tattooing
+8603 Incision pilonidal sinus
+8604 Other skin & subq i & d
+8605 Removal fb/dev from skin
+8606 Insert infusion pump
+8607 Insert vasc access dev
+8609 Skin & subq incision NEC
+8611 Closed bx skin/subq tiss
+8619 Skin & subq dx proc NEC
+8621 Excision of pilonid cyst
+8622 Exc wound debridement
+8623 Nail removal
+8624 Skin chemosurgery
+8625 Dermabrasion
+8626 Ligation dermal appendag
+8627 Debridement of nail
+8628 Nonexcis debridement wnd
+863  Other local destruc skin
+864  Radical excis skin les
+8651 Replantation of scalp
+8659 Skin closure NEC
+8660 Free skin graft NOS
+8661 Full-thick hand skin grf
+8662 Hand skin graft NEC
+8663 Full-thick skin grft NEC
+8664 Hair transplant
+8665 Heterograft to skin
+8666 Homograft to skin
+8667 Dermal regener graft
+8669 Free skin graft NEC
+8670 Pedicle graft/flap NOS
+8671 Cut & prep pedicle graft
+8672 Pedicle graft advancemen
+8673 Attach pedicle to hand
+8674 Attach pedicle graft NEC
+8675 Revision of pedicle grft
+8681 Repair facial weakness
+8682 Facial rhytidectomy
+8683 Size reduct plastic op
+8684 Relaxation of scar
+8685 Syndactyly correction
+8686 Onychoplasty
+8687 Fat grft skin/subq tiss
+8689 Skin repair & plasty NEC
+8690 Ext fat for grft/banking
+8691 Skin excision for graft
+8692 Epilation of skin
+8693 Insert tissue expander
+8694 Ins/repl single pul gen
+8695 Ins/re pls gn no rechrg
+8696 Insert/repl oth neurost
+8697 Ins/rep 1 pul gen,rechrg
+8698 Ins/rep mul pul gn,rechg
+8699 Skin & subq op NEC
+8701 Pneumoencephalogram
+8702 Brain/skull contrst xray
+8703 C.A.T. scan of head
+8704 Head tomography NEC
+8705 Contrast dacryocystogram
+8706 Nasophary contrast x-ray
+8707 Contrast laryngogram
+8708 Cervical lymphangiogram
+8709 Head soft tiss x-ray NEC
+8711 Full-mouth x-ray
+8712 Dental x-ray NEC
+8713 Tm contrast arthrogram
+8714 Contrast x-ray of orbit
+8715 Contrast x-ray of sinus
+8716 Facial bone x-ray NEC
+8717 Skull x-ray NEC
+8721 Contrast myelogram
+8722 Cervical spine x-ray NEC
+8723 Thoracic spine x-ray NEC
+8724 Lumbosac spine x-ray NEC
+8729 Spinal x-ray NEC
+8731 Endotracheal bronchogram
+8732 Contrast bronchogram NEC
+8733 Mediastinal pneumogram
+8734 Intrathor lymphangiogram
+8735 Contr mammary ductogram
+8736 Breast xerography
+8737 Mammography NEC
+8738 Chest wall sinogram
+8739 Thorax sft tiss xray NEC
+8741 C.A.T. scan of thorax
+8742 Thoracic tomography NEC
+8743 Rib/sternum/clavic x-ray
+8744 Routine chest x-ray
+8749 Chest x-ray NEC
+8751 Perc hepat Cholangiogram
+8752 Intraven cholangiogram
+8753 Intraoper cholangiogram
+8754 Cholangiogram NEC
+8759 Biliary tract x-ray NEC
+8761 Barium swallow
+8762 Upper GI series
+8763 Small bowel series
+8764 Lower GI series
+8765 Intestinal x-ray NEC
+8766 Contrast pancreatogram
+8769 Digestive tract xray NEC
+8771 C.A.T. scan of kidney
+8772 Nephrotomogram NEC
+8773 Intravenous pyelogram
+8774 Retrograde pyelogram
+8775 Percutaneous pyelogram
+8776 Retrogr cystourethrogram
+8777 Cystogram NEC
+8778 Ileal conduitogram
+8779 Urinary system x-ray NEC
+8781 X-ray of gravid uterus
+8782 Gas hysterosalpingogram
+8783 Dye hysterosalpingogram
+8784 Percutaneous hysterogram
+8785 Tube & uterus x-ray NEC
+8789 Female genital x-ray NEC
+8791 Contr semin vesiculogram
+8792 Prostat/sem ves xray NEC
+8793 Contrast epididymogram
+8794 Contrast vasogram
+8795 Epididymis/vas x-ray NEC
+8799 Male genital x-ray NEC
+8801 C.A.T. scan of abdomen
+8802 Abdominal tomography NEC
+8803 Abdominal wall sinogram
+8804 Abdominal lymphangiogram
+8809 Abdominal wall x-ray NEC
+8811 Pelvic dye contrast xray
+8812 Pelvic gas contrast xray
+8813 Periton pneumogram NEC
+8814 Retroperiton fistulogram
+8815 Retroperiton pneumogram
+8816 Retroperitoneal xray NEC
+8819 Abdominal x-ray NEC
+8821 Skl xray-shoulder/up arm
+8822 Skel xray-elbow/forearm
+8823 Skel xray-wrist & hand
+8824 Skel xray-upper limb NOS
+8825 Pelvimetry
+8826 Skel xray-pelvis/hip NEC
+8827 Skel xray-thigh/knee/leg
+8828 Skel xray-ankle & foot
+8829 Skel xray-lower limb NOS
+8831 Skeletal series x-ray
+8832 Contrast arthrogram
+8833 Other skeletal x-ray
+8834 Upper limb lymphangiogrm
+8835 Up limb sft tis xray NEC
+8836 Lower limb lymphangiogrm
+8837 Lo limb sft tis xray NEC
+8838 Other C.A.T. scan
+8839 X-ray NEC and NOS
+8840 Contrast arteriogram NOS
+8841 Contr cerebr arteriogram
+8842 Contrast aortogram
+8843 Contr pulmon arteriogram
+8844 Contr thor arteriogr NEC
+8845 Contrast renal arteriogr
+8846 Contrast placentogram
+8847 Contr abd arteriogrm NEC
+8848 Contrast arteriogram-leg
+8849 Contrast arteriogram NEC
+8850 Angiocardiography NOS
+8851 Vena cav angiocardiogram
+8852 Rt heart angiocardiogram
+8853 Lt heart angiocardiogram
+8854 Rt & lt heart angiocard
+8855 Coronar arteriogr-1 cath
+8856 Coronar arteriogr-2 cath
+8857 Coronary arteriogram NEC
+8858 Negatve-contr cardiogram
+8859 Intraop cor flr vas angi
+8860 Contrast phlebogram NOS
+8861 Contr phlebogram-hd/neck
+8862 Contr phlebogram-pulmon
+8863 Thorac contr phlebog NEC
+8864 Portal contr phlebogram
+8865 Abd contr phlebogram NEC
+8866 Contrast phlebogram-leg
+8867 Contrast phlebogram NEC
+8868 Impedance phlebogram
+8871 Dx ultrasound-head/neck
+8872 Dx ultrasound-heart
+8873 Dx ultrasound-thorax NEC
+8874 Dx ultrasound-digestive
+8875 Dx ultrasound-urinary
+8876 Dx ultrasound-abdomen
+8877 Dx ultrasound-vascular
+8878 Dx ultrasound-grav uter
+8879 Dx ultrasound NEC
+8881 Cerebral thermography
+8882 Ocular thermography
+8883 Bone thermography
+8884 Muscle thermography
+8885 Breast thermography
+8886 Blood vessel thermograph
+8889 Thermography NEC
+8890 Diagnostic imaging NOS
+8891 Mri of brain & brainstem
+8892 Mri chest & heart
+8893 Mri spinal canal
+8894 Mri musculoskeletal
+8895 Mri pelvis,prostate,blad
+8896 Oth intraop mag res imag
+8897 Magnetic res image unsp
+8898 Bone mineral density
+8901 Brief interview & evalua
+8902 Limited interview/evalua
+8903 Comprehen interview/eval
+8904 Interview & evaluat NEC
+8905 Interview & evaluat NOS
+8906 Limited consultation
+8907 Comprehensive consultat
+8908 Consultation NEC
+8909 Consultation NOS
+8910 Intracarot amobarb test
+8911 Tonometry
+8912 Nasal function study
+8913 Neurologic examination
+8914 Electroencephalogram
+8915 Neurologic func test NEC
+8916 Skull transilluminat
+8917 Polysomnogram
+8918 Oth sleep dis funct test
+8919 Video/radio eeg monitor
+8921 Urinary manometry
+8922 Cystometrogram
+8923 Urethral sphincter emg
+8924 Uroflowmetry
+8925 Urethral pressure profil
+8926 Gynecologic examination
+8929 Other gu system exams
+8931 Dental examination
+8932 Esophageal manometry
+8933 Digital enterostomy exam
+8934 Digital rectal exam
+8935 Nasal sinus transillumin
+8936 Manual exam of breast
+8937 Vital capacity determin
+8938 Respiratory measure NEC
+8939 Nonoperative exams NEC
+8941 Treadmill stress test
+8942 Masters' 2-step test
+8943 Bicycle ergometer test
+8944 Cardiac stress test NEC
+8945 Pacemaker rate check
+8946 Pacemaker wave form chck
+8947 Pacemaker impedance chck
+8948 Pacemaker volt threshold
+8949 AICD check
+8950 Ambu cardiac monitoring
+8951 Rhythm electrocardiogram
+8952 Electrocardiogram
+8953 Vectorcardiogram
+8954 Electrocardiograph monit
+8955 Phonocardiogram
+8956 Carotid pulse tracing
+8957 Apexcardiogram
+8958 Plethysmogram
+8959 Nonop cardiac/vasc exam
+8960 Cnt intraart bld gas mon
+8961 Arterial pressure monit
+8962 Cvp monitoring
+8963 Pulmon art press monitor
+8964 Pulmon art wedge monitor
+8965 Arterial bld gas measure
+8966 Mix venous bld gas meas
+8967 Oxygen consumption monit
+8968 Oth cardiac mon output
+8969 Coronary bld flow monit
+897  General physical exam
+898  Autopsy
+9001 Bact smear-nervous syst
+9002 Culture-nervous syst
+9003 C & s-nervous syst
+9004 Parasitology-nerv syst
+9005 Toxicology-nervous syst
+9006 Cell blk/pap-nervous sys
+9009 Micro exam-nervous NEC
+9011 Bact smear-endocrine
+9012 Culture-endocrine
+9013 C & s-endocrine
+9014 Parasitology-endocrine
+9015 Toxicology-endocrine
+9016 Cell block/pap-endocrine
+9019 Micro exam-endocrine NEC
+9021 Bact smear-eye
+9022 Culture-eye
+9023 C & s-eye
+9024 Parasitology-eye
+9025 Toxicology-eye
+9026 Cell block/pap-eye
+9029 Micro exam-eye NEC
+9031 Bact smear-ent/larynx
+9032 Culture-ent/larynx
+9033 C & s-ent/larynx
+9034 Parasitology-ent/larynx
+9035 Toxicology-ent/larynx
+9036 Cell block/pap-ent/laryn
+9039 Micro exam-ent/laryn NEC
+9041 Bact smear-lower resp
+9042 Culture-lower resp
+9043 C & s-lower resp
+9044 Parasitology-lower resp
+9045 Toxicology-lower resp
+9046 Cell block/pap-lowr resp
+9049 Micro exam-lowr resp NEC
+9051 Bact smear-blood
+9052 Culture-blood
+9053 C & s-blood
+9054 Parasitology-blood
+9055 Toxicology-blood
+9056 Cell block/pap-blood
+9059 Micro exam-blood NEC
+9061 Bact smear-spleen/marrow
+9062 Culture-spleen/marrow
+9063 C & s-spleen/marrow
+9064 Parasitol-spleen/marrow
+9065 Toxicology-spleen/marrow
+9066 Cell blk/pap-spleen/marr
+9069 Micro exam-spln/marr NEC
+9071 Bact smear-lymph system
+9072 Culture-lymph system
+9073 C & s-lymph system
+9074 Parasitology-lymph sys
+9075 Toxicology-lymph system
+9076 Cell blk/pap-lymph sys
+9079 Micro exam-lymph sys NEC
+9081 Bact smear-upper GI
+9082 Culture-upper GI
+9083 C & s-upper GI
+9084 Parasitology-upper GI
+9085 Toxicology-upper GI
+9086 Cell blk/pap-upper GI
+9089 Micro exam-upper GI NEC
+9091 Bact smear-lower GI
+9092 Culture-lower GI
+9093 C & s-lower GI
+9094 Parasitology-lower GI
+9095 Toxicology-lower GI
+9096 Cell blk/pap-lower GI
+9099 Micro exam-lower GI NEC
+9101 Bact smear-bili/pancreas
+9102 Culture-bili/pancreas
+9103 C & s-bili/pancreas
+9104 Parasitology-bili/pancr
+9105 Toxicology-bili/pancreas
+9106 Cell blk/pap-bili/pancre
+9109 Micro exam-bili/panc NEC
+9111 Bact smear-peritoneum
+9112 Culture-peritoneum
+9113 C & s-peritoneum
+9114 Parasitology-peritoneum
+9115 Toxicology-peritoneum
+9116 Cell blk/pap-peritoneum
+9119 Micro exam-periton NEC
+9121 Bact smear-upper urinary
+9122 Culture-upper urinary
+9123 C & s-upper urinary
+9124 Parasitology-upper urin
+9125 Toxicology-upper urinary
+9126 Cell blk/pap-upper urin
+9129 Micro exam-uppr urin NEC
+9131 Bact smear-lower urinary
+9132 Culture-lower urinary
+9133 C & s-lower urinary
+9134 Parasitlolgy-lower urin
+9135 Toxicology-lower urinary
+9136 Cell blk/pap-lower urin
+9139 Micro exam-low urin NEC
+9141 Bact smear-female genit
+9142 Culture-female genital
+9143 C & s-female genital
+9144 Parasitology-female gen
+9145 Toxicology-female genit
+9146 Cell blk/pap-female gen
+9149 Micro exam-femal gen NEC
+9151 Bact smear-musculoskel
+9152 Culture-musculoskeletal
+9153 C & s-musculoskeletal
+9154 Parasitology-musculoskel
+9155 Toxicology-musculoskel
+9156 Cell blk/pap-musculoskel
+9159 Micro exam-musculosk NEC
+9161 Bact smear-integument
+9162 Culture-integument
+9163 C & s-integument
+9164 Parasitology-integument
+9165 Toxicology-integument
+9166 Cell blk/pap-integument
+9169 Micro exam-integumen NEC
+9171 Bact smear-op wound
+9172 Culture-op wound
+9173 C & s-op wound
+9174 Parasitology-op wound
+9175 Toxicology-op wound
+9176 Cell blk/pap-op wound
+9179 Micro exam-op wound NEC
+9181 Bact smear NEC
+9182 Culture NEC
+9183 C & s NEC
+9184 Parasitology NEC
+9185 Toxicology NEC
+9186 Cell blk/pap NEC
+9189 Micro exam NEC
+9191 Bact smear NOS
+9192 Culture NOS
+9193 C & s NOS
+9194 Parasitology NOS
+9195 Toxicology NOS
+9196 Cell blk/pap NOS
+9199 Micro exam NOS
+9201 Thyroid scan/isotop func
+9202 Liver scan/isotope funct
+9203 Renal scan/isotope funct
+9204 GI scan & isotope funct
+9205 C-vasc scan/isotop funct
+9209 Other isotope function
+9211 Cerebral scan
+9212 Head scan NEC
+9213 Parathyroid scan
+9214 Bone scan
+9215 Pulmonary scan
+9216 Lymphatic system scan
+9217 Placental scan
+9218 Total body scan
+9219 Scan of other sites
+9220 Inf liquid brachy isotop
+9221 Superficial radiation
+9222 Orthovoltage radiation
+9223 Radioisot teleradiother
+9224 Teleradio using photons
+9225 Electron teleradiotherap
+9226 Particul teleradioth NEC
+9227 Radioactive elem implant
+9228 Isotope inject/instill
+9229 Radiotherapeut proc NEC
+9230 Stereo radiosurgery NOS
+9231 Sing source radiosurgery
+9232 Multisource radiosurgery
+9233 Particulate radiosurgery
+9239 Stereo radiosurgery NEC
+9241 Intra-op electron rad rx
+9301 Functional pt evaluation
+9302 Orthotic evaluation
+9303 Prosthetic evaluation
+9304 Manual muscle funct test
+9305 Range of motion testing
+9306 Limb length measurement
+9307 Body measurement
+9308 Electromyography
+9309 Other dx pt procedure
+9311 Assisting exercise
+9312 Activ musculosk exer NEC
+9313 Resistive exercise
+9314 Joint movement training
+9315 Mobilization of spine
+9316 Other joint mobilization
+9317 Pass musculosk exer NEC
+9318 Pt breathing exercise
+9319 Pt exercise NEC
+9321 Manual & mechan traction
+9322 Ambulat & gait training
+9323 Orthotic device fitting
+9324 Prosthet/orthot training
+9325 Forced limb extension
+9326 Manual rupt joint adhes
+9327 Musc or tend stretching
+9328 Stretching of fascia
+9329 Forcib correct defor NEC
+9331 Assisted pool exercise
+9332 Whirlpool treatment
+9333 Other hydrotherapy
+9334 Diathermy
+9335 Other heat therapy
+9336 Cardiac retraining
+9337 Prenatal training
+9338 Combined pt NOS
+9339 Physical therapy NEC
+9341 Spine tract w skull dev
+9342 Other spinal traction
+9343 Intermitt skel traction
+9344 Other skeletal traction
+9345 Thomas' splint traction
+9346 Limb skin traction NEC
+9351 Plaster jacket applicat
+9352 Neck support application
+9353 Other cast application
+9354 Application of splint
+9355 Dental wiring
+9356 Pressure dressing applic
+9357 Dressing of wound NEC
+9358 Pressure trouser applica
+9359 Immobiliz/wound attn NEC
+9361 Omt for gen'l mobilizat
+9362 Omt with hi-vel,lo-ampli
+9363 Omt with lo-vel,hi-ampli
+9364 Omt with isoton,isometri
+9365 Omt with indirect forces
+9366 Omt to move tissue fluid
+9367 Osteopath manipulat NEC
+9371 Dyslexia training
+9372 Dysphasia training
+9373 Esophag speech training
+9374 Speech defect training
+9375 Other speech therapy
+9376 Training in lead dog use
+9377 Braille or moon training
+9378 Rehab for the blind NEC
+9381 Recreational therapy
+9382 Educational therapy
+9383 Occupational therapy
+9384 Music therapy
+9385 Vocational rehabilitat
+9389 Rehabilitation NEC
+9390 Non-invasive mech vent
+9391 Ippb
+9393 Nonmechan resuscitation
+9394 Nebulizer therapy
+9395 Hyperbaric oxygenation
+9396 Oxygen enrichment NEC
+9397 Decompression chamber
+9398 Atmos press/compos contr
+9399 Other resp procedures
+9401 Intelligence test admin
+9402 Psychologic test adminis
+9403 Character analysis
+9408 Psychol eval & test NEC
+9409 Psychol mental stat NOS
+9411 Psychiat mental determin
+9412 Routine psychiat visit
+9413 Psychia commitment eval
+9419 Psychia interv/eval NEC
+9421 Narcoanalysis
+9422 Lithium therapy
+9423 Neuroleptic therapy
+9424 Chemical shock therapy
+9425 Psychiat drug therap NEC
+9426 Subconvulsive est
+9427 Electroshock therapy NEC
+9429 Psychiatr somatother NEC
+9431 Psychoanalysis
+9432 Hypnotherapy
+9433 Behavior therapy
+9434 Ind therap psychsex dysf
+9435 Crisis intervention
+9436 Play psychotherapy
+9437 Explor verbal psychother
+9438 Suppor verbal psychother
+9439 Individ psychotherap NEC
+9441 Grp therap psychsex dysf
+9442 Family therapy
+9443 Psychodrama
+9444 Other group therapy
+9445 Drug addict counselling
+9446 Alcoholism counselling
+9449 Other counselling
+9451 Referral for psychother
+9452 Referral psych aftercare
+9453 Referral alcohol rehab
+9454 Referral for drug rehab
+9455 Referral vocation rehab
+9459 Referral psych rehab NEC
+9461 Alcohol rehabilitation
+9462 Alcohol detoxification
+9463 Alcohol rehab/detox
+9464 Drug rehabilitation
+9465 Drug detoxification
+9466 Drug rehab/detox
+9467 Comb alcohol/drug rehab
+9468 Comb alcohol/drug detox
+9469 Comb alco/drug reha/deto
+9501 Limited eye examination
+9502 Comprehensive eye exam
+9503 Extended ophthal work-up
+9504 Anesthetized eye exam
+9505 Visual field study
+9506 Color vision study
+9507 Dark adaptation study
+9509 Eye examination NOS
+9511 Fundus photography
+9512 Eye fluorescein angiogra
+9513 Ultrasound study of eye
+9514 X-ray study of eye
+9515 Ocular motility study
+9516 P32 & eye tracer NEC
+9521 Electroretinogram
+9522 Electro-oculogram
+9523 Visual evoked potential
+9524 Electronystagmogram
+9525 Electromyogram of eye
+9526 Glaucoma testing
+9531 Spectacle fit & dispense
+9532 Perscr/fit/disp contacts
+9533 Oth lo vision aid dispen
+9534 Ocular prosthetics
+9535 Orthoptic training
+9536 Ophth counsel & instruct
+9541 Audiometry
+9542 Clinical hearing test
+9543 Audiological evaluation
+9544 Clin vestibul funct test
+9545 Rotation tests
+9546 Audit & vestib test NEC
+9547 Hearing examination NOS
+9548 Fitting of hearing aid
+9549 Non-op hearing proc NEC
+9601 Insert nasopharyn airway
+9602 Insert oropharyn airway
+9603 Insert esoph obtu airway
+9604 Insert endotracheal tube
+9605 Resp tract intubat NEC
+9606 Insert sengstaken tube
+9607 Insert gastric tube NEC
+9608 Insert intestinal tube
+9609 Insert rectal tube
+9611 Pack ext auditory canal
+9614 Vaginal packing
+9615 Vaginal mold insertion
+9616 Other vaginal dilation
+9617 Vag diaphragm insertion
+9618 Oth vagin pessary insert
+9619 Rectal packing
+9621 Dilat frontonasal duct
+9622 Dilation of rectum
+9623 Dilation anal sphincter
+9624 Dilat enterostomy stoma
+9625 Therapeut distent bladd
+9626 Manual reduc rect prolap
+9627 Manual reduction hernia
+9628 Manl reduct stoma prolap
+9629 Reduct intuss ali tract
+9631 Gastric cooling
+9632 Gastric freezing
+9633 Gastric lavage
+9634 Gastric tube irrigat NEC
+9635 Gastric gavage
+9636 GI ostomy irrigation
+9637 Proctoclysis
+9638 Impacted feces removal
+9639 Other transanal enema
+9641 Biliary tube irrigation
+9642 Pancreatic tube irrigat
+9643 GI tract instillat NEC
+9644 Vaginal douche
+9645 Nephrost/pyelost irrigat
+9646 Urterost/urete cth irrig
+9647 Cystostomy irrigation
+9648 Indwell cath irrig NEC
+9649 Other gu instillation
+9651 Irrigation of eye
+9652 Irrigation of ear
+9653 Irrigation of nasal pass
+9654 Dental scaling & debride
+9655 Tracheostomy toilette
+9656 Bronch/trach lavage NEC
+9657 Vascular cath irrigation
+9658 Wound catheter irrigat
+9659 Wound irrigation NEC
+966  Entral infus nutrit sub
+9670 Con inv mec ven-unsp dur
+9671 Cont inv mec ven <96 hrs
+9672 Cont inv mec ven 96+ hrs
+9701 Replace gast/esoph tube
+9702 Replace gastrostomy tube
+9703 Replace small bowel tube
+9704 Replace large bowel tube
+9705 Repl stent in bile duct
+9711 Replace upper limb cast
+9712 Replace lower limb cast
+9713 Replace cast NEC
+9714 Replac m/s immob dev NEC
+9715 Replace wound catheter
+9716 Replace wound pack/drain
+9721 Replace nasal packing
+9722 Replace dental packing
+9723 Replace trach tube
+9724 Replace vag diaphragm
+9725 Replace vaginal pessary
+9726 Replace vag/vulv packing
+9729 Non-op replacement NEC
+9731 Remove eye prosthesis
+9732 Remove nasal packing
+9733 Remove dental wiring
+9734 Remove dental packing
+9735 Remove dental prosthesis
+9736 Remove ext mand fix dev
+9737 Remove tracheostomy tube
+9738 Remove head/neck sutures
+9739 Remove head/neck dev NEC
+9741 Remov thoracotomy tube
+9742 Remov mediastinal drain
+9743 Remov thorax sutures
+9744 Nonop remov hrt asst sys
+9749 Remov thor ther dev NEC
+9751 Remov gastrostomy tube
+9752 Remov small bowel tube
+9753 Remov large bowel tube
+9754 Remov cholecystost tube
+9755 Remov biliary/liver tube
+9756 Remov pancreatic tube
+9759 Remov other GI device
+9761 Remov pyelos/nephros tub
+9762 Remov ureteral drain
+9763 Remov cystostomy tube
+9764 Remov urin drainage NEC
+9765 Remov urethral stent
+9769 Remov other urin device
+9771 Removal iud
+9772 Remov intrauterine pack
+9773 Remov vaginal diaphragm
+9774 Removal oth vag pessary
+9775 Remov vag/vulv packing
+9779 Remov other genit device
+9781 Remov retroperiton drain
+9782 Remov peritoneal drain
+9783 Remov abdom wall suture
+9784 Remov trunk suture NEC
+9785 Remov trunk packing NEC
+9786 Remov abdomen device NEC
+9787 Remov trunk device NEC
+9788 Remov ext immobilization
+9789 Remov therapeut dev NEC
+9801 Remov intralum mouth FB
+9802 Remov intralum esoph FB
+9803 Remov intralum gastr FB
+9804 Remov intralum colon FB
+9805 Remov intralum rect FB
+9811 Remov intralum ear FB
+9812 Remov intralum nose FB
+9813 Remov intralum pharyn FB
+9814 Remov intralum laryn FB
+9815 Remov intralum trach FB
+9816 Remov intralum uter FB
+9817 Remov intralum vag FB
+9818 Remov intralum stoma FB
+9819 Remove intralum ureth FB
+9820 Removal of FB NOS
+9821 Removal superfic FB eye
+9822 Removal head/neck FB
+9823 Removal vulvar FB
+9824 Removal scrotal/penis FB
+9825 Removal trunk FB NEC
+9826 Removal FB from hand
+9827 Removal FB from arm
+9828 Removal FB from foot
+9829 Removal FB from leg
+9851 Eswl kid/ureter/bladder
+9852 Eswl gb/bile duct
+9859 Eswl other sites
+9900 Periop aut trans hol bld
+9901 Exchange transfusion
+9902 Transfus prev auto blood
+9903 Whole blood transfus NEC
+9904 Packed cell transfusion
+9905 Platelet transfusion
+9906 Coag factor transfusion
+9907 Serum transfusion NEC
+9908 Blood expander transfus
+9909 Transfusion NEC
+9910 Inject/inf thrombo agent
+9911 Inject rh immune globul
+9912 Allergy immunization
+9913 Autoimmune dis immunizat
+9914 Injct/inf immunoglobulin
+9915 Parent infus nutrit sub
+9916 Inject antidote
+9917 Inject insulin
+9918 Inject/infuse electrolyt
+9919 Inject anticoagulant
+9920 Inj/inf platelet inhibit
+9921 Inject antibiotic
+9922 Inject anti-infect NEC
+9923 Inject steroid
+9924 Inject hormone NEC
+9925 Inject ca chemother NEC
+9926 Inject tranquilizer
+9927 Iontophoresis
+9928 Immunotherapy as antineo
+9929 Inject/infuse NEC
+9931 Cholera vaccination
+9932 Typhoid/paratyphoid vacc
+9933 Tuberculosis vaccination
+9934 Plague vaccination
+9935 Tularemia vaccination
+9936 Diphtheria toxoid admin
+9937 Pertussis vaccination
+9938 Tetanus toxoid administ
+9939 Dpt administration
+9941 Polio vaccine administra
+9942 Smallpox vaccination
+9943 Yellow fever vaccination
+9944 Rabies vaccination
+9945 Measles vaccination
+9946 Mumps vaccination
+9947 Rubella vaccination
+9948 Mmr administration
+9951 Common cold vaccination
+9952 Influenza vaccination
+9953 Arbovirus enceph vaccin
+9954 Arbovirus vaccinat NEC
+9955 Vaccination NEC
+9956 Tetanus antitoxin admini
+9957 Botulism antitoxin admin
+9958 Antitoxin administra NEC
+9959 Vaccination/innocula NEC
+9960 Cardiopulm resuscita NOS
+9961 Atrial cardioversion
+9962 Heart countershock NEC
+9963 Closed chest card massag
+9964 Carotid sinus stiumlat
+9969 Cardiac rhythm conv NEC
+9971 Therapeu plasmapheresis
+9972 Therapeutc leukopheresis
+9973 Therapeu erythropheresis
+9974 Therapeu plateltpheresis
+9975 Adm neuroprotective agnt
+9976 Extracorp immunoabsorpt
+9977 App adhesion barrier sub
+9978 Aquapheresis
+9979 Other therapeu apheresis
+9981 Hypothermia
+9982 Ultraviolet light therap
+9983 Other phototherapy
+9984 Isolation
+9985 Hyperthermia ca therapy
+9986 Non-invasive bone stimul
+9988 Therapeutc photopheresis
+9991 Anesthesia acupuncture
+9992 Other acupuncture
+9993 Rectal massage
+9994 Prostatic massage
+9995 Stretching of foreskin
+9996 Sperm collection
+9997 Denture fitting
+9998 Milk extraction
+9999 Miscellaneous proc NEC
