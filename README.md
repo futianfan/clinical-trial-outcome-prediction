@@ -57,7 +57,7 @@ Please see [`benchmark/README.md`](https://github.com/futianfan/clinical-trial-o
 
 
 <a name="hint"></a>
-## HINT: Learn and Inference 
+## 🤖 HINT: Learn and Inference 
 
 After processing the data, we learn the Hierarchical Interaction Network (HINT) on the following four tasks. The following figure illustrates the pipeline of HINT. All the scripts are available in the folder [`HINT`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/HINT). 
 Please see [`HINT/README.md`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/HINT/README.md) for details. 
@@ -78,7 +78,7 @@ The trained HINT models for all the three phases are available in `./save_model`
 
 
 <a name="contact"></a>
-## Contact
+## 📞 Contact
 
 Please contact futianfan@gmail.com for help or submit an issue. This is a joint work with [Kexin Huang](https://www.kexinhuang.com/), [Cao(Danica) Xiao](https://sites.google.com/view/danicaxiao/), Lucas M. Glass and [Jimeng Sun](http://sunlab.org/). 
 
