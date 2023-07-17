@@ -15,7 +15,7 @@ The following figure illustrates the pipeline of HINT.
 
 ## Table Of Contents 
 
-- Installation
+- [Installation](#installation)
 - Benchmark 
 - HINT: Learn and Inference 
 - Tutorial (Jupyter Notebook)
@@ -23,6 +23,7 @@ The following figure illustrates the pipeline of HINT.
 
 --- 
 
+<a name="installation"></a>
 ## Installation
 
 We build conda environment and uses `conda` or `pip` to install the required packages. See [`conda.yml`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/conda.yml) for all the packages. 
