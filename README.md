@@ -16,7 +16,7 @@ The following figure illustrates the pipeline of HINT.
 ## Table Of Contents 
 
 - [Installation](#installation)
-- [Benchmark](#benchmark) 
+- [Benchmark Data](#benchmark) 
 - [HINT: Learn and Inference](#hint) 
 - [Tutorial (Jupyter Notebook)](#tutorial)
 - [Contact](#contact) 
@@ -47,7 +47,7 @@ conda activate predict_drug_clinical_trial
 
 
 <a name="benchmark"></a>
-## Benchmark
+## 📊 Benchmark Data
 
 To standardize the clinical trial outcome prediction, we create a benchmark dataset for Trial Outcome Prediction named TOP, which incorporate rich data components about clinical trials, including drug, disease and protocol (eligibility criteria). 
 All the scripts are in the folder [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark). 
