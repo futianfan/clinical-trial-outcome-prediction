@@ -70,7 +70,7 @@ We add the prediction results in `./results` for all the three phases.
 
 The trained HINT models for all the three phases are available in `./save_model`.  
 
-## Tutorial (jupyter notebook)
+## 📚 Tutorial (jupyter notebook)
 
 
 - `benchmark`: [`tutorial_benchmark.ipynb`](https://github.com/futianfan/clinical-trial-outcome-prediction/blob/main/benchmark/README.md) describes some key components of the data curation process. 
