@@ -1,5 +1,12 @@
 # HINT: Hierarchical Interaction Network for Clinical Trial Outcome Prediction
 
+
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![GitHub Repo stars](https://img.shields.io/github/stars/futianfan/clinical-trial-outcome-prediction)](https://github.com/futianfan/clinical-trial-outcome-prediction/stargazers)
+[![GitHub Repo stars](https://img.shields.io/github/forks/futianfan/clinical-trial-outcome-prediction)](https://github.com/futianfan/clinical-trial-outcome-prediction/network/members)
+
+
+
 This repository hosts HINT, a deep learning based method for clinical trial outcome prediction. 
 The repository can be mainly divided into three parts:
 - [`benchmark`](https://github.com/futianfan/clinical-trial-outcome-prediction/tree/main/benchmark) describes the process of curating benchmark dataset named **Trial Outcome Prediction (TOP)** for clinical trial outcome prediction. 
