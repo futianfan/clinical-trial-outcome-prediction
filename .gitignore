@@ -1,0 +1,8 @@
+# directories
+venv/
+.ipynb_checkpoints
+biobert_v1.1_pubmed_pytorch_model/
+biobert/
+
+# files
+app.log
