@@ -50,6 +50,8 @@ We use following command to activate conda environment.
 conda activate predict_drug_clinical_trial
 ```
 
+**Protocol embeddings must be built before training.** The repository ships `data/sentence2embedding.pkl` as an empty placeholder (6 bytes). Build it once with `save_sentence_bert_dict_pkl()` in `HINT/protocol_encode.py` before running `HINT/learn_phase*.py`; otherwise the eligibility-criteria branch receives all-zero features. `load_sentence_2_vec()` now raises if the file is empty.
+
 ---
 
 
