@@ -77,6 +77,13 @@ def save_sentence_bert_dict_pkl():
 
 def load_sentence_2_vec():
 	sentence_2_vec = pickle.load(open('data/sentence2embedding.pkl', 'rb'))
+	if not sentence_2_vec:
+		## An empty dict here makes protocol2feature() drop every sentence and fall back to
+		## torch.zeros(1,768), so HINT would train with all-zero protocol features and no warning.
+		raise RuntimeError(
+			"data/sentence2embedding.pkl is empty. Build it with "
+			"protocol_encode.save_sentence_bert_dict_pkl() before training; "
+			"continuing would train HINT with all-zero protocol features.")
 	return sentence_2_vec 
 
 def protocol2feature(protocol, sentence_2_vec):
